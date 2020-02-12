@@ -4,7 +4,10 @@
   "description": "page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "next build && next export"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,9 @@
   },
   "homepage": "https://github.com/FreeDOSSS/AvtoSale#readme",
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "next": "^9.2.1",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }
