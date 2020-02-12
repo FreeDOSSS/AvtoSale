@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{fUXl:function(n,t,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/contact",function(){return o("zsgb")}])},zsgb:function(n,t,o){"use strict";o.r(t);var c=o("q1tI"),u=o.n(c).a.createElement;t.default=function(){return u("h1",null,"Contact")}}},[["fUXl",1,2,0]]]);

@@ -1,14 +1,14 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"],{
 
-/***/ "./pages/index.module.scss":
-/*!*********************************!*\
-  !*** ./pages/index.module.scss ***!
-  \*********************************/
+/***/ "./src/pages/index.module.scss":
+/*!*************************************!*\
+  !*** ./src/pages/index.module.scss ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"bg":"bg___2YI_9"};;
+module.exports = {"bg":"bg___279o8"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -30,7 +30,7 @@ module.exports = {"bg":"bg___2YI_9"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1581505815232");
+            injectCss(link, link.href.split("?")[0] + "?unix=1581514119891");
           });
       }
     }
