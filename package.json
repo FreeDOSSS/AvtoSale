@@ -1,0 +1,24 @@
+{
+  "name": "avtosale",
+  "version": "1.0.0",
+  "description": "page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreeDOSSS/AvtoSale.git"
+  },
+  "author": "Dima Shkarabura <dima.shkarabura@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreeDOSSS/AvtoSale/issues"
+  },
+  "homepage": "https://github.com/FreeDOSSS/AvtoSale#readme",
+  "dependencies": {
+    "next": "^9.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
