@@ -1,0 +1,41 @@
+@import "./../../constants/variables.scss";
+
+.wrp {
+  background-color: $colorBlackTransparent;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  &__item {
+    &__link {
+      display: block;
+      color: #fff;
+      padding: 20px 25px;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $colorAccent;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.drop {
+  width: auto;
+  .dropMenu {
+    background-color: $colorBlackTransparent;
+    list-style: none;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    .menu__item__link {
+      padding: 5px;
+    }
+  }
+}

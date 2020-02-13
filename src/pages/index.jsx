@@ -1,5 +1,8 @@
-import react from "react";
+import React from "react";
 import Head from "./../components/Head";
+import Menu from "../components/Menu/Menu";
+import * as style from "./index.module.scss";
+
 {
   /* <Head>
   <title>Page</title>
@@ -8,10 +11,12 @@ import Head from "./../components/Head";
 const App = () => {
   return (
     <>
-      <div className=" uk-grid">
-        <div className="uk-width-1-2">1</div>
-        <div>2</div>
-      </div>
+      <Head>
+        <title>Page</title>
+      </Head>
+      <header className={style.header}>
+        <Menu />
+      </header>
     </>
   );
 };

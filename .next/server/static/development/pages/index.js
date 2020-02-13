@@ -88,10 +88,1752 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/symbol.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/symbol */ "core-js/library/fn/symbol");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/symbol/iterator */ "core-js/library/fn/symbol/iterator");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/weak-map.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/weak-map.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/weak-map */ "core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _Object$getOwnPropertyDescriptor = __webpack_require__(/*! ../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+
+var _Object$defineProperty = __webpack_require__(/*! ../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var _typeof = __webpack_require__(/*! ../helpers/typeof */ "./node_modules/@babel/runtime-corejs2/helpers/typeof.js");
+
+var _WeakMap = __webpack_require__(/*! ../core-js/weak-map */ "./node_modules/@babel/runtime-corejs2/core-js/weak-map.js");
+
+function _getRequireWildcardCache() {
+  if (typeof _WeakMap !== "function") return null;
+  var cache = new _WeakMap();
+
+  _getRequireWildcardCache = function _getRequireWildcardCache() {
+    return cache;
+  };
+
+  return cache;
+}
+
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
+    return {
+      "default": obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache();
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = _Object$defineProperty && _Object$getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? _Object$getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        _Object$defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj["default"] = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+module.exports = _interopRequireWildcard;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/typeof.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/typeof.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _Symbol$iterator = __webpack_require__(/*! ../core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
+
+var _Symbol = __webpack_require__(/*! ../core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
+
+function _typeof2(obj) { if (typeof _Symbol === "function" && typeof _Symbol$iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof _Symbol === "function" && obj.constructor === _Symbol && obj !== _Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof _Symbol === "function" && _typeof2(_Symbol$iterator) === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof _Symbol === "function" && obj.constructor === _Symbol && obj !== _Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/client/link.js":
+/*!***********************************************!*\
+  !*** ./node_modules/next/dist/client/link.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _url = __webpack_require__(/*! url */ "url");
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _router = _interopRequireDefault(__webpack_require__(/*! ./router */ "./node_modules/next/dist/client/router.js"));
+
+var _utils = __webpack_require__(/*! ../next-server/lib/utils */ "./node_modules/next/dist/next-server/lib/utils.js");
+
+function isLocal(href) {
+  var url = (0, _url.parse)(href, false, true);
+  var origin = (0, _url.parse)((0, _utils.getLocationOrigin)(), false, true);
+  return !url.host || url.protocol === origin.protocol && url.host === origin.host;
+}
+
+function memoizedFormatUrl(formatFunc) {
+  var lastHref = null;
+  var lastAs = null;
+  var lastResult = null;
+  return (href, as) => {
+    if (lastResult && href === lastHref && as === lastAs) {
+      return lastResult;
+    }
+
+    var result = formatFunc(href, as);
+    lastHref = href;
+    lastAs = as;
+    lastResult = result;
+    return result;
+  };
+}
+
+function formatUrl(url) {
+  return url && typeof url === 'object' ? (0, _utils.formatWithValidation)(url) : url;
+}
+
+var observer;
+var listeners = new Map();
+var IntersectionObserver = false ? undefined : null;
+var prefetched = {};
+
+function getObserver() {
+  // Return shared instance of IntersectionObserver if already created
+  if (observer) {
+    return observer;
+  } // Only create shared IntersectionObserver if supported in browser
+
+
+  if (!IntersectionObserver) {
+    return undefined;
+  }
+
+  return observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!listeners.has(entry.target)) {
+        return;
+      }
+
+      var cb = listeners.get(entry.target);
+
+      if (entry.isIntersecting || entry.intersectionRatio > 0) {
+        observer.unobserve(entry.target);
+        listeners.delete(entry.target);
+        cb();
+      }
+    });
+  }, {
+    rootMargin: '200px'
+  });
+}
+
+var listenToIntersections = (el, cb) => {
+  var observer = getObserver();
+
+  if (!observer) {
+    return () => {};
+  }
+
+  observer.observe(el);
+  listeners.set(el, cb);
+  return () => {
+    try {
+      observer.unobserve(el);
+    } catch (err) {
+      console.error(err);
+    }
+
+    listeners.delete(el);
+  };
+};
+
+class Link extends _react.Component {
+  constructor(props) {
+    super(props);
+    this.p = void 0;
+
+    this.cleanUpListeners = () => {};
+
+    this.formatUrls = memoizedFormatUrl((href, asHref) => {
+      return {
+        href: formatUrl(href),
+        as: asHref ? formatUrl(asHref) : asHref
+      };
+    });
+
+    this.linkClicked = e => {
+      // @ts-ignore target exists on currentTarget
+      var {
+        nodeName,
+        target
+      } = e.currentTarget;
+
+      if (nodeName === 'A' && (target && target !== '_self' || e.metaKey || e.ctrlKey || e.shiftKey || e.nativeEvent && e.nativeEvent.which === 2)) {
+        // ignore click for new tab / new window behavior
+        return;
+      }
+
+      var {
+        href,
+        as
+      } = this.formatUrls(this.props.href, this.props.as);
+
+      if (!isLocal(href)) {
+        // ignore click if it's outside our scope (e.g. https://google.com)
+        return;
+      }
+
+      var {
+        pathname
+      } = window.location;
+      href = (0, _url.resolve)(pathname, href);
+      as = as ? (0, _url.resolve)(pathname, as) : href;
+      e.preventDefault(); //  avoid scroll for urls with anchor refs
+
+      var {
+        scroll
+      } = this.props;
+
+      if (scroll == null) {
+        scroll = as.indexOf('#') < 0;
+      } // replace state instead of push if prop is present
+
+
+      _router.default[this.props.replace ? 'replace' : 'push'](href, as, {
+        shallow: this.props.shallow
+      }).then(success => {
+        if (!success) return;
+
+        if (scroll) {
+          window.scrollTo(0, 0);
+          document.body.focus();
+        }
+      });
+    };
+
+    if (true) {
+      if (props.prefetch) {
+        console.warn('Next.js auto-prefetches automatically based on viewport. The prefetch attribute is no longer needed. More: https://err.sh/zeit/next.js/prefetch-true-deprecated');
+      }
+    }
+
+    this.p = props.prefetch !== false;
+  }
+
+  componentWillUnmount() {
+    this.cleanUpListeners();
+  }
+
+  getHref() {
+    var {
+      pathname
+    } = window.location;
+    var {
+      href: parsedHref
+    } = this.formatUrls(this.props.href, this.props.as);
+    return (0, _url.resolve)(pathname, parsedHref);
+  }
+
+  handleRef(ref) {
+    var isPrefetched = prefetched[this.getHref()];
+
+    if (this.p && IntersectionObserver && ref && ref.tagName) {
+      this.cleanUpListeners();
+
+      if (!isPrefetched) {
+        this.cleanUpListeners = listenToIntersections(ref, () => {
+          this.prefetch();
+        });
+      }
+    }
+  } // The function is memoized so that no extra lifecycles are needed
+  // as per https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
+
+
+  prefetch() {
+    if (!this.p || true) return; // Prefetch the JSON page if asked (only in the client)
+
+    var href = this.getHref();
+
+    _router.default.prefetch(href);
+
+    prefetched[href] = true;
+  }
+
+  render() {
+    var {
+      children
+    } = this.props;
+    var {
+      href,
+      as
+    } = this.formatUrls(this.props.href, this.props.as); // Deprecated. Warning shown by propType check. If the children provided is a string (<Link>example</Link>) we wrap it in an <a> tag
+
+    if (typeof children === 'string') {
+      children = _react.default.createElement("a", null, children);
+    } // This will return the first child, if multiple are provided it will throw an error
+
+
+    var child = _react.Children.only(children);
+
+    var props = {
+      ref: el => {
+        this.handleRef(el);
+
+        if (child && typeof child === 'object' && child.ref) {
+          if (typeof child.ref === 'function') child.ref(el);else if (typeof child.ref === 'object') {
+            child.ref.current = el;
+          }
+        }
+      },
+      onMouseEnter: e => {
+        if (child.props && typeof child.props.onMouseEnter === 'function') {
+          child.props.onMouseEnter(e);
+        }
+
+        this.prefetch();
+      },
+      onClick: e => {
+        if (child.props && typeof child.props.onClick === 'function') {
+          child.props.onClick(e);
+        }
+
+        if (!e.defaultPrevented) {
+          this.linkClicked(e);
+        }
+      }
+    }; // If child is an <a> tag and doesn't have a href attribute, or if the 'passHref' property is
+    // defined, we specify the current 'href', so that repetition is not needed by the user
+
+    if (this.props.passHref || child.type === 'a' && !('href' in child.props)) {
+      props.href = as || href;
+    } // Add the ending slash to the paths. So, we can serve the
+    // "<page>/index.html" directly.
+
+
+    if (false) { var rewriteUrlForNextExport; }
+
+    return _react.default.cloneElement(child, props);
+  }
+
+}
+
+if (true) {
+  var warn = (0, _utils.execOnce)(console.error); // This module gets removed by webpack.IgnorePlugin
+
+  var PropTypes = __webpack_require__(/*! prop-types */ "prop-types");
+
+  var exact = __webpack_require__(/*! prop-types-exact */ "prop-types-exact"); // @ts-ignore the property is supported, when declaring it on the class it outputs an extra bit of code which is not needed.
+
+
+  Link.propTypes = exact({
+    href: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+    as: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+    prefetch: PropTypes.bool,
+    replace: PropTypes.bool,
+    shallow: PropTypes.bool,
+    passHref: PropTypes.bool,
+    scroll: PropTypes.bool,
+    children: PropTypes.oneOfType([PropTypes.element, (props, propName) => {
+      var value = props[propName];
+
+      if (typeof value === 'string') {
+        warn("Warning: You're using a string directly inside <Link>. This usage has been deprecated. Please add an <a> tag as child of <Link>");
+      }
+
+      return null;
+    }]).isRequired
+  });
+}
+
+var _default = Link;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/client/router.js":
+/*!*************************************************!*\
+  !*** ./node_modules/next/dist/client/router.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports.useRouter = useRouter;
+exports.makePublicRouterInstance = makePublicRouterInstance;
+exports.createRouter = exports.withRouter = exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _router2 = _interopRequireWildcard(__webpack_require__(/*! ../next-server/lib/router/router */ "./node_modules/next/dist/next-server/lib/router/router.js"));
+
+exports.Router = _router2.default;
+exports.NextRouter = _router2.NextRouter;
+
+var _routerContext = __webpack_require__(/*! ../next-server/lib/router-context */ "./node_modules/next/dist/next-server/lib/router-context.js");
+
+var _withRouter = _interopRequireDefault(__webpack_require__(/*! ./with-router */ "./node_modules/next/dist/client/with-router.js"));
+
+exports.withRouter = _withRouter.default;
+/* global window */
+
+var singletonRouter = {
+  router: null,
+  // holds the actual router instance
+  readyCallbacks: [],
+
+  ready(cb) {
+    if (this.router) return cb();
+
+    if (false) {}
+  }
+
+}; // Create public properties and methods of the router in the singletonRouter
+
+var urlPropertyFields = ['pathname', 'route', 'query', 'asPath', 'components'];
+var routerEvents = ['routeChangeStart', 'beforeHistoryChange', 'routeChangeComplete', 'routeChangeError', 'hashChangeStart', 'hashChangeComplete'];
+var coreMethodFields = ['push', 'replace', 'reload', 'back', 'prefetch', 'beforePopState']; // Events is a static property on the router, the router doesn't have to be initialized to use it
+
+Object.defineProperty(singletonRouter, 'events', {
+  get() {
+    return _router2.default.events;
+  }
+
+});
+urlPropertyFields.forEach(field => {
+  // Here we need to use Object.defineProperty because, we need to return
+  // the property assigned to the actual router
+  // The value might get changed as we change routes and this is the
+  // proper way to access it
+  Object.defineProperty(singletonRouter, field, {
+    get() {
+      var router = getRouter();
+      return router[field];
+    }
+
+  });
+});
+coreMethodFields.forEach(field => {
+  // We don't really know the types here, so we add them later instead
+  ;
+
+  singletonRouter[field] = function () {
+    var router = getRouter();
+    return router[field](...arguments);
+  };
+});
+routerEvents.forEach(event => {
+  singletonRouter.ready(() => {
+    _router2.default.events.on(event, function () {
+      var eventField = "on" + event.charAt(0).toUpperCase() + event.substring(1);
+      var _singletonRouter = singletonRouter;
+
+      if (_singletonRouter[eventField]) {
+        try {
+          _singletonRouter[eventField](...arguments);
+        } catch (err) {
+          // tslint:disable-next-line:no-console
+          console.error("Error when running the Router event: " + eventField); // tslint:disable-next-line:no-console
+
+          console.error(err.message + "\n" + err.stack);
+        }
+      }
+    });
+  });
+});
+
+function getRouter() {
+  if (!singletonRouter.router) {
+    var message = 'No router instance found.\n' + 'You should only use "next/router" inside the client side of your app.\n';
+    throw new Error(message);
+  }
+
+  return singletonRouter.router;
+} // Export the singletonRouter and this is the public API.
+
+
+var _default = singletonRouter; // Reexport the withRoute HOC
+
+exports.default = _default;
+
+function useRouter() {
+  return _react.default.useContext(_routerContext.RouterContext);
+} // INTERNAL APIS
+// -------------
+// (do not use following exports inside the app)
+// Create a router and assign it as the singleton instance.
+// This is used in client side when we are initilizing the app.
+// This should **not** use inside the server.
+
+
+var createRouter = function createRouter() {
+  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  singletonRouter.router = new _router2.default(...args);
+  singletonRouter.readyCallbacks.forEach(cb => cb());
+  singletonRouter.readyCallbacks = [];
+  return singletonRouter.router;
+}; // This function is used to create the `withRouter` router instance
+
+
+exports.createRouter = createRouter;
+
+function makePublicRouterInstance(router) {
+  var _router = router;
+  var instance = {};
+
+  for (var property of urlPropertyFields) {
+    if (typeof _router[property] === 'object') {
+      instance[property] = Object.assign({}, _router[property]); // makes sure query is not stateful
+
+      continue;
+    }
+
+    instance[property] = _router[property];
+  } // Events is a static property on the router, the router doesn't have to be initialized to use it
+
+
+  instance.events = _router2.default.events;
+  coreMethodFields.forEach(field => {
+    instance[field] = function () {
+      return _router[field](...arguments);
+    };
+  });
+  return instance;
+}
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/client/with-router.js":
+/*!******************************************************!*\
+  !*** ./node_modules/next/dist/client/with-router.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports.default = withRouter;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _router = __webpack_require__(/*! ./router */ "./node_modules/next/dist/client/router.js");
+
+function withRouter(ComposedComponent) {
+  function WithRouterWrapper(props) {
+    return _react.default.createElement(ComposedComponent, Object.assign({
+      router: (0, _router.useRouter)()
+    }, props));
+  }
+
+  WithRouterWrapper.getInitialProps = ComposedComponent.getInitialProps // This is needed to allow checking for custom getInitialProps in _app
+  ;
+  WithRouterWrapper.origGetInitialProps = ComposedComponent.origGetInitialProps;
+
+  if (true) {
+    var name = ComposedComponent.displayName || ComposedComponent.name || 'Unknown';
+    WithRouterWrapper.displayName = "withRouter(" + name + ")";
+  }
+
+  return WithRouterWrapper;
+}
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/mitt.js":
+/*!********************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/mitt.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/*
+MIT License
+
+Copyright (c) Jason Miller (https://jasonformat.com/)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function mitt() {
+  const all = Object.create(null);
+  return {
+    on(type, handler) {
+      ;
+      (all[type] || (all[type] = [])).push(handler);
+    },
+
+    off(type, handler) {
+      if (all[type]) {
+        // tslint:disable-next-line:no-bitwise
+        all[type].splice(all[type].indexOf(handler) >>> 0, 1);
+      }
+    },
+
+    emit(type, ...evts) {
+      // eslint-disable-next-line array-callback-return
+      ;
+      (all[type] || []).slice().map(handler => {
+        handler(...evts);
+      });
+    }
+
+  };
+}
+
+exports.default = mitt;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/router-context.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router-context.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const React = __importStar(__webpack_require__(/*! react */ "react"));
+
+exports.RouterContext = React.createContext(null);
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/router/router.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/router.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const url_1 = __webpack_require__(/*! url */ "url");
+
+const mitt_1 = __importDefault(__webpack_require__(/*! ../mitt */ "./node_modules/next/dist/next-server/lib/mitt.js"));
+
+const utils_1 = __webpack_require__(/*! ../utils */ "./node_modules/next/dist/next-server/lib/utils.js");
+
+const is_dynamic_1 = __webpack_require__(/*! ./utils/is-dynamic */ "./node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js");
+
+const route_matcher_1 = __webpack_require__(/*! ./utils/route-matcher */ "./node_modules/next/dist/next-server/lib/router/utils/route-matcher.js");
+
+const route_regex_1 = __webpack_require__(/*! ./utils/route-regex */ "./node_modules/next/dist/next-server/lib/router/utils/route-regex.js");
+
+function addBasePath(path) {
+  // @ts-ignore variable is always a string
+  const p = "";
+  return path.indexOf(p) !== 0 ? p + path : path;
+}
+
+function toRoute(path) {
+  return path.replace(/\/$/, '') || '/';
+}
+
+class Router {
+  constructor(pathname, query, as, {
+    initialProps,
+    pageLoader,
+    App,
+    wrapApp,
+    Component,
+    err,
+    subscription
+  }) {
+    // Static Data Cache
+    this.sdc = {};
+
+    this.onPopState = e => {
+      if (!e.state) {
+        // We get state as undefined for two reasons.
+        //  1. With older safari (< 8) and older chrome (< 34)
+        //  2. When the URL changed with #
+        //
+        // In the both cases, we don't need to proceed and change the route.
+        // (as it's already changed)
+        // But we can simply replace the state with the new changes.
+        // Actually, for (1) we don't need to nothing. But it's hard to detect that event.
+        // So, doing the following for (1) does no harm.
+        const {
+          pathname,
+          query
+        } = this;
+        this.changeState('replaceState', utils_1.formatWithValidation({
+          pathname,
+          query
+        }), utils_1.getURL());
+        return;
+      } // Make sure we don't re-render on initial load,
+      // can be caused by navigating back from an external site
+
+
+      if (e.state && this.isSsr && e.state.url === this.pathname && e.state.as === this.asPath) {
+        return;
+      } // If the downstream application returns falsy, return.
+      // They will then be responsible for handling the event.
+
+
+      if (this._bps && !this._bps(e.state)) {
+        return;
+      }
+
+      const {
+        url,
+        as,
+        options
+      } = e.state;
+
+      if (true) {
+        if (typeof url === 'undefined' || typeof as === 'undefined') {
+          console.warn('`popstate` event triggered but `event.state` did not have `url` or `as` https://err.sh/zeit/next.js/popstate-state-empty');
+        }
+      }
+
+      this.replace(url, as, options);
+    };
+
+    this._getStaticData = (asPath, _cachedData) => {
+      let pathname = url_1.parse(asPath).pathname;
+      pathname = toRoute(!pathname || pathname === '/' ? '/index' : pathname);
+      return  false ? undefined : fetch( // @ts-ignore __NEXT_DATA__
+      `/_next/data/${__NEXT_DATA__.buildId}${pathname}.json`).then(res => {
+        if (!res.ok) {
+          throw new Error(`Failed to load static props`);
+        }
+
+        return res.json();
+      }).then(data => {
+        this.sdc[pathname] = data;
+        return data;
+      }).catch(err => {
+        ;
+        err.code = 'PAGE_LOAD_ERROR';
+        throw err;
+      });
+    }; // represents the current component key
+
+
+    this.route = toRoute(pathname); // set up the component cache (by route keys)
+
+    this.components = {}; // We should not keep the cache, if there's an error
+    // Otherwise, this cause issues when when going back and
+    // come again to the errored page.
+
+    if (pathname !== '/_error') {
+      this.components[this.route] = {
+        Component,
+        props: initialProps,
+        err
+      };
+    }
+
+    this.components['/_app'] = {
+      Component: App
+    }; // Backwards compat for Router.router.events
+    // TODO: Should be remove the following major version as it was never documented
+    // @ts-ignore backwards compatibility
+
+    this.events = Router.events;
+    this.pageLoader = pageLoader;
+    this.pathname = pathname;
+    this.query = query; // if auto prerendered and dynamic route wait to update asPath
+    // until after mount to prevent hydration mismatch
+
+    this.asPath = // @ts-ignore this is temporarily global (attached to window)
+    is_dynamic_1.isDynamicRoute(pathname) && __NEXT_DATA__.autoExport ? pathname : as;
+    this.sub = subscription;
+    this.clc = null;
+    this._wrapApp = wrapApp; // make sure to ignore extra popState in safari on navigating
+    // back from external site
+
+    this.isSsr = true;
+
+    if (false) {}
+  } // @deprecated backwards compatibility even though it's a private method.
+
+
+  static _rewriteUrlForNextExport(url) {
+    if (false) {} else {
+      return url;
+    }
+  }
+
+  update(route, mod) {
+    const Component = mod.default || mod;
+    const data = this.components[route];
+
+    if (!data) {
+      throw new Error(`Cannot update unavailable route: ${route}`);
+    }
+
+    const newData = Object.assign(Object.assign({}, data), {
+      Component
+    });
+    this.components[route] = newData; // pages/_app.js updated
+
+    if (route === '/_app') {
+      this.notify(this.components[this.route]);
+      return;
+    }
+
+    if (route === this.route) {
+      this.notify(newData);
+    }
+  }
+
+  reload() {
+    window.location.reload();
+  }
+  /**
+   * Go back in history
+   */
+
+
+  back() {
+    window.history.back();
+  }
+  /**
+   * Performs a `pushState` with arguments
+   * @param url of the route
+   * @param as masks `url` for the browser
+   * @param options object you can define `shallow` and other options
+   */
+
+
+  push(url, as = url, options = {}) {
+    return this.change('pushState', url, as, options);
+  }
+  /**
+   * Performs a `replaceState` with arguments
+   * @param url of the route
+   * @param as masks `url` for the browser
+   * @param options object you can define `shallow` and other options
+   */
+
+
+  replace(url, as = url, options = {}) {
+    return this.change('replaceState', url, as, options);
+  }
+
+  change(method, _url, _as, options) {
+    return new Promise((resolve, reject) => {
+      if (!options._h) {
+        this.isSsr = false;
+      } // marking route changes as a navigation start entry
+
+
+      if (utils_1.ST) {
+        performance.mark('routeChange');
+      } // If url and as provided as an object representation,
+      // we'll format them into the string version here.
+
+
+      const url = typeof _url === 'object' ? utils_1.formatWithValidation(_url) : _url;
+      let as = typeof _as === 'object' ? utils_1.formatWithValidation(_as) : _as; // Add the ending slash to the paths. So, we can serve the
+      // "<page>/index.html" directly for the SSR page.
+
+      if (false) {}
+
+      this.abortComponentLoad(as); // If the url change is only related to a hash change
+      // We should not proceed. We should only change the state.
+      // WARNING: `_h` is an internal option for handing Next.js client-side
+      // hydration. Your app should _never_ use this property. It may change at
+      // any time without notice.
+
+      if (!options._h && this.onlyAHashChange(as)) {
+        this.asPath = as;
+        Router.events.emit('hashChangeStart', as);
+        this.changeState(method, url, addBasePath(as), options);
+        this.scrollToHash(as);
+        Router.events.emit('hashChangeComplete', as);
+        return resolve(true);
+      }
+
+      const {
+        pathname,
+        query,
+        protocol
+      } = url_1.parse(url, true);
+
+      if (!pathname || protocol) {
+        if (true) {
+          throw new Error(`Invalid href passed to router: ${url} https://err.sh/zeit/next.js/invalid-href-passed`);
+        }
+
+        return resolve(false);
+      } // If asked to change the current URL we should reload the current page
+      // (not location.reload() but reload getInitialProps and other Next.js stuffs)
+      // We also need to set the method = replaceState always
+      // as this should not go into the history (That's how browsers work)
+      // We should compare the new asPath to the current asPath, not the url
+
+
+      if (!this.urlIsNew(as)) {
+        method = 'replaceState';
+      } // @ts-ignore pathname is always a string
+
+
+      const route = toRoute(pathname);
+      const {
+        shallow = false
+      } = options;
+
+      if (is_dynamic_1.isDynamicRoute(route)) {
+        const {
+          pathname: asPathname
+        } = url_1.parse(as);
+        const routeRegex = route_regex_1.getRouteRegex(route);
+        const routeMatch = route_matcher_1.getRouteMatcher(routeRegex)(asPathname);
+
+        if (!routeMatch) {
+          const missingParams = Object.keys(routeRegex.groups).filter(param => !query[param]);
+
+          if (missingParams.length > 0) {
+            if (true) {
+              console.warn(`Mismatching \`as\` and \`href\` failed to manually provide ` + `the params: ${missingParams.join(', ')} in the \`href\`'s \`query\``);
+            }
+
+            return reject(new Error(`The provided \`as\` value (${asPathname}) is incompatible with the \`href\` value (${route}). ` + `Read more: https://err.sh/zeit/next.js/incompatible-href-as`));
+          }
+        } else {
+          // Merge params into `query`, overwriting any specified in search
+          Object.assign(query, routeMatch);
+        }
+      }
+
+      Router.events.emit('routeChangeStart', as); // If shallow is true and the route exists in the router cache we reuse the previous result
+      // @ts-ignore pathname is always a string
+
+      this.getRouteInfo(route, pathname, query, as, shallow).then(routeInfo => {
+        const {
+          error
+        } = routeInfo;
+
+        if (error && error.cancelled) {
+          return resolve(false);
+        }
+
+        Router.events.emit('beforeHistoryChange', as);
+        this.changeState(method, url, addBasePath(as), options);
+        const hash = window.location.hash.substring(1);
+
+        if (true) {
+          const appComp = this.components['/_app'].Component;
+          window.next.isPrerendered = appComp.getInitialProps === appComp.origGetInitialProps && !routeInfo.Component.getInitialProps;
+        } // @ts-ignore pathname is always defined
+
+
+        this.set(route, pathname, query, as, Object.assign(Object.assign({}, routeInfo), {
+          hash
+        }));
+
+        if (error) {
+          Router.events.emit('routeChangeError', error, as);
+          throw error;
+        }
+
+        Router.events.emit('routeChangeComplete', as);
+        return resolve(true);
+      }, reject);
+    });
+  }
+
+  changeState(method, url, as, options = {}) {
+    if (true) {
+      if (typeof window.history === 'undefined') {
+        console.error(`Warning: window.history is not available.`);
+        return;
+      } // @ts-ignore method should always exist on history
+
+
+      if (typeof window.history[method] === 'undefined') {
+        console.error(`Warning: window.history.${method} is not available`);
+        return;
+      }
+    }
+
+    if (method !== 'pushState' || utils_1.getURL() !== as) {
+      // @ts-ignore method should always exist on history
+      window.history[method]({
+        url,
+        as,
+        options
+      }, null, as);
+    }
+  }
+
+  getRouteInfo(route, pathname, query, as, shallow = false) {
+    const cachedRouteInfo = this.components[route]; // If there is a shallow route transition possible
+    // If the route is already rendered on the screen.
+
+    if (shallow && cachedRouteInfo && this.route === route) {
+      return Promise.resolve(cachedRouteInfo);
+    }
+
+    return new Promise((resolve, reject) => {
+      if (cachedRouteInfo) {
+        return resolve(cachedRouteInfo);
+      }
+
+      this.fetchComponent(route).then(Component => resolve({
+        Component
+      }), reject);
+    }).then(routeInfo => {
+      const {
+        Component
+      } = routeInfo;
+
+      if (true) {
+        const {
+          isValidElementType
+        } = __webpack_require__(/*! react-is */ "react-is");
+
+        if (!isValidElementType(Component)) {
+          throw new Error(`The default export is not a React Component in page: "${pathname}"`);
+        }
+      }
+
+      return this._getData(() => Component.__N_SSG ? this._getStaticData(as) : this.getInitialProps(Component, // we provide AppTree later so this needs to be `any`
+      {
+        pathname,
+        query,
+        asPath: as
+      })).then(props => {
+        routeInfo.props = props;
+        this.components[route] = routeInfo;
+        return routeInfo;
+      });
+    }).catch(err => {
+      return new Promise(resolve => {
+        if (err.code === 'PAGE_LOAD_ERROR') {
+          // If we can't load the page it could be one of following reasons
+          //  1. Page doesn't exists
+          //  2. Page does exist in a different zone
+          //  3. Internal error while loading the page
+          // So, doing a hard reload is the proper way to deal with this.
+          window.location.href = as; // Changing the URL doesn't block executing the current code path.
+          // So, we need to mark it as a cancelled error and stop the routing logic.
+
+          err.cancelled = true; // @ts-ignore TODO: fix the control flow here
+
+          return resolve({
+            error: err
+          });
+        }
+
+        if (err.cancelled) {
+          // @ts-ignore TODO: fix the control flow here
+          return resolve({
+            error: err
+          });
+        }
+
+        resolve(this.fetchComponent('/_error').then(Component => {
+          const routeInfo = {
+            Component,
+            err
+          };
+          return new Promise(resolve => {
+            this.getInitialProps(Component, {
+              err,
+              pathname,
+              query
+            }).then(props => {
+              routeInfo.props = props;
+              routeInfo.error = err;
+              resolve(routeInfo);
+            }, gipErr => {
+              console.error('Error in error page `getInitialProps`: ', gipErr);
+              routeInfo.error = err;
+              routeInfo.props = {};
+              resolve(routeInfo);
+            });
+          });
+        }));
+      });
+    });
+  }
+
+  set(route, pathname, query, as, data) {
+    this.route = route;
+    this.pathname = pathname;
+    this.query = query;
+    this.asPath = as;
+    this.notify(data);
+  }
+  /**
+   * Callback to execute before replacing router state
+   * @param cb callback to be executed
+   */
+
+
+  beforePopState(cb) {
+    this._bps = cb;
+  }
+
+  onlyAHashChange(as) {
+    if (!this.asPath) return false;
+    const [oldUrlNoHash, oldHash] = this.asPath.split('#');
+    const [newUrlNoHash, newHash] = as.split('#'); // Makes sure we scroll to the provided hash if the url/hash are the same
+
+    if (newHash && oldUrlNoHash === newUrlNoHash && oldHash === newHash) {
+      return true;
+    } // If the urls are change, there's more than a hash change
+
+
+    if (oldUrlNoHash !== newUrlNoHash) {
+      return false;
+    } // If the hash has changed, then it's a hash only change.
+    // This check is necessary to handle both the enter and
+    // leave hash === '' cases. The identity case falls through
+    // and is treated as a next reload.
+
+
+    return oldHash !== newHash;
+  }
+
+  scrollToHash(as) {
+    const [, hash] = as.split('#'); // Scroll to top if the hash is just `#` with no value
+
+    if (hash === '') {
+      window.scrollTo(0, 0);
+      return;
+    } // First we check if the element by id is found
+
+
+    const idEl = document.getElementById(hash);
+
+    if (idEl) {
+      idEl.scrollIntoView();
+      return;
+    } // If there's no element with the id, we check the `name` property
+    // To mirror browsers
+
+
+    const nameEl = document.getElementsByName(hash)[0];
+
+    if (nameEl) {
+      nameEl.scrollIntoView();
+    }
+  }
+
+  urlIsNew(asPath) {
+    return this.asPath !== asPath;
+  }
+  /**
+   * Prefetch `page` code, you may wait for the data during `page` rendering.
+   * This feature only works in production!
+   * @param url of prefetched `page`
+   */
+
+
+  prefetch(url) {
+    return new Promise((resolve, reject) => {
+      const {
+        pathname,
+        protocol
+      } = url_1.parse(url);
+
+      if (!pathname || protocol) {
+        if (true) {
+          throw new Error(`Invalid href passed to router: ${url} https://err.sh/zeit/next.js/invalid-href-passed`);
+        }
+
+        return;
+      } // Prefetch is not supported in development mode because it would trigger on-demand-entries
+
+
+      if (true) {
+        return;
+      } // @ts-ignore pathname is always defined
+
+
+      const route = toRoute(pathname);
+      this.pageLoader.prefetch(route).then(resolve, reject);
+    });
+  }
+
+  async fetchComponent(route) {
+    let cancelled = false;
+
+    const cancel = this.clc = () => {
+      cancelled = true;
+    };
+
+    const Component = await this.pageLoader.loadPage(route);
+
+    if (cancelled) {
+      const error = new Error(`Abort fetching component for route: "${route}"`);
+      error.cancelled = true;
+      throw error;
+    }
+
+    if (cancel === this.clc) {
+      this.clc = null;
+    }
+
+    return Component;
+  }
+
+  _getData(fn) {
+    let cancelled = false;
+
+    const cancel = () => {
+      cancelled = true;
+    };
+
+    this.clc = cancel;
+    return fn().then(data => {
+      if (cancel === this.clc) {
+        this.clc = null;
+      }
+
+      if (cancelled) {
+        const err = new Error('Loading initial props cancelled');
+        err.cancelled = true;
+        throw err;
+      }
+
+      return data;
+    });
+  }
+
+  getInitialProps(Component, ctx) {
+    const {
+      Component: App
+    } = this.components['/_app'];
+
+    const AppTree = this._wrapApp(App);
+
+    ctx.AppTree = AppTree;
+    return utils_1.loadGetInitialProps(App, {
+      AppTree,
+      Component,
+      router: this,
+      ctx
+    });
+  }
+
+  abortComponentLoad(as) {
+    if (this.clc) {
+      const e = new Error('Route Cancelled');
+      e.cancelled = true;
+      Router.events.emit('routeChangeError', e, as);
+      this.clc();
+      this.clc = null;
+    }
+  }
+
+  notify(data) {
+    this.sub(data, this.components['/_app'].Component);
+  }
+
+}
+
+exports.default = Router;
+Router.events = mitt_1.default();
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}); // Identify /[param]/ in route string
+
+const TEST_ROUTE = /\/\[[^/]+?\](?=\/|$)/;
+
+function isDynamicRoute(route) {
+  return TEST_ROUTE.test(route);
+}
+
+exports.isDynamicRoute = isDynamicRoute;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/router/utils/route-matcher.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/utils/route-matcher.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function getRouteMatcher(routeRegex) {
+  const {
+    re,
+    groups
+  } = routeRegex;
+  return pathname => {
+    const routeMatch = re.exec(pathname);
+
+    if (!routeMatch) {
+      return false;
+    }
+
+    const decode = decodeURIComponent;
+    const params = {};
+    Object.keys(groups).forEach(slugName => {
+      const g = groups[slugName];
+      const m = routeMatch[g.pos];
+
+      if (m !== undefined) {
+        params[slugName] = ~m.indexOf('/') ? m.split('/').map(entry => decode(entry)) : g.repeat ? [decode(m)] : decode(m);
+      }
+    });
+    return params;
+  };
+}
+
+exports.getRouteMatcher = getRouteMatcher;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/router/utils/route-regex.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/utils/route-regex.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function getRouteRegex(normalizedRoute) {
+  // Escape all characters that could be considered RegEx
+  const escapedRoute = (normalizedRoute.replace(/\/$/, '') || '/').replace(/[|\\{}()[\]^$+*?.-]/g, '\\$&');
+  const groups = {};
+  let groupIndex = 1;
+  const parameterizedRoute = escapedRoute.replace(/\/\\\[([^/]+?)\\\](?=\/|$)/g, (_, $1) => {
+    const isCatchAll = /^(\\\.){3}/.test($1);
+    groups[$1 // Un-escape key
+    .replace(/\\([|\\{}()[\]^$+*?.-])/g, '$1').replace(/^\.{3}/, '') // eslint-disable-next-line no-sequences
+    ] = {
+      pos: groupIndex++,
+      repeat: isCatchAll
+    };
+    return isCatchAll ? '/(.+?)' : '/([^/]+?)';
+  });
+  return {
+    re: new RegExp('^' + parameterizedRoute + '(?:/)?$', 'i'),
+    groups
+  };
+}
+
+exports.getRouteRegex = getRouteRegex;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/utils.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/utils.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const url_1 = __webpack_require__(/*! url */ "url");
+/**
+ * Utils
+ */
+
+
+function execOnce(fn) {
+  let used = false;
+  let result = null;
+  return (...args) => {
+    if (!used) {
+      used = true;
+      result = fn.apply(this, args);
+    }
+
+    return result;
+  };
+}
+
+exports.execOnce = execOnce;
+
+function getLocationOrigin() {
+  const {
+    protocol,
+    hostname,
+    port
+  } = window.location;
+  return `${protocol}//${hostname}${port ? ':' + port : ''}`;
+}
+
+exports.getLocationOrigin = getLocationOrigin;
+
+function getURL() {
+  const {
+    href
+  } = window.location;
+  const origin = getLocationOrigin();
+  return href.substring(origin.length);
+}
+
+exports.getURL = getURL;
+
+function getDisplayName(Component) {
+  return typeof Component === 'string' ? Component : Component.displayName || Component.name || 'Unknown';
+}
+
+exports.getDisplayName = getDisplayName;
+
+function isResSent(res) {
+  return res.finished || res.headersSent;
+}
+
+exports.isResSent = isResSent;
+
+async function loadGetInitialProps(App, ctx) {
+  var _a;
+
+  if (true) {
+    if ((_a = App.prototype) === null || _a === void 0 ? void 0 : _a.getInitialProps) {
+      const message = `"${getDisplayName(App)}.getInitialProps()" is defined as an instance method - visit https://err.sh/zeit/next.js/get-initial-props-as-an-instance-method for more information.`;
+      throw new Error(message);
+    }
+  } // when called from _app `ctx` is nested in `ctx`
+
+
+  const res = ctx.res || ctx.ctx && ctx.ctx.res;
+
+  if (!App.getInitialProps) {
+    if (ctx.ctx && ctx.Component) {
+      // @ts-ignore pageProps default
+      return {
+        pageProps: await loadGetInitialProps(ctx.Component, ctx.ctx)
+      };
+    }
+
+    return {};
+  }
+
+  const props = await App.getInitialProps(ctx);
+
+  if (res && isResSent(res)) {
+    return props;
+  }
+
+  if (!props) {
+    const message = `"${getDisplayName(App)}.getInitialProps()" should resolve to an object. But found "${props}" instead.`;
+    throw new Error(message);
+  }
+
+  if (true) {
+    if (Object.keys(props).length === 0 && !ctx.ctx) {
+      console.warn(`${getDisplayName(App)} returned an empty object from \`getInitialProps\`. This de-optimizes and prevents automatic static optimization. https://err.sh/zeit/next.js/empty-object-getInitialProps`);
+    }
+  }
+
+  return props;
+}
+
+exports.loadGetInitialProps = loadGetInitialProps;
+exports.urlObjectKeys = ['auth', 'hash', 'host', 'hostname', 'href', 'path', 'pathname', 'port', 'protocol', 'query', 'search', 'slashes'];
+
+function formatWithValidation(url, options) {
+  if (true) {
+    if (url !== null && typeof url === 'object') {
+      Object.keys(url).forEach(key => {
+        if (exports.urlObjectKeys.indexOf(key) === -1) {
+          console.warn(`Unknown key passed via urlObject into url.format: ${key}`);
+        }
+      });
+    }
+  }
+
+  return url_1.format(url, options);
+}
+
+exports.formatWithValidation = formatWithValidation;
+exports.SP = typeof performance !== 'undefined';
+exports.ST = exports.SP && typeof performance.mark === 'function' && typeof performance.measure === 'function';
+
+/***/ }),
+
+/***/ "./node_modules/next/link.js":
+/*!***********************************!*\
+  !*** ./node_modules/next/link.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/next/dist/client/link.js")
+
+
+/***/ }),
+
+/***/ "./src/components/Container/Container.jsx":
+/*!************************************************!*\
+  !*** ./src/components/Container/Container.jsx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Container_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Container.scss */ "./src/components/Container/Container.scss");
+/* harmony import */ var _Container_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Container_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\PAVILION\\Desktop\\Repositor\\AvtoSale\\src\\components\\Container\\Container.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+function Container({
+  fluid,
+  children
+}) {
+  return __jsx("div", {
+    className: fluid,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx("div", {
+    className: _Container_scss__WEBPACK_IMPORTED_MODULE_1__["conteiner"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, children));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Container);
+
+/***/ }),
+
+/***/ "./src/components/Container/Container.scss":
+/*!*************************************************!*\
+  !*** ./src/components/Container/Container.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"conteiner": "conteiner___1myVA"
+};
+
+/***/ }),
+
+/***/ "./src/components/Container/index.js":
+/*!*******************************************!*\
+  !*** ./src/components/Container/index.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Container__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Container */ "./src/components/Container/Container.jsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_Container__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
 
 /***/ "./src/components/Head/Head.jsx":
 /*!**************************************!*\
@@ -106,8 +1848,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _helpers_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/style.scss */ "./src/helpers/style.scss");
-/* harmony import */ var _helpers_style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_helpers_style_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Head_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Head.scss */ "./src/components/Head/Head.scss");
+/* harmony import */ var _Head_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Head_scss__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "C:\\Users\\PAVILION\\Desktop\\Repositor\\AvtoSale\\src\\components\\Head\\Head.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -123,10 +1865,43 @@ const Head = ({
       lineNumber: 5
     },
     __self: undefined
-  }, children);
+  }, children, __jsx("link", {
+    rel: "stylesheet",
+    href: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.1/css/uikit.min.css",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }), __jsx("script", {
+    src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.1/js/uikit.min.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }), __jsx("script", {
+    src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.1/js/uikit-icons.min.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Head);
+
+/***/ }),
+
+/***/ "./src/components/Head/Head.scss":
+/*!***************************************!*\
+  !*** ./src/components/Head/Head.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -145,871 +1920,215 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/helpers/style.scss":
-/*!********************************!*\
-  !*** ./src/helpers/style.scss ***!
-  \********************************/
+/***/ "./src/components/Menu/Menu.jsx":
+/*!**************************************!*\
+  !*** ./src/components/Menu/Menu.jsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Container */ "./src/components/Container/index.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Menu.module.scss */ "./src/components/Menu/Menu.module.scss");
+/* harmony import */ var _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _router_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../router/router */ "./src/router/router.js");
+var _jsxFileName = "C:\\Users\\PAVILION\\Desktop\\Repositor\\AvtoSale\\src\\components\\Menu\\Menu.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+function Menu() {
+  const avtoDrop = ({
+    city
+  }) => {
+    const sortCity = city.sort((a, b) => a.name < b.name ? -1 : 1);
+    return sortCity.map((el, i) => __jsx("li", {
+      key: i,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: el.url,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, __jsx("a", {
+      className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, el.name))));
+  };
+
+  return __jsx(_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    fluid: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["wrp"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, __jsx("ul", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, __jsx("li", {
+    className: "menu__item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx("a", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "\u041E \u043D\u0430\u0441"))), __jsx("li", {
+    className: "menu__item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, __jsx("a", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, "\u0410\u0432\u0442\u043E\u0432\u044B\u043A\u0443\u043F \u0432 \u0433\u043E\u0440\u043E\u0434\u0430\u0445")), __jsx("div", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["drop"],
+    "uk-drop": "mode: click",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, __jsx("ul", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["dropMenu"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, " ", avtoDrop(_router_router__WEBPACK_IMPORTED_MODULE_4__["default"])))), __jsx("li", {
+    className: "menu__item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, __jsx("a", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, "\u043D\u0435\u0434\u0432\u0438\u0436\u0438\u043C\u043E\u0441\u0442\u044C"))), __jsx("li", {
+    className: "menu__item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, __jsx("a", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "\u041F\u043E\u043B\u0435\u0437\u043D\u0430\u044F \u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F"))), __jsx("li", {
+    className: "menu__item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, __jsx("a", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B")))));
+} //TODO Канвас меню
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Menu);
+
+/***/ }),
+
+/***/ "./src/components/Menu/Menu.module.scss":
+/*!**********************************************!*\
+  !*** ./src/components/Menu/Menu.module.scss ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = {
-	"uk-link": "uk-link___2fsD0",
-	"uk-link-toggle": "uk-link-toggle___5vFyO",
-	"uk-h1": "uk-h1___P5yug",
-	"uk-h2": "uk-h2___1xRfu",
-	"uk-h3": "uk-h3___cbOKe",
-	"uk-h4": "uk-h4___1XdNl",
-	"uk-h5": "uk-h5___c8l5N",
-	"uk-h6": "uk-h6___asjjS",
-	"uk-heading-small": "uk-heading-small___UsvO-",
-	"uk-heading-medium": "uk-heading-medium___3Fuvy",
-	"uk-heading-large": "uk-heading-large___2eSbk",
-	"uk-heading-xlarge": "uk-heading-xlarge___2Vyoj",
-	"uk-heading-2xlarge": "uk-heading-2xlarge___1h0De",
-	"uk-hr": "uk-hr___1MKgu",
-	"uk-breakpoint-s": "uk-breakpoint-s___1LD6K",
-	"uk-breakpoint-m": "uk-breakpoint-m___3kmzx",
-	"uk-breakpoint-l": "uk-breakpoint-l___2Nia9",
-	"uk-breakpoint-xl": "uk-breakpoint-xl___gFhTe",
-	"uk-link-muted": "uk-link-muted___2rUZo",
-	"uk-link-text": "uk-link-text___3e_Jb",
-	"uk-link-heading": "uk-link-heading___20iC8",
-	"uk-link-reset": "uk-link-reset___CUGlN",
-	"uk-heading-divider": "uk-heading-divider___cMl59",
-	"uk-heading-bullet": "uk-heading-bullet___2M0N_",
-	"uk-heading-line": "uk-heading-line___EZCv4",
-	"uk-divider-icon": "uk-divider-icon___mnOR0",
-	"uk-divider-small": "uk-divider-small___1gJmF",
-	"uk-divider-vertical": "uk-divider-vertical___18wub",
-	"uk-list": "uk-list___1K40S",
-	"uk-list-divider": "uk-list-divider___wwJ6l",
-	"uk-list-striped": "uk-list-striped___3VtmR",
-	"uk-list-bullet": "uk-list-bullet___13CJ_",
-	"uk-list-large": "uk-list-large___3YJ_E",
-	"uk-description-list": "uk-description-list____WF5Q",
-	"uk-description-list-divider": "uk-description-list-divider___1aUE5",
-	"uk-table": "uk-table___3ltRr",
-	"uk-table-middle": "uk-table-middle___oCPQt",
-	"uk-table-divider": "uk-table-divider___N9cxf",
-	"uk-table-striped": "uk-table-striped___3S8GK",
-	"uk-table-hover": "uk-table-hover___11-WP",
-	"uk-active": "uk-active___8My8R",
-	"uk-table-small": "uk-table-small___3DtuM",
-	"uk-table-large": "uk-table-large___TmWPm",
-	"uk-table-justify": "uk-table-justify___4QHEm",
-	"uk-table-shrink": "uk-table-shrink___2sVjf",
-	"uk-table-expand": "uk-table-expand___1l1iz",
-	"uk-table-link": "uk-table-link___JjOeb",
-	"uk-table-responsive": "uk-table-responsive___3lHwH",
-	"uk-icon": "uk-icon___VYT1I",
-	"uk-preserve": "uk-preserve___HTOvz",
-	"uk-icon-image": "uk-icon-image___1ORGR",
-	"uk-icon-link": "uk-icon-link___1IbzQ",
-	"uk-icon-button": "uk-icon-button___1HQIF",
-	"uk-range": "uk-range___TJwhc",
-	"uk-input": "uk-input___1fYmm",
-	"uk-select": "uk-select___18dld",
-	"uk-textarea": "uk-textarea___1-2_B",
-	"uk-radio": "uk-radio___3vK-S",
-	"uk-checkbox": "uk-checkbox___1ccWS",
-	"uk-fieldset": "uk-fieldset___3hy4F",
-	"uk-form-small": "uk-form-small___2DEMY",
-	"uk-form-large": "uk-form-large___2x7rW",
-	"uk-form-danger": "uk-form-danger___2vzis",
-	"uk-form-success": "uk-form-success___PfZTx",
-	"uk-form-blank": "uk-form-blank___2yLz5",
-	"uk-form-width-xsmall": "uk-form-width-xsmall___3MY3b",
-	"uk-form-width-small": "uk-form-width-small___2-qJz",
-	"uk-form-width-medium": "uk-form-width-medium___G_XFv",
-	"uk-form-width-large": "uk-form-width-large___1UACi",
-	"uk-legend": "uk-legend___1f1L1",
-	"uk-form-custom": "uk-form-custom___wMBBx",
-	"uk-form-label": "uk-form-label___2lN0U",
-	"uk-form-stacked": "uk-form-stacked___2RcjO",
-	"uk-form-horizontal": "uk-form-horizontal___xUBDT",
-	"uk-form-controls": "uk-form-controls___2fWq2",
-	"uk-form-controls-text": "uk-form-controls-text___2mfb1",
-	"uk-form-icon": "uk-form-icon___2ykgA",
-	"uk-form-icon-flip": "uk-form-icon-flip____ydhi",
-	"uk-button": "uk-button___1n7L-",
-	"uk-button-default": "uk-button-default___3KKGE",
-	"uk-button-primary": "uk-button-primary___3wbir",
-	"uk-button-secondary": "uk-button-secondary___24UiU",
-	"uk-button-danger": "uk-button-danger___3HmhX",
-	"uk-button-small": "uk-button-small___3ap11",
-	"uk-button-large": "uk-button-large___3r6Pl",
-	"uk-button-text": "uk-button-text___171Ya",
-	"uk-button-link": "uk-button-link___3fxxJ",
-	"uk-button-group": "uk-button-group___2C75r",
-	"uk-section": "uk-section___3LBYC",
-	"uk-section-xsmall": "uk-section-xsmall___hLot6",
-	"uk-section-small": "uk-section-small___1F3be",
-	"uk-section-large": "uk-section-large___2hY75",
-	"uk-section-xlarge": "uk-section-xlarge___1YY9U",
-	"uk-section-default": "uk-section-default___25OpQ",
-	"uk-section-muted": "uk-section-muted___1DPc9",
-	"uk-section-primary": "uk-section-primary___2E22J",
-	"uk-section-secondary": "uk-section-secondary___1lOYR",
-	"uk-container": "uk-container___32aw_",
-	"uk-container-xsmall": "uk-container-xsmall___1_gf3",
-	"uk-container-small": "uk-container-small___1Wo8G",
-	"uk-container-large": "uk-container-large___ycgQc",
-	"uk-container-xlarge": "uk-container-xlarge___2ro2I",
-	"uk-container-expand": "uk-container-expand___1acKr",
-	"uk-container-expand-left": "uk-container-expand-left___2Znql",
-	"uk-container-expand-right": "uk-container-expand-right___1yKNx",
-	"uk-container-item-padding-remove-left": "uk-container-item-padding-remove-left___2-JlB",
-	"uk-container-item-padding-remove-right": "uk-container-item-padding-remove-right___1ujAL",
-	"uk-grid": "uk-grid___2U95E",
-	"uk-grid-margin": "uk-grid-margin___3CKc2",
-	"uk-grid-small": "uk-grid-small___1KYzX",
-	"uk-grid-column-small": "uk-grid-column-small___1D1LE",
-	"uk-grid-row-small": "uk-grid-row-small___3PQFV",
-	"uk-grid-margin-small": "uk-grid-margin-small___3B-XV",
-	"uk-grid-medium": "uk-grid-medium___3i3o8",
-	"uk-grid-column-medium": "uk-grid-column-medium___3OYoO",
-	"uk-grid-row-medium": "uk-grid-row-medium___2YLFH",
-	"uk-grid-margin-medium": "uk-grid-margin-medium___24iz3",
-	"uk-grid-large": "uk-grid-large___3ApQs",
-	"uk-grid-column-large": "uk-grid-column-large___7N09x",
-	"uk-grid-row-large": "uk-grid-row-large___5z0Rj",
-	"uk-grid-margin-large": "uk-grid-margin-large___2_H8A",
-	"uk-grid-collapse": "uk-grid-collapse___3_7Vf",
-	"uk-grid-column-collapse": "uk-grid-column-collapse___1sUYp",
-	"uk-grid-row-collapse": "uk-grid-row-collapse___1_CVJ",
-	"uk-grid-divider": "uk-grid-divider___mVcOg",
-	"uk-first-column": "uk-first-column___1z_DA",
-	"uk-grid-stack": "uk-grid-stack___2j4fT",
-	"uk-grid-match": "uk-grid-match___45cgx",
-	"uk-grid-item-match": "uk-grid-item-match___A5rL6",
-	"uk-tile": "uk-tile___mWWN_",
-	"uk-tile-xsmall": "uk-tile-xsmall___2qXho",
-	"uk-tile-small": "uk-tile-small___3pAoT",
-	"uk-tile-large": "uk-tile-large___3KTYi",
-	"uk-tile-xlarge": "uk-tile-xlarge___Bba5u",
-	"uk-tile-default": "uk-tile-default___3y859",
-	"uk-tile-muted": "uk-tile-muted___1TmTb",
-	"uk-tile-primary": "uk-tile-primary___10cUe",
-	"uk-tile-secondary": "uk-tile-secondary___lLiZo",
-	"uk-card": "uk-card___34St_",
-	"uk-card-body": "uk-card-body___3V9Go",
-	"uk-card-header": "uk-card-header___1ADJM",
-	"uk-card-footer": "uk-card-footer___I0ysc",
-	"uk-card-title": "uk-card-title___3RF_r",
-	"uk-card-badge": "uk-card-badge___35gbv",
-	"uk-card-hover": "uk-card-hover___2C-Sa",
-	"uk-card-default": "uk-card-default___1iCMb",
-	"uk-card-primary": "uk-card-primary___2blAE",
-	"uk-card-secondary": "uk-card-secondary___16J1z",
-	"uk-card-small": "uk-card-small___1KBmf",
-	"uk-card-large": "uk-card-large___2n7Li",
-	"uk-nav-default": "uk-nav-default___1wLL3",
-	"uk-nav-header": "uk-nav-header___1QTXD",
-	"uk-nav-divider": "uk-nav-divider___3lQ6_",
-	"uk-nav-sub": "uk-nav-sub___24Xc4",
-	"uk-close": "uk-close___-ecj4",
-	"uk-spinner": "uk-spinner___2J4vR",
-	"uk-spinner-rotate": "uk-spinner-rotate___2bNiB",
-	"uk-spinner-dash": "uk-spinner-dash___9NukW",
-	"uk-totop": "uk-totop___2pEnG",
-	"uk-marker": "uk-marker___OPsKU",
-	"uk-alert": "uk-alert___5FZnj",
-	"uk-alert-close": "uk-alert-close___1S8Eq",
-	"uk-alert-primary": "uk-alert-primary___1YyKH",
-	"uk-alert-success": "uk-alert-success___1xkAM",
-	"uk-alert-warning": "uk-alert-warning___RHXrJ",
-	"uk-alert-danger": "uk-alert-danger___2mqYL",
-	"uk-badge": "uk-badge___35cNK",
-	"uk-label": "uk-label___3NXyc",
-	"uk-label-success": "uk-label-success___ACf0T",
-	"uk-label-warning": "uk-label-warning___1Zg5s",
-	"uk-label-danger": "uk-label-danger___1dezI",
-	"uk-overlay": "uk-overlay___1ITO4",
-	"uk-overlay-default": "uk-overlay-default___3PANu",
-	"uk-overlay-primary": "uk-overlay-primary___3DKIh",
-	"uk-article": "uk-article___2-9GA",
-	"uk-article-title": "uk-article-title___KwSkd",
-	"uk-article-meta": "uk-article-meta___2swac",
-	"uk-comment-body": "uk-comment-body___265uC",
-	"uk-comment-header": "uk-comment-header___2vH2M",
-	"uk-comment-title": "uk-comment-title___3E-kL",
-	"uk-comment-meta": "uk-comment-meta___1ksFa",
-	"uk-comment-list": "uk-comment-list___3agb0",
-	"uk-comment": "uk-comment___3VsuT",
-	"uk-comment-primary": "uk-comment-primary___5N-4l",
-	"uk-search": "uk-search___2Mua5",
-	"uk-search-input": "uk-search-input___1KRg9",
-	"uk-search-icon": "uk-search-icon___2yhni",
-	"uk-search-icon-flip": "uk-search-icon-flip___gfEp8",
-	"uk-search-default": "uk-search-default___1ksm6",
-	"uk-search-navbar": "uk-search-navbar___2fec8",
-	"uk-search-large": "uk-search-large___14bGD",
-	"uk-search-toggle": "uk-search-toggle___1J4A7",
-	"uk-nav": "uk-nav___2gI59",
-	"uk-nav-parent-icon": "uk-nav-parent-icon___kNRj6",
-	"uk-parent": "uk-parent___2sUgB",
-	"uk-open": "uk-open___1mDPR",
-	"uk-nav-primary": "uk-nav-primary___1fsYi",
-	"uk-nav-center": "uk-nav-center___1qOcF",
-	"uk-navbar": "uk-navbar___3vlRZ",
-	"uk-navbar-container": "uk-navbar-container___2bjsp",
-	"uk-navbar-transparent": "uk-navbar-transparent___3d5FP",
-	"uk-navbar-left": "uk-navbar-left___2aDob",
-	"uk-navbar-right": "uk-navbar-right___2bzrj",
-	"uk-navbar-center": "uk-navbar-center___8ThmZ",
-	"uk-navbar-center-left": "uk-navbar-center-left___3fP97",
-	"uk-navbar-center-right": "uk-navbar-center-right___3RTsM",
-	"uk-navbar-nav": "uk-navbar-nav___3Sasf",
-	"uk-navbar-item": "uk-navbar-item___-Hepp",
-	"uk-navbar-toggle": "uk-navbar-toggle___25IkX",
-	"uk-navbar-subtitle": "uk-navbar-subtitle___K8FFh",
-	"uk-navbar-dropdown": "uk-navbar-dropdown___2ttcq",
-	"uk-navbar-dropdown-grid": "uk-navbar-dropdown-grid___XsMjt",
-	"uk-navbar-dropdown-stack": "uk-navbar-dropdown-stack___1H3Cr",
-	"uk-navbar-dropdown-width-2": "uk-navbar-dropdown-width-2___1AqIP",
-	"uk-navbar-dropdown-width-3": "uk-navbar-dropdown-width-3___21yXf",
-	"uk-navbar-dropdown-width-4": "uk-navbar-dropdown-width-4___B3sf8",
-	"uk-navbar-dropdown-width-5": "uk-navbar-dropdown-width-5___2a1j_",
-	"uk-navbar-dropdown-dropbar": "uk-navbar-dropdown-dropbar___3SgUw",
-	"uk-navbar-dropdown-nav": "uk-navbar-dropdown-nav___fdmT-",
-	"uk-navbar-dropbar": "uk-navbar-dropbar___2nsco",
-	"uk-navbar-dropbar-slide": "uk-navbar-dropbar-slide___33M0U",
-	"uk-subnav": "uk-subnav___1dhef",
-	"uk-subnav-divider": "uk-subnav-divider___3JTVQ",
-	"uk-subnav-pill": "uk-subnav-pill___BSa7U",
-	"uk-disabled": "uk-disabled___16i1L",
-	"uk-breadcrumb": "uk-breadcrumb___3kfmC",
-	"uk-pagination": "uk-pagination___2sREm",
-	"uk-tab": "uk-tab___1e42O",
-	"uk-tab-bottom": "uk-tab-bottom___22JHJ",
-	"uk-tab-left": "uk-tab-left___3VERM",
-	"uk-tab-right": "uk-tab-right___2NJAe",
-	"uk-dropdown": "uk-dropdown___2Evfw",
-	"uk-slidenav": "uk-slidenav___1dOKx",
-	"uk-slidenav-large": "uk-slidenav-large___gp1DB",
-	"uk-slidenav-container": "uk-slidenav-container___H1vr3",
-	"uk-dotnav": "uk-dotnav___1wCnS",
-	"uk-dotnav-vertical": "uk-dotnav-vertical___gmUeC",
-	"uk-thumbnav": "uk-thumbnav___3DJeZ",
-	"uk-thumbnav-vertical": "uk-thumbnav-vertical___kv6u8",
-	"uk-accordion": "uk-accordion___EvWas",
-	"uk-accordion-title": "uk-accordion-title___3OjT6",
-	"uk-accordion-content": "uk-accordion-content___128x7",
-	"uk-drop": "uk-drop___BrMsp",
-	"uk-drop-stack": "uk-drop-stack___15GXm",
-	"uk-drop-grid": "uk-drop-grid___1A4_r",
-	"uk-dropdown-nav": "uk-dropdown-nav___2kjnl",
-	"uk-dropdown-stack": "uk-dropdown-stack___34mJ5",
-	"uk-dropdown-grid": "uk-dropdown-grid___Dw1qv",
-	"uk-modal": "uk-modal___9RyUt",
-	"uk-modal-page": "uk-modal-page___2Rk8f",
-	"uk-modal-dialog": "uk-modal-dialog___Rt5sx",
-	"uk-modal-container": "uk-modal-container___1U904",
-	"uk-modal-full": "uk-modal-full___8pWwg",
-	"uk-modal-body": "uk-modal-body___16YCQ",
-	"uk-modal-header": "uk-modal-header___2fYOU",
-	"uk-modal-footer": "uk-modal-footer___2d98q",
-	"uk-modal-title": "uk-modal-title___2pKiF",
-	"uk-modal-close-outside": "uk-modal-close-outside___11Xpi",
-	"uk-modal-close-full": "uk-modal-close-full___S9M6f",
-	"uk-lightbox": "uk-lightbox___26bHa",
-	"uk-lightbox-page": "uk-lightbox-page___7XIm5",
-	"uk-lightbox-items": "uk-lightbox-items___2eOo3",
-	"uk-lightbox-toolbar": "uk-lightbox-toolbar___eJvKB",
-	"uk-lightbox-toolbar-icon": "uk-lightbox-toolbar-icon___ZZ_QW",
-	"uk-lightbox-button": "uk-lightbox-button___35WHH",
-	"uk-lightbox-iframe": "uk-lightbox-iframe___1IGB5",
-	"uk-slideshow": "uk-slideshow___1pmZj",
-	"uk-slideshow-items": "uk-slideshow-items___1AvA0",
-	"uk-slider": "uk-slider___y4MWH",
-	"uk-slider-container": "uk-slider-container___20Y6H",
-	"uk-slider-items": "uk-slider-items___1uTfr",
-	"uk-sticky-fixed": "uk-sticky-fixed___1TiSp",
-	"uk-sticky": "uk-sticky___yStrK",
-	"uk-animation-reverse": "uk-animation-reverse___2V1-L",
-	"uk-offcanvas": "uk-offcanvas___gsVui",
-	"uk-offcanvas-flip": "uk-offcanvas-flip___10-BY",
-	"uk-offcanvas-bar": "uk-offcanvas-bar___2aClX",
-	"uk-offcanvas-bar-animation": "uk-offcanvas-bar-animation___3sTF-",
-	"uk-offcanvas-reveal": "uk-offcanvas-reveal___2hlSI",
-	"uk-offcanvas-close": "uk-offcanvas-close___1zMCL",
-	"uk-offcanvas-overlay": "uk-offcanvas-overlay___2Twar",
-	"uk-offcanvas-page": "uk-offcanvas-page___k7SMz",
-	"uk-offcanvas-container": "uk-offcanvas-container___1Co-a",
-	"uk-offcanvas-container-animation": "uk-offcanvas-container-animation___Bpp0Z",
-	"uk-switcher": "uk-switcher____jMMO",
-	"uk-leader": "uk-leader___1EbOR",
-	"uk-leader-fill": "uk-leader-fill___2kbc2",
-	"uk-leader-hide": "uk-leader-hide___OHy1c",
-	"uk-leader-fill-content": "uk-leader-fill-content___3OsQh",
-	"uk-iconnav": "uk-iconnav___2kf-W",
-	"uk-iconnav-vertical": "uk-iconnav-vertical___2pU1a",
-	"uk-notification": "uk-notification___3b6Q5",
-	"uk-notification-top-right": "uk-notification-top-right___QKSk1",
-	"uk-notification-bottom-right": "uk-notification-bottom-right___2ChOD",
-	"uk-notification-top-center": "uk-notification-top-center___16AoI",
-	"uk-notification-bottom-center": "uk-notification-bottom-center___21ydp",
-	"uk-notification-bottom-left": "uk-notification-bottom-left___1S38e",
-	"uk-notification-message": "uk-notification-message___3Z_eC",
-	"uk-notification-close": "uk-notification-close___rW0sL",
-	"uk-notification-message-primary": "uk-notification-message-primary___3Zktf",
-	"uk-notification-message-success": "uk-notification-message-success___FIx2p",
-	"uk-notification-message-warning": "uk-notification-message-warning___3eueJ",
-	"uk-notification-message-danger": "uk-notification-message-danger___3gILj",
-	"uk-tooltip": "uk-tooltip___cUQ-8",
-	"uk-placeholder": "uk-placeholder___2KR26",
-	"uk-progress": "uk-progress___2MgTC",
-	"uk-sortable": "uk-sortable___2EQaC",
-	"uk-sortable-drag": "uk-sortable-drag___1yCbj",
-	"uk-sortable-placeholder": "uk-sortable-placeholder___1dOnb",
-	"uk-sortable-empty": "uk-sortable-empty___xyn-Z",
-	"uk-sortable-handle": "uk-sortable-handle___1ra1d",
-	"uk-countdown-number": "uk-countdown-number___2S08f",
-	"uk-countdown-separator": "uk-countdown-separator___2aob_",
-	"uk-animation-fade": "uk-animation-fade___3ydxy",
-	"uk-fade": "uk-fade___1tzeK",
-	"uk-animation-scale-up": "uk-animation-scale-up___1xvpZ",
-	"uk-fade-scale-02": "uk-fade-scale-02___3qUM0",
-	"uk-animation-scale-down": "uk-animation-scale-down___2r9ZE",
-	"uk-fade-scale-18": "uk-fade-scale-18___NvyTn",
-	"uk-animation-slide-top": "uk-animation-slide-top___2rahg",
-	"uk-fade-top": "uk-fade-top___3XAjY",
-	"uk-animation-slide-bottom": "uk-animation-slide-bottom___1onpa",
-	"uk-fade-bottom": "uk-fade-bottom___1c14N",
-	"uk-animation-slide-left": "uk-animation-slide-left___3QbHb",
-	"uk-fade-left": "uk-fade-left___8kDX_",
-	"uk-animation-slide-right": "uk-animation-slide-right___1N34g",
-	"uk-fade-right": "uk-fade-right___1SrD9",
-	"uk-animation-slide-top-small": "uk-animation-slide-top-small___4am87",
-	"uk-fade-top-small": "uk-fade-top-small___22j70",
-	"uk-animation-slide-bottom-small": "uk-animation-slide-bottom-small___3lBew",
-	"uk-fade-bottom-small": "uk-fade-bottom-small___3U8n6",
-	"uk-animation-slide-left-small": "uk-animation-slide-left-small___1JNkt",
-	"uk-fade-left-small": "uk-fade-left-small___1W9gK",
-	"uk-animation-slide-right-small": "uk-animation-slide-right-small___1zGe1",
-	"uk-fade-right-small": "uk-fade-right-small___1dGeZ",
-	"uk-animation-slide-top-medium": "uk-animation-slide-top-medium___3MbKh",
-	"uk-fade-top-medium": "uk-fade-top-medium___2cVV-",
-	"uk-animation-slide-bottom-medium": "uk-animation-slide-bottom-medium___2iMDz",
-	"uk-fade-bottom-medium": "uk-fade-bottom-medium___5dFCx",
-	"uk-animation-slide-left-medium": "uk-animation-slide-left-medium___28oHe",
-	"uk-fade-left-medium": "uk-fade-left-medium___1LIgZ",
-	"uk-animation-slide-right-medium": "uk-animation-slide-right-medium___2bzAN",
-	"uk-fade-right-medium": "uk-fade-right-medium___11M5i",
-	"uk-animation-kenburns": "uk-animation-kenburns___2-B-9",
-	"uk-scale-kenburns": "uk-scale-kenburns___3IrfC",
-	"uk-animation-shake": "uk-animation-shake___1J5zS",
-	"uk-shake": "uk-shake___6riQT",
-	"uk-animation-stroke": "uk-animation-stroke___15mdY",
-	"uk-stroke": "uk-stroke___3ZjCX",
-	"uk-animation-fast": "uk-animation-fast___3fQgr",
-	"uk-animation-toggle": "uk-animation-toggle___1rNCF",
-	"none": "none___5y2Yb",
-	"uk-child-width-1-2": "uk-child-width-1-2___19_jo",
-	"uk-child-width-1-3": "uk-child-width-1-3___1K_lB",
-	"uk-child-width-1-4": "uk-child-width-1-4___vRBq4",
-	"uk-child-width-1-5": "uk-child-width-1-5___2PRSj",
-	"uk-child-width-1-6": "uk-child-width-1-6___2foXa",
-	"uk-child-width-auto": "uk-child-width-auto___27u-4",
-	"uk-child-width-expand": "uk-child-width-expand___2iJyQ",
-	"uk-child-width-1-1@s": "uk-child-width-1-1-s___1-e7-",
-	"uk-child-width-1-2@s": "uk-child-width-1-2-s___RHIuQ",
-	"uk-child-width-1-3@s": "uk-child-width-1-3-s___1aDc2",
-	"uk-child-width-1-4@s": "uk-child-width-1-4-s___2gntQ",
-	"uk-child-width-1-5@s": "uk-child-width-1-5-s___2bhpo",
-	"uk-child-width-1-6@s": "uk-child-width-1-6-s___1HzRB",
-	"uk-child-width-auto@s": "uk-child-width-auto-s___1jGKl",
-	"uk-child-width-expand@s": "uk-child-width-expand-s___2jlkL",
-	"uk-child-width-1-1@m": "uk-child-width-1-1-m___1-ojK",
-	"uk-child-width-1-2@m": "uk-child-width-1-2-m___2dDQZ",
-	"uk-child-width-1-3@m": "uk-child-width-1-3-m___3B4iR",
-	"uk-child-width-1-4@m": "uk-child-width-1-4-m___3a_mQ",
-	"uk-child-width-1-5@m": "uk-child-width-1-5-m___2a-x6",
-	"uk-child-width-1-6@m": "uk-child-width-1-6-m___1OfJ_",
-	"uk-child-width-auto@m": "uk-child-width-auto-m___aeJ4y",
-	"uk-child-width-expand@m": "uk-child-width-expand-m___17IWT",
-	"uk-child-width-1-1@l": "uk-child-width-1-1-l___1Xvj8",
-	"uk-child-width-1-2@l": "uk-child-width-1-2-l___1Heu-",
-	"uk-child-width-1-3@l": "uk-child-width-1-3-l___QBK7Y",
-	"uk-child-width-1-4@l": "uk-child-width-1-4-l___vPIZc",
-	"uk-child-width-1-5@l": "uk-child-width-1-5-l___3O7rc",
-	"uk-child-width-1-6@l": "uk-child-width-1-6-l___In37R",
-	"uk-child-width-auto@l": "uk-child-width-auto-l___oif1k",
-	"uk-child-width-expand@l": "uk-child-width-expand-l___Qp1wl",
-	"uk-child-width-1-1@xl": "uk-child-width-1-1-xl___2utEb",
-	"uk-child-width-1-2@xl": "uk-child-width-1-2-xl___3P1A0",
-	"uk-child-width-1-3@xl": "uk-child-width-1-3-xl___2W1cC",
-	"uk-child-width-1-4@xl": "uk-child-width-1-4-xl___3Qcic",
-	"uk-child-width-1-5@xl": "uk-child-width-1-5-xl___uum-X",
-	"uk-child-width-1-6@xl": "uk-child-width-1-6-xl___3LO0U",
-	"uk-child-width-auto@xl": "uk-child-width-auto-xl___3c4Hv",
-	"uk-child-width-expand@xl": "uk-child-width-expand-xl___11JT9",
-	"uk-width-1-2": "uk-width-1-2___dFB5-",
-	"uk-width-1-3": "uk-width-1-3___d4LAo",
-	"uk-width-2-3": "uk-width-2-3___hQtBZ",
-	"uk-width-1-4": "uk-width-1-4___2V2qI",
-	"uk-width-3-4": "uk-width-3-4___2V2z6",
-	"uk-width-1-5": "uk-width-1-5___3P-aE",
-	"uk-width-2-5": "uk-width-2-5___2ixD7",
-	"uk-width-3-5": "uk-width-3-5___1PkEC",
-	"uk-width-4-5": "uk-width-4-5___2aVQu",
-	"uk-width-1-6": "uk-width-1-6___10QFv",
-	"uk-width-5-6": "uk-width-5-6___5_jao",
-	"uk-width-small": "uk-width-small___YQBCv",
-	"uk-width-medium": "uk-width-medium___3U_zP",
-	"uk-width-large": "uk-width-large___1RhPv",
-	"uk-width-xlarge": "uk-width-xlarge___1p7is",
-	"uk-width-xxlarge": "uk-width-xxlarge___3ctS8",
-	"uk-width-auto": "uk-width-auto___3SpW-",
-	"uk-width-expand": "uk-width-expand___3UP5o",
-	"uk-width-1-1@s": "uk-width-1-1-s___2jsGi",
-	"uk-width-1-2@s": "uk-width-1-2-s___h8df9",
-	"uk-width-1-3@s": "uk-width-1-3-s___2MR6x",
-	"uk-width-2-3@s": "uk-width-2-3-s___15-Qn",
-	"uk-width-1-4@s": "uk-width-1-4-s___3yGGe",
-	"uk-width-3-4@s": "uk-width-3-4-s___1k_qA",
-	"uk-width-1-5@s": "uk-width-1-5-s___6h3D4",
-	"uk-width-2-5@s": "uk-width-2-5-s___3-ZLm",
-	"uk-width-3-5@s": "uk-width-3-5-s___3fsv8",
-	"uk-width-4-5@s": "uk-width-4-5-s___8sWhZ",
-	"uk-width-1-6@s": "uk-width-1-6-s___Zj6gb",
-	"uk-width-5-6@s": "uk-width-5-6-s____8twT",
-	"uk-width-small@s": "uk-width-small-s___3ZnSo",
-	"uk-width-medium@s": "uk-width-medium-s___2VAF_",
-	"uk-width-large@s": "uk-width-large-s___3a4by",
-	"uk-width-xlarge@s": "uk-width-xlarge-s___1-W2L",
-	"uk-width-xxlarge@s": "uk-width-xxlarge-s___3vdbv",
-	"uk-width-auto@s": "uk-width-auto-s___uMGm5",
-	"uk-width-expand@s": "uk-width-expand-s___326b7",
-	"uk-width-1-1@m": "uk-width-1-1-m___1cpHy",
-	"uk-width-1-2@m": "uk-width-1-2-m___2mzhJ",
-	"uk-width-1-3@m": "uk-width-1-3-m___1th6Y",
-	"uk-width-2-3@m": "uk-width-2-3-m___1juYG",
-	"uk-width-1-4@m": "uk-width-1-4-m___3F3TN",
-	"uk-width-3-4@m": "uk-width-3-4-m___2mBSU",
-	"uk-width-1-5@m": "uk-width-1-5-m___2ayja",
-	"uk-width-2-5@m": "uk-width-2-5-m___1Kw89",
-	"uk-width-3-5@m": "uk-width-3-5-m___3yJk3",
-	"uk-width-4-5@m": "uk-width-4-5-m___1T10J",
-	"uk-width-1-6@m": "uk-width-1-6-m___1LDSj",
-	"uk-width-5-6@m": "uk-width-5-6-m___1PzOT",
-	"uk-width-small@m": "uk-width-small-m___25H80",
-	"uk-width-medium@m": "uk-width-medium-m___3x86w",
-	"uk-width-large@m": "uk-width-large-m___1AO3A",
-	"uk-width-xlarge@m": "uk-width-xlarge-m___3Y3Yk",
-	"uk-width-xxlarge@m": "uk-width-xxlarge-m___hYZ3f",
-	"uk-width-auto@m": "uk-width-auto-m___ABg8f",
-	"uk-width-expand@m": "uk-width-expand-m___cTTCC",
-	"uk-width-1-1@l": "uk-width-1-1-l___1_i0P",
-	"uk-width-1-2@l": "uk-width-1-2-l___38QlO",
-	"uk-width-1-3@l": "uk-width-1-3-l___3uJwu",
-	"uk-width-2-3@l": "uk-width-2-3-l___2qNmG",
-	"uk-width-1-4@l": "uk-width-1-4-l___1Udr_",
-	"uk-width-3-4@l": "uk-width-3-4-l___19Zof",
-	"uk-width-1-5@l": "uk-width-1-5-l___3S-lx",
-	"uk-width-2-5@l": "uk-width-2-5-l___2LTzJ",
-	"uk-width-3-5@l": "uk-width-3-5-l___23z2g",
-	"uk-width-4-5@l": "uk-width-4-5-l___2oKqf",
-	"uk-width-1-6@l": "uk-width-1-6-l___Kc7RC",
-	"uk-width-5-6@l": "uk-width-5-6-l___3SE4D",
-	"uk-width-small@l": "uk-width-small-l___3tlMd",
-	"uk-width-medium@l": "uk-width-medium-l___3KEt4",
-	"uk-width-large@l": "uk-width-large-l___1Wmls",
-	"uk-width-xlarge@l": "uk-width-xlarge-l___twi7f",
-	"uk-width-xxlarge@l": "uk-width-xxlarge-l___1J2BV",
-	"uk-width-auto@l": "uk-width-auto-l___270iL",
-	"uk-width-expand@l": "uk-width-expand-l___2v9Tk",
-	"uk-width-1-1@xl": "uk-width-1-1-xl___1v-5m",
-	"uk-width-1-2@xl": "uk-width-1-2-xl___39mjq",
-	"uk-width-1-3@xl": "uk-width-1-3-xl___2VuKt",
-	"uk-width-2-3@xl": "uk-width-2-3-xl___2wVwD",
-	"uk-width-1-4@xl": "uk-width-1-4-xl___2PyVt",
-	"uk-width-3-4@xl": "uk-width-3-4-xl___ykfCc",
-	"uk-width-1-5@xl": "uk-width-1-5-xl___R9F6G",
-	"uk-width-2-5@xl": "uk-width-2-5-xl___rT8vJ",
-	"uk-width-3-5@xl": "uk-width-3-5-xl___2ZkIm",
-	"uk-width-4-5@xl": "uk-width-4-5-xl___5XkKs",
-	"uk-width-1-6@xl": "uk-width-1-6-xl___HLN3l",
-	"uk-width-5-6@xl": "uk-width-5-6-xl___1eubu",
-	"uk-width-small@xl": "uk-width-small-xl___3Trob",
-	"uk-width-medium@xl": "uk-width-medium-xl___3HotJ",
-	"uk-width-large@xl": "uk-width-large-xl___10Am5",
-	"uk-width-xlarge@xl": "uk-width-xlarge-xl___2xp51",
-	"uk-width-xxlarge@xl": "uk-width-xxlarge-xl___23HPS",
-	"uk-width-auto@xl": "uk-width-auto-xl___2m5wH",
-	"uk-width-expand@xl": "uk-width-expand-xl___2H4qu",
-	"uk-height-1-1": "uk-height-1-1___ShuGQ",
-	"uk-height-viewport": "uk-height-viewport___3IVLL",
-	"uk-height-small": "uk-height-small___3X0lr",
-	"uk-height-medium": "uk-height-medium___33gy_",
-	"uk-height-large": "uk-height-large___I1LFX",
-	"uk-height-max-small": "uk-height-max-small___1qVbT",
-	"uk-height-max-medium": "uk-height-max-medium___H8M3z",
-	"uk-height-max-large": "uk-height-max-large___2XT-C",
-	"uk-text-lead": "uk-text-lead___36R7y",
-	"uk-text-meta": "uk-text-meta___1yxPF",
-	"uk-text-small": "uk-text-small___Wosak",
-	"uk-text-large": "uk-text-large___3Y357",
-	"uk-text-light": "uk-text-light___qfC7C",
-	"uk-text-normal": "uk-text-normal___1L7Cz",
-	"uk-text-bold": "uk-text-bold___1yKwN",
-	"uk-text-lighter": "uk-text-lighter___BygmU",
-	"uk-text-bolder": "uk-text-bolder___VAOLz",
-	"uk-text-italic": "uk-text-italic___2rus7",
-	"uk-text-capitalize": "uk-text-capitalize___19vb4",
-	"uk-text-uppercase": "uk-text-uppercase___BAPlZ",
-	"uk-text-lowercase": "uk-text-lowercase___iyFy-",
-	"uk-text-muted": "uk-text-muted___jNbLB",
-	"uk-text-emphasis": "uk-text-emphasis___1kk29",
-	"uk-text-primary": "uk-text-primary___1OlEe",
-	"uk-text-secondary": "uk-text-secondary___3Mgjk",
-	"uk-text-success": "uk-text-success___3ZOWG",
-	"uk-text-warning": "uk-text-warning___3ZLOC",
-	"uk-text-danger": "uk-text-danger___3rM-u",
-	"uk-text-background": "uk-text-background___3axqf",
-	"uk-text-left": "uk-text-left___3jQmr",
-	"uk-text-right": "uk-text-right___vwJXt",
-	"uk-text-center": "uk-text-center___28kdv",
-	"uk-text-justify": "uk-text-justify___RKEhB",
-	"uk-text-left@s": "uk-text-left-s___2KeFh",
-	"uk-text-right@s": "uk-text-right-s___HuUyn",
-	"uk-text-center@s": "uk-text-center-s___2zkWP",
-	"uk-text-left@m": "uk-text-left-m___36plF",
-	"uk-text-right@m": "uk-text-right-m___Y6x_x",
-	"uk-text-center@m": "uk-text-center-m___2GOSN",
-	"uk-text-left@l": "uk-text-left-l___rAd2F",
-	"uk-text-right@l": "uk-text-right-l___2Ssir",
-	"uk-text-center@l": "uk-text-center-l___22KiH",
-	"uk-text-left@xl": "uk-text-left-xl___2XcE9",
-	"uk-text-right@xl": "uk-text-right-xl___24hHg",
-	"uk-text-center@xl": "uk-text-center-xl___19VRl",
-	"uk-text-top": "uk-text-top___xnKTB",
-	"uk-text-middle": "uk-text-middle___1H_y1",
-	"uk-text-bottom": "uk-text-bottom___1gsie",
-	"uk-text-baseline": "uk-text-baseline___1DdI1",
-	"uk-text-nowrap": "uk-text-nowrap___1Nwa_",
-	"uk-text-truncate": "uk-text-truncate___26jOw",
-	"uk-text-break": "uk-text-break___1bsek",
-	"uk-column-divider": "uk-column-divider___2E-za",
-	"uk-column-1-2": "uk-column-1-2___25n7Y",
-	"uk-column-1-3": "uk-column-1-3___2GZjY",
-	"uk-column-1-4": "uk-column-1-4___2nH7H",
-	"uk-column-1-5": "uk-column-1-5___1H3MS",
-	"uk-column-1-6": "uk-column-1-6___3iR-b",
-	"uk-column-1-2@s": "uk-column-1-2-s___1mJB6",
-	"uk-column-1-3@s": "uk-column-1-3-s___-KeBT",
-	"uk-column-1-4@s": "uk-column-1-4-s___1RMzB",
-	"uk-column-1-5@s": "uk-column-1-5-s___2W2Vl",
-	"uk-column-1-6@s": "uk-column-1-6-s___j3Wri",
-	"uk-column-1-2@m": "uk-column-1-2-m___1Hd7h",
-	"uk-column-1-3@m": "uk-column-1-3-m___3xg0C",
-	"uk-column-1-4@m": "uk-column-1-4-m___1cdZ8",
-	"uk-column-1-5@m": "uk-column-1-5-m___3Q45Z",
-	"uk-column-1-6@m": "uk-column-1-6-m___1MM_h",
-	"uk-column-1-2@l": "uk-column-1-2-l___4muHd",
-	"uk-column-1-3@l": "uk-column-1-3-l___1fP1-",
-	"uk-column-1-4@l": "uk-column-1-4-l___1PHFi",
-	"uk-column-1-5@l": "uk-column-1-5-l___Rzm61",
-	"uk-column-1-6@l": "uk-column-1-6-l___rLbRz",
-	"uk-column-1-2@xl": "uk-column-1-2-xl___BiVtH",
-	"uk-column-1-3@xl": "uk-column-1-3-xl___2toFg",
-	"uk-column-1-4@xl": "uk-column-1-4-xl___12x_u",
-	"uk-column-1-5@xl": "uk-column-1-5-xl___1mAzW",
-	"uk-column-1-6@xl": "uk-column-1-6-xl___qOGFK",
-	"uk-column-span": "uk-column-span___9fO6W",
-	"uk-cover": "uk-cover___2vtbg",
-	"uk-cover-container": "uk-cover-container___3gJ2D",
-	"uk-background-default": "uk-background-default___3QVMx",
-	"uk-background-muted": "uk-background-muted___2oCLG",
-	"uk-background-primary": "uk-background-primary___1pJkX",
-	"uk-background-secondary": "uk-background-secondary___3qWjw",
-	"uk-background-cover": "uk-background-cover___2KSyg",
-	"uk-background-contain": "uk-background-contain___2-IeS",
-	"uk-background-top-left": "uk-background-top-left___34x5Y",
-	"uk-background-top-center": "uk-background-top-center___3gFiu",
-	"uk-background-top-right": "uk-background-top-right___1BsCA",
-	"uk-background-center-left": "uk-background-center-left___2Happ",
-	"uk-background-center-center": "uk-background-center-center___37ahI",
-	"uk-background-center-right": "uk-background-center-right___bHK8M",
-	"uk-background-bottom-left": "uk-background-bottom-left___2BuzN",
-	"uk-background-bottom-center": "uk-background-bottom-center___2Gqwn",
-	"uk-background-bottom-right": "uk-background-bottom-right___3iax4",
-	"uk-background-norepeat": "uk-background-norepeat___2gtsZ",
-	"uk-background-fixed": "uk-background-fixed___3ehpl",
-	"uk-background-image@s": "uk-background-image-s___399rG",
-	"uk-background-image@m": "uk-background-image-m___1K6Bu",
-	"uk-background-image@l": "uk-background-image-l___2N-wc",
-	"uk-background-image@xl": "uk-background-image-xl___3f3tL",
-	"uk-background-blend-multiply": "uk-background-blend-multiply___3lUV9",
-	"uk-background-blend-screen": "uk-background-blend-screen___138B5",
-	"uk-background-blend-overlay": "uk-background-blend-overlay___osxVq",
-	"uk-background-blend-darken": "uk-background-blend-darken___1QNI9",
-	"uk-background-blend-lighten": "uk-background-blend-lighten___2s8Tq",
-	"uk-background-blend-color-dodge": "uk-background-blend-color-dodge___2EQpY",
-	"uk-background-blend-color-burn": "uk-background-blend-color-burn___V4M0P",
-	"uk-background-blend-hard-light": "uk-background-blend-hard-light___1Gef6",
-	"uk-background-blend-soft-light": "uk-background-blend-soft-light___2Z_C3",
-	"uk-background-blend-difference": "uk-background-blend-difference___qoHg0",
-	"uk-background-blend-exclusion": "uk-background-blend-exclusion___2xxDU",
-	"uk-background-blend-hue": "uk-background-blend-hue___3cmfv",
-	"uk-background-blend-saturation": "uk-background-blend-saturation___1bjLH",
-	"uk-background-blend-color": "uk-background-blend-color___31v4v",
-	"uk-background-blend-luminosity": "uk-background-blend-luminosity___A2-NE",
-	"uk-align-center": "uk-align-center___1uCzU",
-	"uk-align-left": "uk-align-left___xQx6D",
-	"uk-align-right": "uk-align-right___5fyDK",
-	"uk-align-left@s": "uk-align-left-s___Ry179",
-	"uk-align-right@s": "uk-align-right-s___2w5MB",
-	"uk-align-left@m": "uk-align-left-m___1ADry",
-	"uk-align-right@m": "uk-align-right-m___hSPuh",
-	"uk-align-left@l": "uk-align-left-l___1-BIh",
-	"uk-align-right@l": "uk-align-right-l___25MZ1",
-	"uk-align-left@xl": "uk-align-left-xl___BJTiw",
-	"uk-align-right@xl": "uk-align-right-xl___3uXh_",
-	"uk-svg": "uk-svg___1yW4c",
-	"uk-panel": "uk-panel___3mTzm",
-	"uk-panel-scrollable": "uk-panel-scrollable___2m9nz",
-	"uk-clearfix": "uk-clearfix___2X6sc",
-	"uk-float-left": "uk-float-left___3iaKS",
-	"uk-float-right": "uk-float-right___3MftU",
-	"uk-overflow-hidden": "uk-overflow-hidden___6v8KD",
-	"uk-overflow-auto": "uk-overflow-auto___32Xeb",
-	"uk-resize": "uk-resize___3OP7S",
-	"uk-resize-vertical": "uk-resize-vertical___3ik9p",
-	"uk-display-block": "uk-display-block___VtqKz",
-	"uk-display-inline": "uk-display-inline___5zb5i",
-	"uk-display-inline-block": "uk-display-inline-block___3hJXJ",
-	"uk-inline-clip": "uk-inline-clip___10tuF",
-	"uk-preserve-width": "uk-preserve-width___3_cBp",
-	"uk-responsive-width": "uk-responsive-width___2C3j3",
-	"uk-responsive-height": "uk-responsive-height___1TDSf",
-	"uk-border-circle": "uk-border-circle___kS10G",
-	"uk-border-pill": "uk-border-pill___16m5i",
-	"uk-border-rounded": "uk-border-rounded___35Ouf",
-	"uk-box-shadow-small": "uk-box-shadow-small___3vFOe",
-	"uk-box-shadow-medium": "uk-box-shadow-medium___1o1ZP",
-	"uk-box-shadow-large": "uk-box-shadow-large___4ifpU",
-	"uk-box-shadow-xlarge": "uk-box-shadow-xlarge___yBAMm",
-	"uk-box-shadow-hover-small": "uk-box-shadow-hover-small___C3KYN",
-	"uk-box-shadow-hover-medium": "uk-box-shadow-hover-medium___1x3J9",
-	"uk-box-shadow-hover-large": "uk-box-shadow-hover-large___1u0Zh",
-	"uk-box-shadow-hover-xlarge": "uk-box-shadow-hover-xlarge___3bWg3",
-	"uk-box-shadow-bottom": "uk-box-shadow-bottom___2Ssru",
-	"uk-dropcap": "uk-dropcap___1n2-w",
-	"uk-logo": "uk-logo___p70oU",
-	"uk-logo-inverse": "uk-logo-inverse___2homW",
-	"uk-drag": "uk-drag___1oAfW",
-	"uk-dragover": "uk-dragover____IVi5",
-	"uk-blend-multiply": "uk-blend-multiply___21kYa",
-	"uk-blend-screen": "uk-blend-screen___e6sFw",
-	"uk-blend-overlay": "uk-blend-overlay___1LiB_",
-	"uk-blend-darken": "uk-blend-darken___2VVDE",
-	"uk-blend-lighten": "uk-blend-lighten___1-S07",
-	"uk-blend-color-dodge": "uk-blend-color-dodge___cKBJe",
-	"uk-blend-color-burn": "uk-blend-color-burn___1AKL_",
-	"uk-blend-hard-light": "uk-blend-hard-light___39nQe",
-	"uk-blend-soft-light": "uk-blend-soft-light_____OLF",
-	"uk-blend-difference": "uk-blend-difference___1MpMv",
-	"uk-blend-exclusion": "uk-blend-exclusion___3QNEJ",
-	"uk-blend-hue": "uk-blend-hue___KtKp8",
-	"uk-blend-saturation": "uk-blend-saturation___29Rfw",
-	"uk-blend-color": "uk-blend-color___1p6-q",
-	"uk-blend-luminosity": "uk-blend-luminosity___2_DfS",
-	"uk-transform-center": "uk-transform-center___3a1mQ",
-	"uk-transform-origin-top-left": "uk-transform-origin-top-left___2R2l6",
-	"uk-transform-origin-top-center": "uk-transform-origin-top-center___2YVxD",
-	"uk-transform-origin-top-right": "uk-transform-origin-top-right___Fye_u",
-	"uk-transform-origin-center-left": "uk-transform-origin-center-left___eQx7g",
-	"uk-transform-origin-center-right": "uk-transform-origin-center-right___183NE",
-	"uk-transform-origin-bottom-left": "uk-transform-origin-bottom-left___1iXND",
-	"uk-transform-origin-bottom-center": "uk-transform-origin-bottom-center___1inn6",
-	"uk-transform-origin-bottom-right": "uk-transform-origin-bottom-right___3VDwp",
-	"uk-flex": "uk-flex___1zzH0",
-	"uk-flex-inline": "uk-flex-inline___3XeEx",
-	"uk-flex-left": "uk-flex-left___1brJu",
-	"uk-flex-center": "uk-flex-center___2e69c",
-	"uk-flex-right": "uk-flex-right___57tKg",
-	"uk-flex-between": "uk-flex-between___2XGU2",
-	"uk-flex-around": "uk-flex-around___1v4OW",
-	"uk-flex-left@s": "uk-flex-left-s___3OIR8",
-	"uk-flex-center@s": "uk-flex-center-s___3EESS",
-	"uk-flex-right@s": "uk-flex-right-s___pB6e4",
-	"uk-flex-between@s": "uk-flex-between-s___3B-CF",
-	"uk-flex-around@s": "uk-flex-around-s___1flPH",
-	"uk-flex-left@m": "uk-flex-left-m___2apJ4",
-	"uk-flex-center@m": "uk-flex-center-m___3MR1o",
-	"uk-flex-right@m": "uk-flex-right-m___37mBP",
-	"uk-flex-between@m": "uk-flex-between-m___3bxJD",
-	"uk-flex-around@m": "uk-flex-around-m___sAVFL",
-	"uk-flex-left@l": "uk-flex-left-l___wPIpH",
-	"uk-flex-center@l": "uk-flex-center-l___3ZeDG",
-	"uk-flex-right@l": "uk-flex-right-l___1ku_l",
-	"uk-flex-between@l": "uk-flex-between-l___1NFiA",
-	"uk-flex-around@l": "uk-flex-around-l___367GS",
-	"uk-flex-left@xl": "uk-flex-left-xl___ElwnT",
-	"uk-flex-center@xl": "uk-flex-center-xl___2lTPn",
-	"uk-flex-right@xl": "uk-flex-right-xl___3o--i",
-	"uk-flex-between@xl": "uk-flex-between-xl___Nd5VJ",
-	"uk-flex-around@xl": "uk-flex-around-xl___1r0mQ",
-	"uk-flex-stretch": "uk-flex-stretch___2aWnP",
-	"uk-flex-top": "uk-flex-top___3ApyH",
-	"uk-flex-middle": "uk-flex-middle___tuZ_4",
-	"uk-flex-bottom": "uk-flex-bottom___3WsKm",
-	"uk-flex-row": "uk-flex-row___GjewO",
-	"uk-flex-row-reverse": "uk-flex-row-reverse___3c8zm",
-	"uk-flex-column": "uk-flex-column___17jej",
-	"uk-flex-column-reverse": "uk-flex-column-reverse___VkJNQ",
-	"uk-flex-nowrap": "uk-flex-nowrap___3mODV",
-	"uk-flex-wrap": "uk-flex-wrap___3NrGq",
-	"uk-flex-wrap-reverse": "uk-flex-wrap-reverse___3Ui5b",
-	"uk-flex-wrap-stretch": "uk-flex-wrap-stretch___aemy0",
-	"uk-flex-wrap-top": "uk-flex-wrap-top___jS0ah",
-	"uk-flex-wrap-middle": "uk-flex-wrap-middle___1WiSQ",
-	"uk-flex-wrap-bottom": "uk-flex-wrap-bottom___2km0T",
-	"uk-flex-wrap-between": "uk-flex-wrap-between___3QKi-",
-	"uk-flex-wrap-around": "uk-flex-wrap-around___1AGkF",
-	"uk-flex-first": "uk-flex-first___2jjYS",
-	"uk-flex-last": "uk-flex-last___139oE",
-	"uk-flex-first@s": "uk-flex-first-s___My10S",
-	"uk-flex-last@s": "uk-flex-last-s___ZUnlm",
-	"uk-flex-first@m": "uk-flex-first-m___3Sftj",
-	"uk-flex-last@m": "uk-flex-last-m___1QlEy",
-	"uk-flex-first@l": "uk-flex-first-l___Ylg_N",
-	"uk-flex-last@l": "uk-flex-last-l___3kNcX",
-	"uk-flex-first@xl": "uk-flex-first-xl___1M_4h",
-	"uk-flex-last@xl": "uk-flex-last-xl___1V1em",
-	"uk-flex-none": "uk-flex-none___1ilwa",
-	"uk-flex-auto": "uk-flex-auto___2uERM",
-	"uk-flex-1": "uk-flex-1___s0Ik4",
-	"uk-margin": "uk-margin___1MRuV",
-	"uk-margin-top": "uk-margin-top___171Uf",
-	"uk-margin-bottom": "uk-margin-bottom___3mqT1",
-	"uk-margin-left": "uk-margin-left___2W4mi",
-	"uk-margin-right": "uk-margin-right___3oddk",
-	"uk-margin-small": "uk-margin-small___2B8xT",
-	"uk-margin-small-top": "uk-margin-small-top___1Pq87",
-	"uk-margin-small-bottom": "uk-margin-small-bottom___1qEtm",
-	"uk-margin-small-left": "uk-margin-small-left___2kPQb",
-	"uk-margin-small-right": "uk-margin-small-right___3UZZ_",
-	"uk-margin-medium": "uk-margin-medium___wDAzg",
-	"uk-margin-medium-top": "uk-margin-medium-top___kdD6n",
-	"uk-margin-medium-bottom": "uk-margin-medium-bottom___3zPbE",
-	"uk-margin-medium-left": "uk-margin-medium-left___1q204",
-	"uk-margin-medium-right": "uk-margin-medium-right___20nPh",
-	"uk-margin-large": "uk-margin-large___3149f",
-	"uk-margin-large-top": "uk-margin-large-top___3hV1u",
-	"uk-margin-large-bottom": "uk-margin-large-bottom____3yCD",
-	"uk-margin-large-left": "uk-margin-large-left___1zLhV",
-	"uk-margin-large-right": "uk-margin-large-right___2AZDN",
-	"uk-margin-xlarge": "uk-margin-xlarge___1nOdP",
-	"uk-margin-xlarge-top": "uk-margin-xlarge-top___JwZRZ",
-	"uk-margin-xlarge-bottom": "uk-margin-xlarge-bottom___24-4e",
-	"uk-margin-xlarge-left": "uk-margin-xlarge-left___108bW",
-	"uk-margin-xlarge-right": "uk-margin-xlarge-right___2IEfk",
-	"uk-margin-auto": "uk-margin-auto___UwsfA",
-	"uk-margin-auto-top": "uk-margin-auto-top___2_Pmo",
-	"uk-margin-auto-bottom": "uk-margin-auto-bottom___2s2fH",
-	"uk-margin-auto-left": "uk-margin-auto-left___3skxI",
-	"uk-margin-auto-right": "uk-margin-auto-right___28TdX",
-	"uk-margin-auto-vertical": "uk-margin-auto-vertical___2_TG9",
-	"uk-margin-auto@s": "uk-margin-auto-s___1IyLU",
-	"uk-margin-auto-left@s": "uk-margin-auto-left-s___3Lh7H",
-	"uk-margin-auto-right@s": "uk-margin-auto-right-s___uiaOE",
-	"uk-margin-auto@m": "uk-margin-auto-m___3LUzb",
-	"uk-margin-auto-left@m": "uk-margin-auto-left-m___11sMn",
-	"uk-margin-auto-right@m": "uk-margin-auto-right-m___oRehQ",
-	"uk-margin-auto@l": "uk-margin-auto-l___3--Bo",
-	"uk-margin-auto-left@l": "uk-margin-auto-left-l___2-2RW",
-	"uk-margin-auto-right@l": "uk-margin-auto-right-l___3UIuA",
-	"uk-margin-auto@xl": "uk-margin-auto-xl___18IbZ",
-	"uk-margin-auto-left@xl": "uk-margin-auto-left-xl___3b9kc",
-	"uk-margin-auto-right@xl": "uk-margin-auto-right-xl___3VENR",
-	"uk-margin-remove": "uk-margin-remove___2BCAO",
-	"uk-margin-remove-top": "uk-margin-remove-top___2Leoc",
-	"uk-margin-remove-bottom": "uk-margin-remove-bottom___1bIkL",
-	"uk-margin-remove-left": "uk-margin-remove-left___2er0w",
-	"uk-margin-remove-right": "uk-margin-remove-right___dL0T-",
-	"uk-margin-remove-vertical": "uk-margin-remove-vertical___23PUs",
-	"uk-margin-remove-adjacent": "uk-margin-remove-adjacent___wEQlM",
-	"uk-margin-remove-first-child": "uk-margin-remove-first-child___3FBDB",
-	"uk-margin-remove-last-child": "uk-margin-remove-last-child___31Ofp",
-	"uk-margin-remove-left@s": "uk-margin-remove-left-s___3-TjE",
-	"uk-margin-remove-right@s": "uk-margin-remove-right-s___cp_oK",
-	"uk-margin-remove-left@m": "uk-margin-remove-left-m___3EA-R",
-	"uk-margin-remove-right@m": "uk-margin-remove-right-m___3PFCD",
-	"uk-margin-remove-left@l": "uk-margin-remove-left-l___1J2EB",
-	"uk-margin-remove-right@l": "uk-margin-remove-right-l___3TyqC",
-	"uk-margin-remove-left@xl": "uk-margin-remove-left-xl___25UG0",
-	"uk-margin-remove-right@xl": "uk-margin-remove-right-xl___34p46",
-	"uk-padding": "uk-padding___1OgZi",
-	"uk-padding-small": "uk-padding-small___1tLE5",
-	"uk-padding-large": "uk-padding-large___3cGRz",
-	"uk-padding-remove": "uk-padding-remove___3qLnN",
-	"uk-padding-remove-top": "uk-padding-remove-top___2EsAp",
-	"uk-padding-remove-bottom": "uk-padding-remove-bottom___CYitN",
-	"uk-padding-remove-left": "uk-padding-remove-left___1OibO",
-	"uk-padding-remove-right": "uk-padding-remove-right___12Zps",
-	"uk-padding-remove-vertical": "uk-padding-remove-vertical___2Qi18",
-	"uk-padding-remove-horizontal": "uk-padding-remove-horizontal___O2itY",
-	"uk-position-top": "uk-position-top___umVoO",
-	"uk-position-bottom": "uk-position-bottom___gE80u",
-	"uk-position-left": "uk-position-left___LoDao",
-	"uk-position-right": "uk-position-right___1H7YF",
-	"uk-position-top-left": "uk-position-top-left___AsWc6",
-	"uk-position-top-right": "uk-position-top-right___312zi",
-	"uk-position-bottom-left": "uk-position-bottom-left___3VdJu",
-	"uk-position-bottom-right": "uk-position-bottom-right___3Z_5e",
-	"uk-position-center": "uk-position-center___TWc60",
-	"uk-position-center-left": "uk-position-center-left___3XD2b",
-	"uk-position-center-right": "uk-position-center-right___2o_b7",
-	"uk-position-center-left-out": "uk-position-center-left-out___1IJ5x",
-	"uk-position-center-right-out": "uk-position-center-right-out___2XqQd",
-	"uk-position-top-center": "uk-position-top-center___1qozP",
-	"uk-position-bottom-center": "uk-position-bottom-center___3SZWu",
-	"uk-position-cover": "uk-position-cover___3z5xr",
-	"uk-position-relative": "uk-position-relative___74Etx",
-	"uk-position-absolute": "uk-position-absolute___3Gh4g",
-	"uk-position-fixed": "uk-position-fixed___3Z6lh",
-	"uk-position-z-index": "uk-position-z-index___2NkWt",
-	"uk-position-small": "uk-position-small___2MFoo",
-	"uk-position-medium": "uk-position-medium___2gMZV",
-	"uk-position-large": "uk-position-large___3_ji7",
-	"uk-transition-toggle": "uk-transition-toggle___28uei",
-	"uk-transition-fade": "uk-transition-fade___2_uFU",
-	"uk-transition-active": "uk-transition-active___36ENN",
-	"uk-transition-scale-up": "uk-transition-scale-up___1oA21",
-	"uk-transition-scale-down": "uk-transition-scale-down___TzPU8",
-	"uk-transition-slide-top": "uk-transition-slide-top___2URlP",
-	"uk-transition-slide-bottom": "uk-transition-slide-bottom___236Sm",
-	"uk-transition-slide-left": "uk-transition-slide-left___wn5wL",
-	"uk-transition-slide-right": "uk-transition-slide-right___3bRFK",
-	"uk-transition-slide-top-small": "uk-transition-slide-top-small___32e-G",
-	"uk-transition-slide-bottom-small": "uk-transition-slide-bottom-small___2rNgK",
-	"uk-transition-slide-left-small": "uk-transition-slide-left-small___3FzIN",
-	"uk-transition-slide-right-small": "uk-transition-slide-right-small___3cZhP",
-	"uk-transition-slide-top-medium": "uk-transition-slide-top-medium___1qTrq",
-	"uk-transition-slide-bottom-medium": "uk-transition-slide-bottom-medium___2cXCJ",
-	"uk-transition-slide-left-medium": "uk-transition-slide-left-medium___1wIwG",
-	"uk-transition-slide-right-medium": "uk-transition-slide-right-medium___2en3k",
-	"uk-transition-opaque": "uk-transition-opaque___1Mqps",
-	"uk-transition-slow": "uk-transition-slow___1q_xk",
-	"uk-hidden": "uk-hidden___1hGLU",
-	"uk-hidden@s": "uk-hidden-s___155qe",
-	"uk-hidden@m": "uk-hidden-m___x_W5i",
-	"uk-hidden@l": "uk-hidden-l___3uAuy",
-	"uk-hidden@xl": "uk-hidden-xl___2cO61",
-	"uk-visible@s": "uk-visible-s___KMJZr",
-	"uk-visible@m": "uk-visible-m___QBG_N",
-	"uk-visible@l": "uk-visible-l___28mgJ",
-	"uk-visible@xl": "uk-visible-xl___115OA",
-	"uk-invisible": "uk-invisible___3wpm4",
-	"uk-visible-toggle": "uk-visible-toggle___nfv1L",
-	"uk-hidden-hover": "uk-hidden-hover___3nXbD",
-	"uk-invisible-hover": "uk-invisible-hover___2dgZR",
-	"uk-hidden-touch": "uk-hidden-touch___3KG8l",
-	"uk-hidden-notouch": "uk-hidden-notouch___1QLK-",
-	"uk-light": "uk-light___2Bt7G",
-	"uk-preserve-color": "uk-preserve-color___1Nji9"
+	"wrp": "wrp___1Jizy",
+	"menu": "menu___tRjk9",
+	"menu__item__link": "menu__item__link___3QdZD",
+	"drop": "drop___25gLy",
+	"dropMenu": "dropMenu___3mX6b"
 };
 
 /***/ }),
@@ -1026,9 +2145,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../components/Head */ "./src/components/Head/index.jsx");
+/* harmony import */ var _components_Menu_Menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Menu/Menu */ "./src/components/Menu/Menu.jsx");
+/* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.module.scss */ "./src/pages/index.module.scss");
+/* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_module_scss__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "C:\\Users\\PAVILION\\Desktop\\Repositor\\AvtoSale\\src\\pages\\index.jsx";
-
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 {
@@ -1038,34 +2161,116 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 }
 
 const App = () => {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
-    className: " uk-grid",
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Head__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 14
     },
     __self: undefined
-  }, __jsx("div", {
-    className: "uk-width-1-2",
+  }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 15
     },
     __self: undefined
-  }, "1"), __jsx("div", {
+  }, "Page")), __jsx("header", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_3__["header"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 17
     },
     __self: undefined
-  }, "2")));
+  }, __jsx(_components_Menu_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
 
 /***/ }),
 
-/***/ 3:
+/***/ "./src/pages/index.module.scss":
+/*!*************************************!*\
+  !*** ./src/pages/index.module.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"header": "header___1Y18g"
+};
+
+/***/ }),
+
+/***/ "./src/router/router.js":
+/*!******************************!*\
+  !*** ./src/router/router.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const router = {
+  home: "/",
+  city: [{
+    name: "киев",
+    url: "/kiev"
+  }, {
+    name: "харьков",
+    url: "/harkov"
+  }, {
+    name: "донецк",
+    url: "/donetsk"
+  }, {
+    name: "Запорожье",
+    url: "/zaporozhye"
+  }, {
+    name: "Мариуполь",
+    url: "/zhytomyr"
+  }, {
+    name: "Житомир",
+    url: "/Zhytomyr"
+  }, {
+    name: "Полтава",
+    url: "/poltava"
+  }, {
+    name: "Львов",
+    url: "/lviv"
+  }, {
+    name: "Артемовск (Бахмут)",
+    url: "/artyomovsk "
+  }, {
+    name: "Сумы",
+    url: "/sumy"
+  }, {
+    name: "Чернигов",
+    url: "/chernihiv"
+  }, {
+    name: "Ровно",
+    url: "/rovno"
+  }, {
+    name: "Хмельницкий",
+    url: "/khmelnitsky"
+  }, {
+    name: "Винница",
+    url: "/vinnitsa"
+  }, {
+    name: "Бердянск",
+    url: "/berdyansk"
+  }],
+  readme: "/readme",
+  contact: "/contact"
+};
+/* harmony default export */ __webpack_exports__["default"] = (router);
+
+/***/ }),
+
+/***/ 4:
 /*!***********************************!*\
   !*** multi ./src/pages/index.jsx ***!
   \***********************************/
@@ -1074,6 +2279,61 @@ const App = () => {
 
 module.exports = __webpack_require__(/*! C:\Users\PAVILION\Desktop\Repositor\AvtoSale\src\pages\index.jsx */"./src/pages/index.jsx");
 
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/define-property":
+/*!************************************************************!*\
+  !*** external "core-js/library/fn/object/define-property" ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/get-own-property-descriptor":
+/*!************************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-descriptor" ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "core-js/library/fn/symbol":
+/*!********************************************!*\
+  !*** external "core-js/library/fn/symbol" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/symbol");
+
+/***/ }),
+
+/***/ "core-js/library/fn/symbol/iterator":
+/*!*****************************************************!*\
+  !*** external "core-js/library/fn/symbol/iterator" ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/symbol/iterator");
+
+/***/ }),
+
+/***/ "core-js/library/fn/weak-map":
+/*!**********************************************!*\
+  !*** external "core-js/library/fn/weak-map" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/weak-map");
 
 /***/ }),
 
@@ -1088,6 +2348,28 @@ module.exports = require("next/head");
 
 /***/ }),
 
+/***/ "prop-types":
+/*!*****************************!*\
+  !*** external "prop-types" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types");
+
+/***/ }),
+
+/***/ "prop-types-exact":
+/*!***********************************!*\
+  !*** external "prop-types-exact" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types-exact");
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -1096,6 +2378,28 @@ module.exports = require("next/head");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-is":
+/*!***************************!*\
+  !*** external "react-is" ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("url");
 
 /***/ })
 
