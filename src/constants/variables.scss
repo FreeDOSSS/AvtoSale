@@ -1,7 +1,14 @@
+// Цвета
 $colorWhite: #fff;
 $colorBlack: #000;
-$colorAccent: #ce1f11;
-$colorBlackTransparent: transparentize($colorBlack, 0.7);
-// * {
-//   color: transparentize($colorBlack, 0.5);
-// }
+$colorAccent: #ec0712;
+$colorBlackTransparent: transparentize($colorBlack, 0.2);
+
+// Размеры
+$breakPointWidthMb: 320px;
+$breakPointWidthTb: 748px;
+$breakPointWidthDs: 1200px;
+
+$containerWidthMb: 320px;
+$containerWidthTb: 728px;
+$containerWidthDs: 65%;

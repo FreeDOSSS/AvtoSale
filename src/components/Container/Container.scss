@@ -1,17 +1,19 @@
+@import "./../../constants/variables.scss";
 .conteiner {
-  width: 320px;
+  width: $containerWidthMb;
   margin: auto;
   padding: 0 10px;
 }
 
-@media (min-width: 748px) {
+@media (min-width: $breakPointWidthTb) {
   .conteiner {
-    width: 728px;
+    width: $containerWidthTb;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $breakPointWidthDs) {
   .conteiner {
-    width: 80%;
+    min-width: $breakPointWidthDs;
+    width: $containerWidthDs;
   }
 }

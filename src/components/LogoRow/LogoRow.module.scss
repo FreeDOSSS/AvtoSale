@@ -1,0 +1,61 @@
+@import "./../../constants/variables.scss";
+
+.wrp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  > * {
+    margin-bottom: 20px;
+  }
+
+  .logoWrp {
+    width: 200px;
+    height: auto;
+  }
+
+  .modalBtn {
+    background-color: $colorAccent;
+    border: none;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $colorWhite;
+    letter-spacing: 0.98px;
+    border-radius: 8px;
+  }
+
+  .iconGroup {
+    display: flex;
+    align-items: center;
+    a {
+      color: $colorWhite;
+      font-size: 20px;
+      &:hover {
+        text-decoration: none;
+        color: $colorAccent;
+      }
+      svg {
+        fill: $colorWhite;
+        $w: 30px;
+        width: $w;
+        height: $w;
+
+        &:hover {
+          fill: $colorAccent;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakPointWidthTb) {
+  .wrp {
+    justify-content: space-between;
+  }
+}
+
+.submit {
+  background-color: $colorAccent;
+  color: $colorWhite;
+}

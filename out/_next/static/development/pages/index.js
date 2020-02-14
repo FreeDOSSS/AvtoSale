@@ -702,6 +702,56 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 /***/ }),
 
+/***/ "./node_modules/clsx/dist/clsx.m.js":
+/*!******************************************!*\
+  !*** ./node_modules/clsx/dist/clsx.m.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function toVal(mix) {
+	var k, y, str='';
+	if (mix) {
+		if (typeof mix === 'object') {
+			if (Array.isArray(mix)) {
+				for (k=0; k < mix.length; k++) {
+					if (mix[k] && (y = toVal(mix[k]))) {
+						str && (str += ' ');
+						str += y;
+					}
+				}
+			} else {
+				for (k in mix) {
+					if (mix[k] && (y = toVal(k))) {
+						str && (str += ' ');
+						str += y;
+					}
+				}
+			}
+		} else if (typeof mix !== 'boolean' && !mix.call) {
+			str && (str += ' ');
+			str += mix;
+		}
+	}
+	return str;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+	var i=0, x, str='';
+	while (i < arguments.length) {
+		if (x = toVal(arguments[i++])) {
+			str && (str += ' ');
+			str += x
+		}
+	}
+	return str;
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/array/from.js":
 /*!*******************************************************!*\
   !*** ./node_modules/core-js/library/fn/array/from.js ***!
@@ -7588,7 +7638,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_ef0ff7c60362f24a921f
 
 
 
-var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/prop-types/node_modules/react-is/index.js");
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 var assign = __webpack_require__(/*! object-assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
 
 var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
@@ -8189,7 +8239,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
  */
 
 if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/prop-types/node_modules/react-is/index.js");
+  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
@@ -8208,271 +8258,6 @@ if (true) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(/*! dll-reference dll_ef0ff7c60362f24a921f */ "dll-reference dll_ef0ff7c60362f24a921f"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/** @license React v16.12.0
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-// (unstable) APIs that have been removed. Can we remove the symbols?
-
-var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
-var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
-var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
-var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
-
-function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE);
-}
-
-/**
- * Forked from fbjs/warning:
- * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
- *
- * Only change is we use console.warn instead of console.error,
- * and do nothing when 'console' is not supported.
- * This really simplifies the code.
- * ---
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-var lowPriorityWarningWithoutStack = function () {};
-
-{
-  var printWarning = function (format) {
-    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    var argIndex = 0;
-    var message = 'Warning: ' + format.replace(/%s/g, function () {
-      return args[argIndex++];
-    });
-
-    if (typeof console !== 'undefined') {
-      console.warn(message);
-    }
-
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-
-  lowPriorityWarningWithoutStack = function (condition, format) {
-    if (format === undefined) {
-      throw new Error('`lowPriorityWarningWithoutStack(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-
-    if (!condition) {
-      for (var _len2 = arguments.length, args = new Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
-
-      printWarning.apply(void 0, [format].concat(args));
-    }
-  };
-}
-
-var lowPriorityWarningWithoutStack$1 = lowPriorityWarningWithoutStack;
-
-function typeOf(object) {
-  if (typeof object === 'object' && object !== null) {
-    var $$typeof = object.$$typeof;
-
-    switch ($$typeof) {
-      case REACT_ELEMENT_TYPE:
-        var type = object.type;
-
-        switch (type) {
-          case REACT_ASYNC_MODE_TYPE:
-          case REACT_CONCURRENT_MODE_TYPE:
-          case REACT_FRAGMENT_TYPE:
-          case REACT_PROFILER_TYPE:
-          case REACT_STRICT_MODE_TYPE:
-          case REACT_SUSPENSE_TYPE:
-            return type;
-
-          default:
-            var $$typeofType = type && type.$$typeof;
-
-            switch ($$typeofType) {
-              case REACT_CONTEXT_TYPE:
-              case REACT_FORWARD_REF_TYPE:
-              case REACT_LAZY_TYPE:
-              case REACT_MEMO_TYPE:
-              case REACT_PROVIDER_TYPE:
-                return $$typeofType;
-
-              default:
-                return $$typeof;
-            }
-
-        }
-
-      case REACT_PORTAL_TYPE:
-        return $$typeof;
-    }
-  }
-
-  return undefined;
-} // AsyncMode is deprecated along with isAsyncMode
-
-var AsyncMode = REACT_ASYNC_MODE_TYPE;
-var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-var ContextConsumer = REACT_CONTEXT_TYPE;
-var ContextProvider = REACT_PROVIDER_TYPE;
-var Element = REACT_ELEMENT_TYPE;
-var ForwardRef = REACT_FORWARD_REF_TYPE;
-var Fragment = REACT_FRAGMENT_TYPE;
-var Lazy = REACT_LAZY_TYPE;
-var Memo = REACT_MEMO_TYPE;
-var Portal = REACT_PORTAL_TYPE;
-var Profiler = REACT_PROFILER_TYPE;
-var StrictMode = REACT_STRICT_MODE_TYPE;
-var Suspense = REACT_SUSPENSE_TYPE;
-var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
-
-function isAsyncMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true;
-      lowPriorityWarningWithoutStack$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
-    }
-  }
-
-  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-}
-function isConcurrentMode(object) {
-  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-}
-function isContextConsumer(object) {
-  return typeOf(object) === REACT_CONTEXT_TYPE;
-}
-function isContextProvider(object) {
-  return typeOf(object) === REACT_PROVIDER_TYPE;
-}
-function isElement(object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-}
-function isForwardRef(object) {
-  return typeOf(object) === REACT_FORWARD_REF_TYPE;
-}
-function isFragment(object) {
-  return typeOf(object) === REACT_FRAGMENT_TYPE;
-}
-function isLazy(object) {
-  return typeOf(object) === REACT_LAZY_TYPE;
-}
-function isMemo(object) {
-  return typeOf(object) === REACT_MEMO_TYPE;
-}
-function isPortal(object) {
-  return typeOf(object) === REACT_PORTAL_TYPE;
-}
-function isProfiler(object) {
-  return typeOf(object) === REACT_PROFILER_TYPE;
-}
-function isStrictMode(object) {
-  return typeOf(object) === REACT_STRICT_MODE_TYPE;
-}
-function isSuspense(object) {
-  return typeOf(object) === REACT_SUSPENSE_TYPE;
-}
-
-exports.typeOf = typeOf;
-exports.AsyncMode = AsyncMode;
-exports.ConcurrentMode = ConcurrentMode;
-exports.ContextConsumer = ContextConsumer;
-exports.ContextProvider = ContextProvider;
-exports.Element = Element;
-exports.ForwardRef = ForwardRef;
-exports.Fragment = Fragment;
-exports.Lazy = Lazy;
-exports.Memo = Memo;
-exports.Portal = Portal;
-exports.Profiler = Profiler;
-exports.StrictMode = StrictMode;
-exports.Suspense = Suspense;
-exports.isValidElementType = isValidElementType;
-exports.isAsyncMode = isAsyncMode;
-exports.isConcurrentMode = isConcurrentMode;
-exports.isContextConsumer = isContextConsumer;
-exports.isContextProvider = isContextProvider;
-exports.isElement = isElement;
-exports.isForwardRef = isForwardRef;
-exports.isFragment = isFragment;
-exports.isLazy = isLazy;
-exports.isMemo = isMemo;
-exports.isPortal = isPortal;
-exports.isProfiler = isProfiler;
-exports.isStrictMode = isStrictMode;
-exports.isSuspense = isSuspense;
-  })();
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/node_modules/react-is/index.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/prop-types/node_modules/react-is/index.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js");
-}
-
 
 /***/ }),
 
@@ -10525,6 +10310,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./src/assets/images/logo_bel.svg":
+/*!****************************************!*\
+  !*** ./src/assets/images/logo_bel.svg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDYuNiA1MS44IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyMDYuNiA1MS44Ij48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkZGRkZGO30gLnN0MXtmaWxsOiNFQzA3MTI7fTwvc3R5bGU+PHBhdGggZD0iTTE4LjYgMjUuNmwtMS44LTZINy42bC0xLjggNkgwTDguOS4zaDYuNWw4LjkgMjUuM2gtNS43em0tMy4xLTEwLjVjLTEuNy01LjQtMi42LTguNS0yLjktOS4yLS4yLS43LS40LTEuMy0uNS0xLjctLjQgMS41LTEuNSA1LjEtMy4zIDEwLjloNi43ek0zMS43IDI1LjZMMjQuNCA2LjNoNS41bDMuNyAxMWMuNCAxLjQuNyAyLjcuOCAzLjloLjFjLjEtMS4xLjMtMi40LjgtMy45bDMuNy0xMWg1LjVsLTcuMyAxOS4zaC01LjV6TTU1LjMgMjEuN2MuOSAwIDItLjIgMy4zLS42VjI1Yy0xLjMuNi0yLjkuOS00LjguOS0yLjEgMC0zLjYtLjUtNC42LTEuNnMtMS40LTIuNy0xLjQtNC44di05LjNoLTIuNVY4bDIuOS0xLjggMS41LTQuMUg1M3Y0LjFoNS40djMuOUg1M3Y5LjNjMCAuNy4yIDEuMy42IDEuN3MxIC42IDEuNy42ek04MCAxNS45YzAgMy4xLS44IDUuNi0yLjUgNy40LTEuNyAxLjgtNCAyLjctNi45IDIuNy0xLjggMC0zLjUtLjQtNC45LTEuMi0xLjQtLjgtMi41LTItMy4zLTMuNS0uOC0xLjUtMS4xLTMuMy0xLjEtNS4zIDAtMy4xLjgtNS42IDIuNS03LjMgMS42LTEuNyA0LTIuNiA2LjktMi42IDEuOCAwIDMuNS40IDQuOSAxLjIgMS40LjggMi41IDIgMy4zIDMuNS43IDEuMyAxLjEgMy4xIDEuMSA1LjF6bS0xMy4zIDBjMCAxLjkuMyAzLjMuOSA0LjNzMS42IDEuNSAzLjEgMS41YzEuNCAwIDIuNC0uNSAzLTEuNS42LTEgLjktMi40LjktNC4zcy0uMy0zLjMtLjktNC4zYy0uNi0xLTEuNi0xLjQtMy0xLjRzLTIuNC41LTMgMS40Yy0uNyAxLTEgMi40LTEgNC4zeiIgY2xhc3M9InN0MCIvPjxwYXRoIGQ9Ik04Mi43IDE4LjNWMTRIOTJ2NC4zaC05LjN6IiBjbGFzcz0ic3QxIi8+PHBhdGggZD0iTTExMC42IDI1LjZIOTYuMVYuNGgxNC41djQuNGgtOS4ydjUuNWg4LjV2NC40aC04LjV2Ni41aDkuMnY0LjR6TTExOS40IDE1LjhsLTYuMi05LjRoNmwzLjcgNi4xIDMuOC02LjFoNmwtNi4zIDkuNCA2LjYgOS44aC02bC00LTYuNi00LjEgNi42aC02bDYuNS05Ljh6TTE0Ni41IDI1LjljLTIuMyAwLTQtLjgtNS4zLTIuNWgtLjNjLjIgMS42LjMgMi41LjMgMi44VjM0aC01LjNWNi4zaDQuM2wuNyAyLjVoLjJjMS4yLTEuOSAzLTIuOSA1LjUtMi45IDIuMyAwIDQuMS45IDUuMyAyLjYgMS4zIDEuOCAxLjkgNC4yIDEuOSA3LjMgMCAyLjEtLjMgMy44LS45IDUuNHMtMS41IDIuNy0yLjYgMy41Yy0xIC44LTIuMyAxLjItMy44IDEuMnptLTEuNi0xNS43Yy0xLjMgMC0yLjIuNC0yLjggMS4yLS42LjgtLjkgMi4xLS45IDR2LjZjMCAyLjEuMyAzLjUuOSA0LjQuNi45IDEuNiAxLjMgMi45IDEuMyAyLjQgMCAzLjUtMS45IDMuNS01LjggMC0xLjktLjMtMy4zLS45LTQuMy0uNS0xLTEuNC0xLjQtMi43LTEuNHpNMTY2LjkgMjUuOWMtMy4xIDAtNS41LS45LTcuMy0yLjZTMTU3IDE5LjIgMTU3IDE2cy44LTUuNyAyLjQtNy41IDMuOC0yLjYgNi43LTIuNmMyLjcgMCA0LjguOCA2LjQgMi4zIDEuNSAxLjYgMi4zIDMuNyAyLjMgNi40djIuNmgtMTIuNGMuMSAxLjUuNSAyLjcgMS4zIDMuNS44LjggMiAxLjMgMy41IDEuMyAxLjIgMCAyLjMtLjEgMy4zLS40czIuMS0uNiAzLjItMS4ydjQuMWMtLjkuNS0xLjkuOC0yLjkgMS0xLjEuMy0yLjQuNC0zLjkuNHptLS43LTE2LjJjLTEuMSAwLTIgLjQtMi42IDEuMS0uNi43LTEgMS43LTEuMSAzaDcuNGMwLTEuMy0uNC0yLjMtMS0zLS43LS43LTEuNi0xLjEtMi43LTEuMXpNMTg5LjggNmMuNyAwIDEuMy4xIDEuOC4ybC0uNCA0LjljLS40LS4xLS45LS4yLTEuNi0uMi0xLjcgMC0zIC40LTMuOSAxLjMtLjkuOS0xLjQgMi4xLTEuNCAzLjZ2OS44SDE3OVY2LjNoNGwuOCAzLjJoLjNjLjYtMS4xIDEuNC0xLjkgMi40LTIuNnMyLjEtLjkgMy4zLS45ek0yMDMuMiAyMS43Yy45IDAgMi0uMiAzLjMtLjZWMjVjLTEuMy42LTIuOS45LTQuOC45LTIuMSAwLTMuNi0uNS00LjYtMS42cy0xLjQtMi43LTEuNC00Ljh2LTkuM2gtMi41VjhsMi45LTEuOCAxLjUtNC4xaDMuNHY0LjFoNS40djMuOUgyMDF2OS4zYzAgLjcuMiAxLjMuNiAxLjdzLjkuNiAxLjYuNnpNNy43IDM5LjZjMCAuNi0uMiAxLjEtLjUgMS41cy0uOC42LTEuNS43di4xYy44LjEgMS40LjMgMS43LjdzLjYuOS42IDEuNmMwIDEtLjMgMS43LS45IDIuMi0uNi41LTEuNi44LTIuOC44SDB2LTkuOWg0LjJjMS4xIDAgMiAuMiAyLjYuNi42LjMuOS45LjkgMS43em0tMSAuMWMwLS42LS4yLTEtLjYtMS4yLS40LS4yLTEtLjQtMS45LS40SC45djMuNGgzLjJjLjkgMCAxLjYtLjEgMi0uNC40LS4zLjYtLjguNi0xLjR6bS4zIDQuNWMwLTEuMi0uOS0xLjgtMi44LTEuOEguOXY0aDMuNGMxLjgtLjEgMi43LS44IDIuNy0yLjJ6TTExLjYgNDEuNGgzLjJjMi4zIDAgMy41LjkgMy41IDIuOCAwIC45LS4zIDEuNy0xIDIuMi0uNy41LTEuNi44LTIuOC44aC0zLjh2LTkuOWguOXY0LjF6bTAgLjl2NGgzYy45IDAgMS41LS4yIDItLjUuNS0uNC43LS45LjctMS42IDAtLjctLjItMS4xLS42LTEuNHMtMS4xLS40LTIuMS0uNGgtM3ptOS4zIDQuOUgyMHYtOS45aC45djkuOXpNMjkuNiAzNy4yaDEuMUwyNi4zIDQybDQuOCA1LjFoLTEuMmwtNC43LTV2NWgtLjl2LTkuOWguOVY0Mmw0LjQtNC44ek0zMS4xIDM3LjJoLjlsMi4xIDUuNmMuNiAxLjcgMSAyLjkgMS4yIDMuNWguMWMuMy0uOC43LTIgMS4zLTMuNWwyLjEtNS41aC45bC00LjUgMTEuNmMtLjQuOS0uNyAxLjYtLjkgMS45LS4yLjMtLjUuNi0uOS43LS4zLjItLjcuMi0xLjIuMi0uMyAwLS43LS4xLTEuMi0uMnYtLjhjLjQuMS43LjEgMS4xLjEuMyAwIC42LS4xLjgtLjJzLjUtLjQuNi0uN2MuMi0uMy40LS44LjctMS41cy40LTEuMS41LTEuM2wtMy42LTkuOXpNNDIuMyA0Ny4yaC0uOXYtOS45aDcuOXY5LjloLS45di05LjFoLTYuMXY5LjF6TTYzLjYgNDcuMmwtLjItMS42aC0uMWMtLjUuNi0xIDEuMS0xLjUgMS40LS41LjMtMS4yLjQtMS45LjQtMSAwLTEuNy0uMy0yLjMtLjgtLjUtLjUtLjgtMS4yLS44LTIuMSAwLTEgLjQtMS43IDEuMi0yLjMuOC0uNSAyLS44IDMuNS0uOWwxLjktLjF2LS43YzAtLjktLjItMS43LS42LTIuMXMtMS0uNy0xLjktLjdjLS45IDAtMS45LjMtMi45LjhsLS4zLS44YzEuMS0uNSAyLjItLjggMy4yLS44IDEuMSAwIDEuOS4zIDIuNC45LjUuNi44IDEuNS44IDIuN3Y2LjZoLS41em0tMy43LS43YzEuMSAwIDEuOS0uMyAyLjUtLjlzLjktMS41LjktMi41di0xbC0xLjcuMWMtMS40LjEtMi40LjMtMyAuN3MtLjkuOS0uOSAxLjdjMCAuNi4yIDEuMS42IDEuNS40LjIuOS40IDEuNi40ek03NS4xIDM5LjZjMCAuNi0uMiAxLjEtLjUgMS41cy0uOC42LTEuNS43di4xYy44LjEgMS40LjMgMS43LjdzLjUuOS41IDEuNmMwIDEtLjMgMS43LS45IDIuMi0uNi41LTEuNi44LTIuOC44aC00LjJ2LTkuOWg0LjJjMS4xIDAgMiAuMiAyLjYuNi42LjMuOS45LjkgMS43em0tMSAuMWMwLS42LS4yLTEtLjYtMS4yLS40LS4yLTEtLjQtMS45LS40aC0zLjN2My40aDMuMmMuOSAwIDEuNi0uMSAyLS40LjQtLjMuNi0uOC42LTEuNHptLjMgNC41YzAtMS4yLS45LTEuOC0yLjgtMS44aC0zLjJ2NGgzLjRjMS43LS4xIDIuNi0uOCAyLjYtMi4yek04NC40IDM4aC0zLjN2OS4yaC0uOVYzOGgtMy40di0uOGg3LjZ2Ljh6TTk0LjYgNDIuMmMwIDEuNi0uNCAyLjktMS4yIDMuOC0uOC45LTEuOSAxLjQtMy4zIDEuNC0uOSAwLTEuNi0uMi0yLjMtLjYtLjctLjQtMS4yLTEtMS41LTEuOC0uNC0uOC0uNS0xLjctLjUtMi43IDAtMS42LjQtMi45IDEuMi0zLjguOC0uOSAxLjktMS40IDMuMi0xLjQgMS40IDAgMi40LjUgMy4yIDEuNHMxLjIgMi4xIDEuMiAzLjd6bS03LjggMGMwIDEuNC4zIDIuNC45IDMuMi42LjggMS41IDEuMSAyLjUgMS4xczEuOS0uNCAyLjUtMS4xYy42LS44LjktMS44LjktMy4yIDAtMS40LS4zLTIuNC0uOS0zLjJzLTEuNS0xLjEtMi42LTEuMS0xLjkuNC0yLjUgMS4xYy0uNS43LS44IDEuOC0uOCAzLjJ6IiBjbGFzcz0ic3QwIi8+PHBhdGggZD0iTTAgMzEuMWgxMzR2Mi4xSDB6IiBjbGFzcz0ic3QxIi8+PC9zdmc+"
+
+/***/ }),
+
 /***/ "./src/components/Container/Container.jsx":
 /*!************************************************!*\
   !*** ./src/components/Container/Container.jsx ***!
@@ -10613,21 +10409,21 @@ var Head = function Head(_ref) {
     __self: this
   }, children, __jsx("link", {
     rel: "stylesheet",
-    href: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.1/css/uikit.min.css",
+    href: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
   }), __jsx("script", {
-    src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.1/js/uikit.min.js",
+    src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/js/uikit.min.js",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
   }), __jsx("script", {
-    src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.1/js/uikit-icons.min.js",
+    src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/js/uikit-icons.min.js",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
@@ -10655,6 +10451,213 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/components/LogoRow/LogoRow.jsx":
+/*!********************************************!*\
+  !*** ./src/components/LogoRow/LogoRow.jsx ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Container */ "./src/components/Container/index.js");
+/* harmony import */ var _assets_images_logo_bel_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../assets/images/logo_bel.svg */ "./src/assets/images/logo_bel.svg");
+/* harmony import */ var _assets_images_logo_bel_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_logo_bel_svg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _LogoRow_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LogoRow.module.scss */ "./src/components/LogoRow/LogoRow.module.scss");
+/* harmony import */ var _LogoRow_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_LogoRow_module_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+var _jsxFileName = "C:\\Users\\PAVILION\\Desktop\\Repositor\\AvtoSale\\src\\components\\LogoRow\\LogoRow.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+function LogoRow() {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_Container__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx("div", {
+    className: _LogoRow_module_scss__WEBPACK_IMPORTED_MODULE_4__["wrp"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, __jsx("div", {
+    className: _LogoRow_module_scss__WEBPACK_IMPORTED_MODULE_4__["logoWrp"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, __jsx("img", {
+    src: _assets_images_logo_bel_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "logo",
+    className: "logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  })), __jsx("button", {
+    className: _LogoRow_module_scss__WEBPACK_IMPORTED_MODULE_4__["modalBtn"],
+    type: "button",
+    "uk-toggle": "target: #modal-close-default",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, "\u0417\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0437\u0432\u043E\u043D\u043E\u043A"), __jsx("ul", {
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(_LogoRow_module_scss__WEBPACK_IMPORTED_MODULE_4__["iconGroup"], "uk-iconnav"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    "uk-icon": "icon: facebook",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    "uk-icon": "icon: instagram",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, "")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "tel:0663113100",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, "+38 066 311 3100"))))), __jsx("div", {
+    id: "modal-close-default",
+    "uk-modal": "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "uk-modal-dialog uk-modal-body",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, __jsx("button", {
+    className: "uk-modal-close-default",
+    type: "button",
+    "uk-close": "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }), __jsx("h2", {
+    className: "uk-modal-title uk-text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, "\u0417\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A"), __jsx("form", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "uk-inline uk-width-1-1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, __jsx("span", {
+    className: "uk-form-icon",
+    "uk-icon": "icon: user",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }), __jsx("input", {
+    className: "uk-input",
+    type: "text",
+    placeholder: "\u0412\u0430\u0448 \u043D\u043E\u043C\u0435\u0440 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430",
+    required: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  })), __jsx("button", {
+    type: "submit",
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])("uk-button uk-margin uk-align-right", _LogoRow_module_scss__WEBPACK_IMPORTED_MODULE_4__["submit"]),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C")))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (LogoRow);
+
+/***/ }),
+
+/***/ "./src/components/LogoRow/index.js":
+/*!*****************************************!*\
+  !*** ./src/components/LogoRow/index.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LogoRow__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LogoRow */ "./src/components/LogoRow/LogoRow.jsx");
+
+/* harmony default export */ __webpack_exports__["default"] = (_LogoRow__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
 /***/ "./src/components/Menu/Menu.jsx":
 /*!**************************************!*\
   !*** ./src/components/Menu/Menu.jsx ***!
@@ -10672,8 +10675,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Menu.module.scss */ "./src/components/Menu/Menu.module.scss");
 /* harmony import */ var _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _router_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../router/router */ "./src/router/router.js");
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 var _jsxFileName = "C:\\Users\\PAVILION\\Desktop\\Repositor\\AvtoSale\\src\\components\\Menu\\Menu.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -10691,35 +10696,28 @@ function Menu() {
         key: i,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 14
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: el.url,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 15
         },
         __self: this
       }, __jsx("a", {
         className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 16
         },
         __self: this
       }, el.name)));
     });
   };
 
-  return __jsx(_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    fluid: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["wrp"],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, __jsx("ul", {
+  var menu = __jsx("ul", {
     className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu"],
     __source: {
       fileName: _jsxFileName,
@@ -10727,7 +10725,7 @@ function Menu() {
     },
     __self: this
   }, __jsx("li", {
-    className: "menu__item",
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
@@ -10748,7 +10746,7 @@ function Menu() {
     },
     __self: this
   }, "\u041E \u043D\u0430\u0441"))), __jsx("li", {
-    className: "menu__item",
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
@@ -10784,7 +10782,7 @@ function Menu() {
     },
     __self: this
   }, " ", avtoDrop(_router_router__WEBPACK_IMPORTED_MODULE_4__["default"])))), __jsx("li", {
-    className: "menu__item",
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 37
@@ -10805,7 +10803,7 @@ function Menu() {
     },
     __self: this
   }, "\u043D\u0435\u0434\u0432\u0438\u0436\u0438\u043C\u043E\u0441\u0442\u044C"))), __jsx("li", {
-    className: "menu__item",
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
@@ -10826,7 +10824,7 @@ function Menu() {
     },
     __self: this
   }, "\u041F\u043E\u043B\u0435\u0437\u043D\u0430\u044F \u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F"))), __jsx("li", {
-    className: "menu__item",
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 47
@@ -10846,9 +10844,174 @@ function Menu() {
       lineNumber: 49
     },
     __self: this
-  }, "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B")))));
-} //TODO Канвас меню
+  }, "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B"))));
 
+  var offMenu = __jsx("ul", {
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])("uk-nav-parent-icon"),
+    "uk-nav": "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, __jsx("li", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, __jsx("a", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, "\u041E \u043D\u0430\u0441"))), __jsx("li", {
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(_Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item"], "uk-parent"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
+  }, "\u0410\u0432\u0442\u043E\u0432\u044B\u043A\u0443\u043F \u0432 \u0433\u043E\u0440\u043E\u0434\u0430\u0445"), __jsx("ul", {
+    className: "uk-nav-sub",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, " ", avtoDrop(_router_router__WEBPACK_IMPORTED_MODULE_4__["default"]))), __jsx("li", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: this
+  }, __jsx("a", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }, "\u041D\u0435\u0434\u0432\u0438\u0436\u0438\u043C\u043E\u0441\u0442\u044C"))), __jsx("li", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }, __jsx("a", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  }, "\u041F\u043E\u043B\u0435\u0437\u043D\u0430\u044F \u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F"))), __jsx("li", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: this
+  }, __jsx("a", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menu__item__link"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81
+    },
+    __self: this
+  }, "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B"))));
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    fluid: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["wrp"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
+    },
+    __self: this
+  }, __jsx("div", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menuWrp"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: this
+  }, menu, __jsx("button", {
+    className: _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["offcanvasToggler"],
+    "uk-toggle": "target: #offcanvas",
+    type: "button",
+    "uk-icon": "menu",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92
+    },
+    __self: this
+  }))), __jsx("div", {
+    id: "offcanvas",
+    "uk-offcanvas": "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101
+    },
+    __self: this
+  }, __jsx("div", {
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])("uk-offcanvas-bar", _Menu_module_scss__WEBPACK_IMPORTED_MODULE_3__["menuOffcanvas"]),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102
+    },
+    __self: this
+  }, __jsx("button", {
+    className: "uk-offcanvas-close",
+    type: "button",
+    "uk-close": "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103
+    },
+    __self: this
+  }), offMenu)));
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Menu);
 
@@ -10869,8 +11032,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Menu_Menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Menu/Menu */ "./src/components/Menu/Menu.jsx");
 /* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.module.scss */ "./src/pages/index.module.scss");
 /* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_module_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_Container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Container */ "./src/components/Container/index.js");
+/* harmony import */ var _components_LogoRow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/LogoRow */ "./src/components/LogoRow/index.js");
 var _jsxFileName = "C:\\Users\\PAVILION\\Desktop\\Repositor\\AvtoSale\\src\\pages\\index.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 
@@ -10885,26 +11052,32 @@ var App = function App() {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Head__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 17
     },
     __self: this
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 18
     },
     __self: this
   }, "Page")), __jsx("header", {
     className: _index_module_scss__WEBPACK_IMPORTED_MODULE_3__["header"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 20
     },
     __self: this
   }, __jsx(_components_Menu_Menu__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 21
+    },
+    __self: this
+  }), __jsx(_components_LogoRow__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
     },
     __self: this
   })));

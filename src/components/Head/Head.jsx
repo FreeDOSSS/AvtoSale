@@ -6,11 +6,11 @@ const Head = ({ children }) => {
       {children}
       <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.1/css/uikit.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css"
       />
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.1/js/uikit.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.1/js/uikit-icons.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/js/uikit.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/js/uikit-icons.min.js"></script>
     </NextHead>
   );
 };
