@@ -94,7 +94,9 @@ function Menu() {
             uk-toggle="target: #offcanvas"
             type="button"
             uk-icon="menu"
-          ></button>
+          >
+            {""}
+          </button>
         </div>
       </Container>
 

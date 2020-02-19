@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 import Container from "../Container";
 import logo from "./../../assets/images/logo_bel.svg";
 import * as style from "./LogoRow.module.scss";
 import clsx from "clsx";
+
+import sendTelegram from "./../../helpers/sendTelegram.js";
 function LogoRow() {
+  const [input, setInput] = useState("");
+  const [sendStatus, setSendStatus] = useState(null);
+
+  const hendlerForm = event => {
+    event.preventDefault();
+    const send = [{ name: "Телефон", value: input }];
+    sendTelegram(send).then(data => setSendStatus(data));
+  };
+
+  const hendlerInput = ({ target }) => {
+    setInput(target.value);
+  };
+
   return (
     <>
       <Container>
@@ -48,27 +63,38 @@ function LogoRow() {
             type="button"
             uk-close="true"
           ></button>
-          <h2 className="uk-modal-title uk-text-center">Заголовок</h2>
-          <form>
-            <div className="uk-inline uk-width-1-1">
-              <span className="uk-form-icon" uk-icon="icon: user"></span>
-              <input
-                className="uk-input"
-                type="text"
-                placeholder="Ваш номер телефона"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className={clsx(
-                "uk-button uk-margin uk-align-right",
-                style.submit
-              )}
-            >
-              Отправить
-            </button>
-          </form>
+          <h2 className="uk-modal-title uk-text-center">Заказать звонок</h2>
+          {sendStatus === null && (
+            <form onSubmit={hendlerForm} className={style.form}>
+              <div className="uk-inline uk-width-1-1">
+                <span className="uk-form-icon" uk-icon="icon: user"></span>
+                <input
+                  className="uk-input"
+                  type="text"
+                  placeholder="Ваш номер телефона"
+                  value={input}
+                  onChange={hendlerInput}
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                className={clsx(
+                  "uk-button uk-margin uk-align-right",
+                  style.submit
+                )}
+              >
+                Отправить
+              </button>
+            </form>
+          )}
+          {sendStatus && (
+            <p className="uk-text-large uk-text-center">
+              {sendStatus === 200
+                ? "Ваше сообщение успешно отправленно. Мы Вам перезвоним"
+                : "Что-то пошло не так попробуйте еще раз..."}
+            </p>
+          )}
         </div>
       </div>
     </>

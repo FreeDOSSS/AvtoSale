@@ -1,8 +1,40 @@
+@import "./../constants/variables.scss";
 .header {
   // background-color: red;
   background-image: url(./../assets/images/fon2.jpg);
   min-height: 100vh;
+  // display: flex;
+  // flex-wrap: wrap;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.main {
+  .title {
+    text-transform: uppercase;
+    color: $colorBlack;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+}
+
+.special {
+  padding-top: 40px;
+  background-color: #f8f8f8;
+  .list {
+    list-style: none;
+    &__item {
+      padding: 10px 0 10px 20px;
+      margin-bottom: 10px;
+      background-color: $colorWhite;
+      color: $colorBlack;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+      }
+    }
+  }
 }

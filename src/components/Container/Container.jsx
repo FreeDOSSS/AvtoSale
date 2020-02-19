@@ -3,9 +3,9 @@ import * as styles from "./Container.scss";
 
 function Container({ fluid, children }) {
   return (
-    <div className={fluid}>
+    <section className={fluid}>
       <div className={styles.conteiner}>{children}</div>
-    </div>
+    </section>
   );
 }
 

@@ -8,7 +8,6 @@
   > * {
     margin-bottom: 20px;
   }
-
   .logoWrp {
     width: 200px;
     height: auto;
@@ -52,6 +51,10 @@
 @media (min-width: $breakPointWidthTb) {
   .wrp {
     justify-content: space-between;
+
+    > * {
+      margin: 0;
+    }
   }
 }
 

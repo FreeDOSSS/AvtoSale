@@ -13,7 +13,7 @@ module.exports = withImages(
     cssModules: true,
     cssLoaderOptions: {
       importLoaders: 1,
-      localIdentName: "[local]"
+      localIdentName: "[local]_[hash]"
     }
   })
 );
