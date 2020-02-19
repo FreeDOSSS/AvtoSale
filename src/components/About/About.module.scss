@@ -1,11 +1,10 @@
 @import "./../../constants/variables.scss";
 .wrp {
-  //   background-color: red;
   height: 100%;
   display: flex;
   padding-top: 50px;
-  //   padding-top: 60%;
-  //   display: flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .accent {
@@ -13,6 +12,8 @@
 }
 
 .left {
+  // display: flex;
+  // margin-right: 20px;
   .title {
     padding: 10px;
     line-height: 1.3;
@@ -44,12 +45,16 @@
 }
 
 .right {
+  // flex-shrink: 0;
   .form {
+    margin: auto;
     width: 90%;
+    max-width: 400px;
     min-width: 300px;
     // border-radius: 6px;
     background-color: $colorWhite;
     padding: 25px;
+    margin-bottom: 30px;
     &__title {
       margin: 0;
       line-height: 1;
@@ -100,10 +105,18 @@
 
 @media (min-width: $breakPointWidthTb) {
   .wrp {
-    padding-top: 200px;
+    padding-top: 180px;
+    flex-wrap: nowrap;
   }
 
   .left {
+    // flex-shrink: 0;
+    max-width: 65%;
+    padding-right: 20px;
+    // margin-right: 0;
+    .title {
+      // font-size: 24px;
+    }
     .card {
       width: 50%;
       .img {
@@ -111,6 +124,18 @@
       }
 
       &__discription {
+        min-width: 260px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakPointWidthDs) {
+  .left {
+    .card {
+      &__discription {
+        min-width: 310px;
         font-size: 24px;
       }
     }

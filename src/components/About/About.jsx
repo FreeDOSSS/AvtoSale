@@ -19,8 +19,8 @@ function About() {
   };
   return (
     <Container>
-      <div className={style.wrp} uk-grid="true">
-        <div className={clsx(style.left, "uk-width-1-1 uk-width-2-3@s")}>
+      <div className={style.wrp}>
+        <div className={clsx(style.left)}>
           <h1 className={style.title}>
             КУПИМ ВАШ АВТО <span className={style.accent}> ДОРОЖЕ</span>{" "}
             КОНКУРЕНТОВ
@@ -46,7 +46,7 @@ function About() {
             </h3>
           </div>
         </div>
-        <div className={clsx(style.right, "uk-width-1-1 uk-width-1-3@s")}>
+        <div className={clsx(style.right)}>
           <form className={style.form} onSubmit={hendlerForm}>
             {sendStatus === null && (
               <>
@@ -57,7 +57,6 @@ function About() {
                 <p className={style.subtitle}>
                   Оставте ваш номер и мы Вам перезвоним
                 </p>
-
                 <input
                   type="text"
                   placeholder="+380__ ___ ____"

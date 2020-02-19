@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 import Container from "../Container";
-import logo from "./../../assets/images/logo_bel.svg";
+import logo from "./../../assets/images/logo/logo_w.svg";
 import * as style from "./LogoRow.module.scss";
 import clsx from "clsx";
 

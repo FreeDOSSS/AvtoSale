@@ -7,9 +7,7 @@ import Container from "../components/Container";
 import LogoRow from "../components/LogoRow";
 import About from "../components/About/About";
 
-import fotoVykup from "./../assets/images/vykup.png";
-import fotoBitAvto from "./../assets/images/bit-avto.png";
-import fotoSud from "./../assets/images/kredit-avto.png";
+import logo from "./../assets/images/logo/logo_b.svg";
 import clsx from "clsx";
 
 {
@@ -53,7 +51,9 @@ const App = () => {
                 </li>
               </ul>
             </div>
-            <div>s</div>
+            <div>
+              <img src={logo} alt="logo" />
+            </div>
           </div>
         </Container>
 
