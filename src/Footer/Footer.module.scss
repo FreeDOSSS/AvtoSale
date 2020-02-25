@@ -2,11 +2,11 @@
 
 // Строка
 
-.prefooterWrp {
-}
+// .prefooterWrp {
+// }
 
 .prefooter {
-  width: $containerWidthMb;
+  width: $containerWidthMb -20px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -121,9 +121,141 @@
 
 // Footer menu
 
+.menuWrp {
+  background-color: $colorFooter;
+  border-bottom: 1px solid transparentize($colorLight, 0.8);
+  padding: 10px 0;
+  padding-bottom: 30px;
+
+  .menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 100%;
+      text-align: center;
+
+      &__link {
+        padding: 3px 0;
+        display: block;
+        letter-spacing: 1px;
+
+        text-transform: uppercase;
+        color: $colorWhite;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
 // Footer Nomera
 
+.number {
+  background-color: $colorFooter;
+  .wrp {
+    padding: 50px 0;
+
+    .border {
+      height: 100px;
+      max-width: 600px;
+      margin: auto;
+      border: 10px solid transparentize($colorLight, 0.9);
+      position: relative;
+      .link {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        font-size: 22px;
+        white-space: nowrap;
+        transform: translate(-50%, -60%);
+        color: $colorLight;
+        background-color: $colorFooter;
+        letter-spacing: 1px;
+        padding: 5px 20px;
+        box-shadow: 0 0 15px 10px $colorFooter;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .iconBox {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+        transform: translateY(60%);
+        white-space: nowrap;
+        a {
+          margin: 10px;
+          background-color: $colorFooter;
+          border: 2px solid $colorAccent;
+          border-radius: 30px;
+          padding: 10px;
+
+          svg {
+            fill: $colorAccent;
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Footer Копирайт
+
+.copyrate {
+  background-color: $colorCopyrate;
+  .wrp {
+    padding: 20px 0;
+    // display: flex;
+
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: "arrow" "year" "develop";
+    align-items: center;
+    text-align: center;
+
+    .year {
+      grid-area: year;
+    }
+
+    .developer {
+      grid-area: develop;
+      a {
+        color: $colorAccent;
+        text-decoration: none;
+      }
+    }
+
+    .arrow {
+      grid-template-areas: arrow;
+      a {
+        padding: 5px;
+        border: 1px solid $colorAccent;
+        border-radius: 30px;
+        // border-color: $colorAccent;
+        // border-width: 1px;
+        // border-style: solid;
+        svg {
+          color: $colorAccent;
+          // fill: $colorAccent;
+          // stroke: $colorAccent;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: $breakPointWidthTb) {
   .prefooter {
@@ -136,6 +268,43 @@
     background-color: $colorFooter;
     .logo {
       height: 100px;
+    }
+  }
+
+  .menuWrp {
+    .menu {
+      justify-content: center;
+      &__item {
+        width: initial;
+        &__link {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  .copyrate {
+    .wrp {
+      grid-template-areas: "year develop arrow";
+      grid-template-columns: repeat(3, 1fr);
+
+      .year {
+        grid-area: year;
+        text-align: left;
+      }
+
+      .developer {
+        grid-area: develop;
+      }
+
+      .arrow {
+        grid-template-areas: arrow;
+        text-align: right;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
     }
   }
 }
@@ -172,7 +341,5 @@
   .boxImg {
     width: 350px;
     order: 3;
-    .img {
-    }
   }
 }

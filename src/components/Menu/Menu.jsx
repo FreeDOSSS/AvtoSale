@@ -87,13 +87,11 @@ function Menu() {
         </div>
       </Container>
 
-      <div id="offcanvas" uk-offcanvas="true">
+      <div id="offcanvas" uk-offcanvas="overlay: true">
         <div className={clsx("uk-offcanvas-bar", style.menuOffcanvas)}>
-          <button
-            className="uk-offcanvas-close"
-            type="button"
-            uk-close="true"
-          ></button>
+          <button className="uk-offcanvas-close" type="button" uk-close="true">
+            {" "}
+          </button>
           {offMenu(router)}
         </div>
       </div>
