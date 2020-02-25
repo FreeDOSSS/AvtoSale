@@ -7,24 +7,24 @@
 const router = {
   home: { name: "О нас", url: "/", path: "/" },
   city: [
-    { name: "киев", url: "/kiev", path: "" },
-    { name: "харьков", url: "/harkov", path: "" },
-    { name: "донецк", url: "/donetsk", path: "" },
-    { name: "Запорожье", url: "/zaporozhye", path: "" },
-    { name: "Мариуполь", url: "/zhytomyr", path: "" },
-    { name: "Житомир", url: "/Zhytomyr", path: "" },
-    { name: "Полтава", url: "/poltava", path: "" },
-    { name: "Львов", url: "/lviv", path: "" },
-    { name: "Артемовск (Бахмут)", url: "/artyomovsk ", path: "" },
-    { name: "Сумы", url: "/sumy", path: "" },
-    { name: "Чернигов", url: "/chernihiv", path: "" },
-    { name: "Ровно", url: "/rovno", path: "" },
-    { name: "Хмельницкий", url: "/khmelnitsky", path: "" },
-    { name: "Винница", url: "/vinnitsa", path: "" },
-    { name: "Бердянск", url: "/berdyansk", path: "" }
+    { name: "Киев", url: "/avtovykup-kiyev", path: "" },
+    { name: "Харьков", url: "/avtovykup-harkov", path: "" },
+    { name: "Донецк", url: "/avtovykup-donetsk", path: "" },
+    { name: "Запорожье", url: "/avtovykup-zaporozhye", path: "" },
+    { name: "Мариуполь", url: "/avtovykup-zhytomyr", path: "" },
+    { name: "Житомир", url: "/avtovykup-zhytomyr", path: "" },
+    { name: "Полтава", url: "/avtovykup-poltava", path: "" },
+    { name: "Львов", url: "/avtovykup-lviv", path: "" },
+    { name: "Артемовск (Бахмут)", url: "/avtovykup-artyomovsk", path: "" },
+    { name: "Сумы", url: "/avtovykup-sumy", path: "" },
+    { name: "Чернигов", url: "/avtovykup-chernihiv", path: "" },
+    { name: "Ровно", url: "/avtovykup-rovno", path: "" },
+    { name: "Хмельницкий", url: "/avtovykup-khmelnitsky", path: "" },
+    { name: "Винница", url: "/avtovykup-vinnitsa", path: "" },
+    { name: "Бердянск", url: "/avtovykup-berdyansk", path: "" }
   ],
-  readme: { name: "Полезная Информация", url: "#", path: "" },
-  contact: { name: "Контакты", url: "/contact", path: "/contact" }
+  readme: { name: "Полезная Информация", url: "informatsiya", path: "" },
+  contact: { name: "Контакты", url: "/kontakty", path: "/contact" }
 };
 
 // export default router;
