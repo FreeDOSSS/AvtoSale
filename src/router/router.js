@@ -1,33 +1,31 @@
+/*
+  name: Название страницы (тайтл)
+  url: Ссылка на сайте
+  path: путь до компонента
+*/
+
 const router = {
-  home: "/",
+  home: { name: "О нас", url: "/", path: "/" },
   city: [
-    {
-      name: "киев",
-      url: "/kiev"
-    },
-    {
-      name: "харьков",
-      url: "/harkov"
-    },
-    {
-      name: "донецк",
-      url: "/donetsk"
-    },
-    { name: "Запорожье", url: "/zaporozhye" },
-    { name: "Мариуполь", url: "/zhytomyr" },
-    { name: "Житомир", url: "/Zhytomyr" },
-    { name: "Полтава", url: "/poltava" },
-    { name: "Львов", url: "/lviv" },
-    { name: "Артемовск (Бахмут)", url: "/artyomovsk " },
-    { name: "Сумы", url: "/sumy" },
-    { name: "Чернигов", url: "/chernihiv" },
-    { name: "Ровно", url: "/rovno" },
-    { name: "Хмельницкий", url: "/khmelnitsky" },
-    { name: "Винница", url: "/vinnitsa" },
-    { name: "Бердянск", url: "/berdyansk" }
+    { name: "киев", url: "/kiev", path: "" },
+    { name: "харьков", url: "/harkov", path: "" },
+    { name: "донецк", url: "/donetsk", path: "" },
+    { name: "Запорожье", url: "/zaporozhye", path: "" },
+    { name: "Мариуполь", url: "/zhytomyr", path: "" },
+    { name: "Житомир", url: "/Zhytomyr", path: "" },
+    { name: "Полтава", url: "/poltava", path: "" },
+    { name: "Львов", url: "/lviv", path: "" },
+    { name: "Артемовск (Бахмут)", url: "/artyomovsk ", path: "" },
+    { name: "Сумы", url: "/sumy", path: "" },
+    { name: "Чернигов", url: "/chernihiv", path: "" },
+    { name: "Ровно", url: "/rovno", path: "" },
+    { name: "Хмельницкий", url: "/khmelnitsky", path: "" },
+    { name: "Винница", url: "/vinnitsa", path: "" },
+    { name: "Бердянск", url: "/berdyansk", path: "" }
   ],
-  readme: "/readme",
-  contact: "/contact"
+  readme: { name: "Полезная Информация", url: "#", path: "" },
+  contact: { name: "Контакты", url: "/contact", path: "/contact" }
 };
 
-export default router;
+// export default router;
+module.exports = router;

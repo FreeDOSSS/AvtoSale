@@ -1,10 +1,10 @@
 import React from "react";
 import Container from "./../Container";
 import Link from "next/link";
-import * as style from "./Menu.module.scss";
-
-import router from "./../../router/router";
 import clsx from "clsx";
+
+import * as style from "./Menu.module.scss";
+import router from "./../../router/router";
 
 function Menu() {
   const avtoDrop = ({ city }) => {
@@ -19,76 +19,63 @@ function Menu() {
     ));
   };
 
-  const menu = (
-    <ul className={style.menu}>
-      <li className={style.menu__item}>
-        <Link href="/">
-          <a className={style.menu__item__link}>О нас</a>
-        </Link>
-      </li>
-      <li className={style.menu__item}>
-        <Link href="#">
-          <a className={style.menu__item__link}>Автовыкуп в городах</a>
-        </Link>
-        <div className={style.drop} uk-drop="mode: click">
-          <ul className={style.dropMenu}> {avtoDrop(router)}</ul>
-        </div>
-      </li>
-      <li className={style.menu__item}>
-        <Link href="#">
-          <a className={style.menu__item__link}>недвижимость</a>
-        </Link>
-      </li>
-      <li className={style.menu__item}>
-        <Link href="#">
-          <a className={style.menu__item__link}>Полезная Информация</a>
-        </Link>
-      </li>
-      <li className={style.menu__item}>
-        <Link href="/contact">
-          <a className={style.menu__item__link}>Контакты</a>
-        </Link>
-      </li>
-    </ul>
-  );
+  const headreMenu = rout => {
+    const arr = Object.values(rout);
 
-  const offMenu = (
-    <ul className={clsx("uk-nav-parent-icon")} uk-nav="true">
-      <li className={style.menu__item}>
-        <Link href="/">
-          <a className={style.menu__item__link}>О нас</a>
-        </Link>
-      </li>
-      <li className={clsx(style.menu__item, "uk-parent")}>
-        <a href="#" className={style.menu__item__link}>
-          Автовыкуп в городах
-        </a>
+    return (
+      <ul className={style.menu}>
+        {arr.map((el, i) =>
+          Array.isArray(el) ? (
+            <li key={i} className={style.menu__item}>
+              <Link href="#">
+                <a className={style.menu__item__link}>Автовыкуп в городах</a>
+              </Link>
+              <div className={style.drop} uk-drop="mode: click">
+                <ul className={style.dropMenu}> {avtoDrop(router)}</ul>
+              </div>
+            </li>
+          ) : (
+            <li key={i} className={style.menu__item}>
+              <Link href={el.url}>
+                <a className={style.menu__item__link}>{el.name}</a>
+              </Link>
+            </li>
+          )
+        )}
+      </ul>
+    );
+  };
 
-        <ul className="uk-nav-sub"> {avtoDrop(router)}</ul>
-      </li>
-      <li className={style.menu__item}>
-        <Link href="#">
-          <a className={style.menu__item__link}>Недвижимость</a>
-        </Link>
-      </li>
-      <li className={style.menu__item}>
-        <Link href="#">
-          <a className={style.menu__item__link}>Полезная Информация</a>
-        </Link>
-      </li>
-      <li className={style.menu__item}>
-        <Link href="/contact">
-          <a className={style.menu__item__link}>Контакты</a>
-        </Link>
-      </li>
-    </ul>
-  );
+  const offMenu = rout => {
+    const arr = Object.values(rout);
+
+    return (
+      <ul className="uk-nav-parent-icon" uk-nav="true">
+        {arr.map((el, i) =>
+          Array.isArray(el) ? (
+            <li key={i} className={clsx(style.menu__item, "uk-parent")}>
+              <a href="#" className={style.menu__item__link}>
+                Автовыкуп в городах
+              </a>
+              <ul className="uk-nav-sub"> {avtoDrop(router)}</ul>
+            </li>
+          ) : (
+            <li key={i} className={style.menu__item}>
+              <Link href={el.url}>
+                <a className={style.menu__item__link}>{el.name}</a>
+              </Link>
+            </li>
+          )
+        )}
+      </ul>
+    );
+  };
 
   return (
     <>
       <Container fluid={style.wrp}>
         <div className={style.menuWrp}>
-          {menu}
+          {headreMenu(router)}
           <button
             className={style.offcanvasToggler}
             uk-toggle="target: #offcanvas"
@@ -107,7 +94,7 @@ function Menu() {
             type="button"
             uk-close="true"
           ></button>
-          {offMenu}
+          {offMenu(router)}
         </div>
       </div>
     </>

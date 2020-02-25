@@ -1,0 +1,8 @@
+@import "./../constants/variables.scss";
+
+.prefooter {
+  background-color: $colorLight;
+}
+
+@media (min-width: $breakPointWidthTb) {
+}

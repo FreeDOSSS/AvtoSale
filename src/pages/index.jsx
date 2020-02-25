@@ -9,6 +9,7 @@ import About from "../components/About/About";
 
 import logo from "./../assets/images/logo/logo_b.svg";
 import clsx from "clsx";
+import Footer from "../Footer/Footer";
 
 {
   /* <Head>
@@ -70,6 +71,9 @@ const App = () => {
         <Container></Container>
         <Container></Container>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
