@@ -62,18 +62,9 @@ const App = () => {
           </div>
         </Container>
 
-        {/* <section className={style.priveleging}></section> */}
-
-        <Container>
-          <h2>Как происходит выкуп</h2>
-        </Container>
-        <Container></Container>
-        <Container></Container>
         <Container></Container>
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   );
 };
