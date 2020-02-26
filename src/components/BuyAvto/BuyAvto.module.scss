@@ -1,0 +1,190 @@
+@import "./../../constants/variables.scss";
+
+.wrapper {
+  background-image: url(./../../assets/images/fonslider.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.sectionTitle {
+  text-align: center;
+  color: $colorWhite;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.spacer {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 3px;
+  background-color: $colorAccent;
+  $pos: 10%;
+  $pos2: $pos + 3%;
+  background: linear-gradient(
+    to right,
+    $colorAccent,
+    $colorAccent $pos,
+    transparentize($colorAccent, 1) $pos,
+    transparentize($colorAccent, 1) $pos2,
+    $colorAccent $pos2,
+    $colorAccent
+  );
+  transform: skewX(40deg);
+}
+
+.box {
+  padding: 30px 0;
+  padding-bottom: 10px;
+}
+
+.card {
+  // padding: 30px;
+  // padding: 20px;
+
+  $lg: 40%;
+  background: linear-gradient(
+    190deg,
+    #ffffff00,
+    #ffffff00 $lg,
+    $colorBlack $lg
+  );
+}
+
+.imgWrp {
+  padding: 20px;
+  padding-bottom: 0;
+  position: relative;
+  text-align: center;
+  // width: 80%;
+  .price {
+    margin: 0;
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    transform: translateY(50%);
+    .fon {
+      position: relative;
+      z-index: 10;
+      color: white;
+      font-size: 24px;
+      padding: 5px 20px;
+      &::after {
+        content: "";
+        position: absolute;
+        transform: skewX(13deg);
+        top: 0;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $colorAccent;
+      }
+    }
+  }
+}
+
+.tableWrp {
+  padding: 20px;
+  padding-top: 0;
+  table {
+    border-collapse: collapse;
+
+    td:first-of-type {
+      padding-right: 20px;
+      color: $colorWhite;
+    }
+
+    td:last-of-type {
+      color: $colorWhite;
+      font-weight: 700;
+      padding-left: 20px;
+    }
+  }
+}
+.title {
+  padding: 20px 0;
+  padding-bottom: 10px;
+  padding-left: 10%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: $colorWhite;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.control {
+  padding: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 20;
+  .btnWrp {
+    background-color: #212121;
+  }
+  &Wrp {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      display: block;
+      width: 99.9%;
+      z-index: 1;
+      border: 1px solid;
+    }
+  }
+
+  .sliderControl {
+    position: relative;
+    margin: 0 10px;
+    visibility: visible !important;
+    z-index: 30;
+
+    &::after {
+      content: "";
+      transform: skewX(13deg);
+      border: 1px solid $colorWhite;
+      position: absolute;
+      z-index: -20;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &.uk-invisible {
+      svg {
+        color: initial;
+      }
+    }
+
+    svg {
+      color: $colorAccent;
+      $w: 50px;
+      width: $w;
+      height: $w;
+    }
+  }
+}
+
+.slider li {
+  width: 100%;
+  // min-width: 30%;
+  flex-shrink: 0;
+}
+
+@media (min-width: $breakPointWidthTb) {
+  .slider li {
+    width: 50%;
+  }
+}
+
+@media (min-width: $breakPointWidthTb) {
+  .slider li {
+    width: 33%;
+  }
+}

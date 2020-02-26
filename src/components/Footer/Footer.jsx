@@ -3,13 +3,13 @@ import clsx from "clsx";
 import Link from "next/link";
 
 import * as style from "./Footer.module.scss";
-import Container from "../components/Container";
-import sendTelegram from "../helpers/sendTelegram";
-import router from "./../router/router";
+import Container from "../Container";
+import sendTelegram from "../../helpers/sendTelegram";
+import router from "../../router/router";
 
 // Картинки
-import car from "../assets/images/car.png";
-import logo from "../assets/images/logo/logo_w.svg";
+import car from "./../../assets/images/car.png";
+import logo from "./../../assets/images/logo/logo_w.svg";
 // ========
 
 function Footer() {
@@ -144,7 +144,7 @@ function Footer() {
       <Container fluid={style.menuWrp}>
         <ul className={style.menu}>{headreMenu(router)}</ul>
 
-        <div id="avtodrop" uk-offcanvas="overlay: true; flip: true">
+        <aside id="avtodrop" uk-offcanvas="overlay: true; flip: true">
           <div className={clsx("uk-offcanvas-bar", style.menuOffcanvas)}>
             <button
               className="uk-offcanvas-close"
@@ -155,7 +155,7 @@ function Footer() {
             </button>
             {offMenu(router)}
           </div>
-        </div>
+        </aside>
       </Container>
 
       <Container fluid={style.number}>
@@ -194,7 +194,7 @@ function Footer() {
             Сайт разработан в <a href="https://webcreate.pro/">WebCreate.pro</a>{" "}
           </div>
           <div className={style.arrow}>
-            <a href="#__next" uk-icon="icon: arrow-up" uk-scroll="true">
+            <a href="#" uk-icon="icon: arrow-up" uk-scroll="">
               {" "}
             </a>
           </div>

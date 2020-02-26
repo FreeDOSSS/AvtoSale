@@ -1,6 +1,5 @@
 const withSass = require("@zeit/next-sass");
-// const withImages = require("next-images");
-const withImages = require("./images");
+const withImages = require("./config/images");
 const withPlugins = require("next-compose-plugins");
 const router = require("./src/router/router");
 

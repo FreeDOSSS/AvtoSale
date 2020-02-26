@@ -9,7 +9,8 @@ import About from "../components/About/About";
 
 import logo from "./../assets/images/logo/logo_b.svg";
 import clsx from "clsx";
-import Footer from "../Footer/Footer";
+import Footer from "../components/Footer/Footer";
+import BuyAvto from "../components/BuyAvto/BuyAvto";
 
 {
   /* <Head>
@@ -20,7 +21,7 @@ const App = () => {
   return (
     <>
       <Head>
-        <title>Page</title>
+        <title>AvtoSale</title>
       </Head>
       <header className={style.header}>
         <Menu />
@@ -61,8 +62,7 @@ const App = () => {
             </div>
           </div>
         </Container>
-
-        <Container></Container>
+        <BuyAvto />
       </main>
       <Footer />
     </>
