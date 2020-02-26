@@ -5,15 +5,19 @@ import * as style from "./BuyAvto.module.scss";
 import Container from "../Container";
 
 // Foto
-import car from "./../../assets/images/foto.jpg";
-import car2 from "./../../assets/images/car.png";
-
+import infinity from "./../../assets/images/car/infinity.jpg";
+import hunday from "./../../assets/images/car/hunday.jpg";
+import lexus from "./../../assets/images/car/lexus.jpg";
+import mazda from "./../../assets/images/car/mazda.jpg";
+import mersedes from "./../../assets/images/car/mersedes.jpg";
+import nisan from "./../../assets/images/car/nisan.jpg";
+import tuareg from "./../../assets/images/car/tuareg.jpg";
 // ======
 
 function BuyAvto() {
   const arrAvto = [
     {
-      img: car,
+      img: hunday,
       model: "Hyundai Sonata",
       price: "7 900",
       year: "2008",
@@ -23,7 +27,7 @@ function BuyAvto() {
       city: "Киев"
     },
     {
-      img: car,
+      img: infinity,
       model: "Infiniti fx 35",
       price: "11 300",
       year: "2005",
@@ -33,7 +37,7 @@ function BuyAvto() {
       city: "Киев"
     },
     {
-      img: car,
+      img: mazda,
       model: "Mazda cx9",
       price: "12 400",
       year: "2009",
@@ -43,7 +47,7 @@ function BuyAvto() {
       city: "Киев"
     },
     {
-      img: car,
+      img: mersedes,
       model: "Mercedes benz e200",
       price: "9 300",
       year: "2007",
@@ -53,7 +57,7 @@ function BuyAvto() {
       city: "Киев"
     },
     {
-      img: car,
+      img: tuareg,
       model: "Volksvagen Toureg",
       price: "10 700",
       year: "2006",
@@ -63,7 +67,7 @@ function BuyAvto() {
       city: "Киев"
     },
     {
-      img: car,
+      img: nisan,
       model: "Nissan X Trail",
       price: "9 700",
       year: "2008",
@@ -73,7 +77,7 @@ function BuyAvto() {
       city: "Киев"
     },
     {
-      img: car,
+      img: lexus,
       model: "Lexus RX350",
       price: "13 800",
       year: "2008",
@@ -90,14 +94,14 @@ function BuyAvto() {
         <div className={style.box}>
           <h2 className={style.sectionTitle}>ВЫКУПЛЕННЫЕ АВТОМОБИЛИ</h2>
           <div className={style.spacer}></div>
-          <div class="uk-slider-container">
+          <div className="uk-slider-container">
             <div className="uk-position-relative uk-visible-toggle ">
               <ul
                 className={clsx(style.slider, "uk-slider-items  ")}
                 uk-grid=""
               >
-                {arrAvto.map(el => (
-                  <li>
+                {arrAvto.map((el, i) => (
+                  <li key={i + "a"}>
                     <div className={style.card}>
                       <div className={style.imgWrp}>
                         <img src={el.img} alt="avto" height="100" />
