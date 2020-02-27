@@ -4,8 +4,9 @@ import Link from "next/link";
 
 import * as style from "./Footer.module.scss";
 import Container from "../Container";
-import sendTelegram from "../../helpers/sendTelegram";
+import sendTelegram from "./../../helpers/sendTelegramMes";
 import router from "../../router/router";
+import { insta, fb, phone } from "./../../constants/constants";
 
 // Картинки
 import car from "./../../assets/images/car.png";
@@ -161,17 +162,14 @@ function Footer() {
       <Container fluid={style.number}>
         <div className={style.wrp}>
           <div className={style.border}>
-            <a href="tel:0663113100" className={style.link}>
-              +38 066 311 3100
+            <a href={`tel:${phone.replace(/\s/g, "")}`} className={style.link}>
+              {phone}
             </a>
             <div className={style.iconBox}>
-              <a href="#" uk-icon="icon: facebook">
+              <a href={fb} uk-icon="icon: facebook">
                 {""}
               </a>
-              <a
-                href="https://www.instagram.com/auto_best_vykup"
-                uk-icon="icon: instagram"
-              >
+              <a href={insta} uk-icon="icon: instagram">
                 {""}
               </a>
               <a

@@ -5,7 +5,7 @@ import Container from "../Container";
 import * as style from "./About.module.scss";
 import fotoTime from "./../../assets/images/icons/time.svg";
 import fotoLocation from "./../../assets/images/icons/location.svg";
-import sendTelegram from "./../../helpers/sendTelegram";
+import sendTelegram from "./../../helpers/sendTelegramMes";
 
 function About() {
   const [input, setinput] = useState("+380");

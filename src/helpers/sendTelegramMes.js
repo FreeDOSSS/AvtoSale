@@ -1,8 +1,9 @@
 import axios from "axios";
+import { chatId, token } from "../constants/constants";
 
-const sendTelegramMes = data => {
-  const token = "1005869345:AAEyX9GfXq2Wv5N_LklJUro_lkDa_XQjIH4";
-  const chatId = "-361745660";
+const sendTelegram = data => {
+  // const token = "1005869345:AAEyX9GfXq2Wv5N_LklJUro_lkDa_XQjIH4";
+  // const chatId = "-361745660";
   //   const errChatId = "";
   const sendUrl = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=`;
 
@@ -16,4 +17,4 @@ const sendTelegramMes = data => {
     });
 };
 
-module.exports = sendTelegramMes;
+module.exports = sendTelegram;

@@ -1,0 +1,107 @@
+@import "./../../constants/variables.scss";
+
+.fluid {
+  background-color: $colorCopyrate;
+}
+
+.wrapper {
+  padding: 40px 0;
+  display: flex;
+  > * {
+    width: 100%;
+  }
+}
+
+.calc {
+  background-color: $colorBlack;
+  padding: 20px;
+  border: 1px solid $colorWhite;
+  border-radius: 8px;
+  width: 60%;
+  min-width: 290px;
+  margin: auto;
+
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: $colorWhite;
+    font-weight: 700;
+    span {
+      color: $colorAccent;
+      display: block;
+    }
+  }
+}
+
+.field {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  background: none;
+  background-color: $colorCopyrate;
+  border: none;
+  font-size: 16px;
+  color: $colorWhite;
+  padding: 10px;
+}
+
+.fileList {
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  > * {
+    width: calc(50% - 10px);
+    flex-shrink: 0;
+  }
+}
+
+.submit {
+  width: 100%;
+  background: none;
+  background-color: $colorAccent;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $colorWhite;
+  letter-spacing: 1px;
+  padding: 15px 0;
+  overflow: hidden;
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    transition: all 0.2s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-90%) skewX(-40deg);
+    background-color: transparentize($colorWhite, 0.9);
+  }
+
+  &::before {
+    transform: translateX(90%) skewX(-40deg);
+  }
+  &:hover {
+    transform: scale(1);
+    &::after {
+      transform: translateX(-50%) skewX(-40deg);
+    }
+    &::before {
+      transform: translateX(50%) skewX(-40deg);
+    }
+  }
+}
+
+@media (min-width: $breakPointWidthTb) {
+  .wrapper {
+    > * {
+      width: 50%;
+    }
+  }
+}

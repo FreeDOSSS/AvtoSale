@@ -5,8 +5,10 @@ import Container from "../Container";
 import logo from "./../../assets/images/logo/logo_w.svg";
 import * as style from "./LogoRow.module.scss";
 import clsx from "clsx";
+import { insta, phone, fb } from "./../../constants/constants";
 
-import sendTelegram from "./../../helpers/sendTelegram.js";
+import sendTelegram from "./../../helpers/sendTelegramMes.js";
+
 function LogoRow() {
   const [input, setInput] = useState("");
   const [sendStatus, setSendStatus] = useState(null);
@@ -43,15 +45,12 @@ function LogoRow() {
               </a>
             </li>
             <li>
-              <a
-                href="https://www.instagram.com/auto_best_vykup"
-                uk-icon="icon: instagram"
-              >
+              <a href={insta} uk-icon="icon: instagram">
                 {""}
               </a>
             </li>
             <li>
-              <a href="tel:0663113100">+38 066 311 3100</a>
+              <a href={`tel:${phone.replace(/\s/g, "")}`}>{phone}</a>
             </li>
           </ul>
         </div>
