@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import clsx from "clsx";
 
 import * as style from "./BuyAvto.module.scss";
