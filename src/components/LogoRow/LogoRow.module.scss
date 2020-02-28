@@ -1,5 +1,10 @@
 @import "./../../constants/variables.scss";
 
+.button {
+  background-color: $colorAccent;
+  color: $colorWhite;
+}
+
 .wrp {
   display: flex;
   flex-wrap: wrap;

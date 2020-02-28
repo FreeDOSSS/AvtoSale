@@ -46,7 +46,6 @@ function Calc() {
         value: phone
       }
     ];
-
     const { files } = target.photo;
     if (!errFile) {
       sendTelegram(fields).then(res => {
@@ -58,16 +57,9 @@ function Calc() {
           setYear("");
           setModel("");
           setFile("");
-          UIkit.notification({
-            message:
-              "<span uk-icon='icon: check'></span> Заявка успешно отправленна",
-            status: "success",
-            pos: "top-right",
-            timeout: 5000
-          });
-          const notif = document.querySelector(".uk-notification-message");
-          console.log("notif", notif);
-          notif.style.background = "#141414";
+          UIkit.modal.dialog(
+            `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправленна!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.button} uk-modal-close" autofocus="">Ok</button> </div> `
+          );
 
           for (const input of files) {
             const data = new FormData();
@@ -132,8 +124,8 @@ function Calc() {
         <div className={style.calcWrp}>
           <form className={style.calc} onSubmit={hendlerForm}>
             <p className={style.title}>
-              Оцените свой авто
-              <span> за 10 минут</span>
+              Экспресс оценка
+              <span>автомобиля</span>
             </p>
 
             <input
@@ -229,8 +221,7 @@ function Calc() {
         </div>
         <div className={style.discription}>
           <h2 className={style.title}>
-            почему стоит <span className={style.accent}> доверять продажу</span>{" "}
-            вашего авто нам
+            почему мы <span className={style.accent}> лучше</span> конкурентов:
           </h2>
           <div className={style.spacer}></div>
           <ul className={style.list}>
@@ -238,7 +229,10 @@ function Calc() {
               <svg className={style.icon}>
                 <use href="#coin"></use>
               </svg>
-              <p>Выкуп - максимально дорого</p>
+              <p>
+                Выкуп - <span className={style.accent}> максимально</span>{" "}
+                дорого 24/7
+              </p>
             </li>
 
             <li>
@@ -255,6 +249,16 @@ function Calc() {
                 <use href="#deal"></use>
               </svg>
               <p>
+                Сделка в возможна в течении{" "}
+                <span className={style.accent}> 1-го часа</span>
+              </p>
+            </li>
+
+            <li>
+              <svg className={style.icon}>
+                <use href="#document"></use>
+              </svg>
+              <p>
                 Оформление и заверение документов -{" "}
                 <span className={style.accent}>бесплатно</span>
               </p>
@@ -267,6 +271,33 @@ function Calc() {
               <p>
                 Снятие с учета в ГАИ -{" "}
                 <span className={style.accent}>бесплатно</span>
+              </p>
+            </li>
+
+            <li>
+              <svg className={style.icon}>
+                <use href="#payment"></use>
+              </svg>
+              <p>
+                Наличный и безналичный{" "}
+                <span className={style.accent}>расчет</span>
+              </p>
+            </li>
+            <li>
+              <svg className={style.icon}>
+                <use href="#cash"></use>
+              </svg>
+              <p>
+                <span className={style.accent}>Оплата любой</span> валютой
+                (доллары, гривны, евро)
+              </p>
+            </li>
+            <li>
+              <svg className={style.icon}>
+                <use href="#ukraine"></use>
+              </svg>
+              <p>
+                Работаем по всей <span className={style.accent}>Украине</span>
               </p>
             </li>
           </ul>

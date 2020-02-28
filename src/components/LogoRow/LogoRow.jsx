@@ -16,7 +16,13 @@ function LogoRow() {
   const hendlerForm = event => {
     event.preventDefault();
     const send = [{ name: "Телефон", value: input }];
-    sendTelegram(send).then(data => setSendStatus(data));
+    sendTelegram(send).then(data => {
+      if (data === 200) {
+        UIkit.modal.dialog(
+          `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправленна!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.button} uk-modal-close" autofocus="">Ok</button> </div> `
+        );
+      }
+    });
   };
 
   const hendlerInput = ({ target }) => {

@@ -17,10 +17,17 @@ function Footer() {
   const [input, setInput] = useState("");
   const [sendStatus, setSendStatus] = useState(null);
 
+  // TODO Всплывашка после отправки формы, такаяже как и в шапке
   const hendlerForm = event => {
     event.preventDefault();
     const send = [{ name: "Телефон", value: input }];
-    sendTelegram(send).then(data => setSendStatus(data));
+    sendTelegram(send).then(data => {
+      if (data === 200) {
+        UIkit.modal.dialog(
+          `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправленна!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.sendButton} uk-modal-close" autofocus="">Ok</button> </div> `
+        );
+      }
+    });
   };
 
   const hendlerInput = ({ target }) => {
@@ -103,37 +110,28 @@ function Footer() {
               uk-close="true"
             ></button>
             <h2 className="uk-modal-title uk-text-center">Заказать звонок</h2>
-            {sendStatus === null && (
-              <form onSubmit={hendlerForm}>
-                <div className="uk-inline uk-width-1-1">
-                  <span className="uk-form-icon" uk-icon="icon: user"></span>
-                  <input
-                    className="uk-input"
-                    type="text"
-                    placeholder="Ваш номер телефона"
-                    value={input}
-                    onChange={hendlerInput}
-                    required
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className={clsx(
-                    "uk-button uk-margin uk-align-right",
-                    style.submit
-                  )}
-                >
-                  Отправить
-                </button>
-              </form>
-            )}
-            {sendStatus && (
-              <p className="uk-text-large uk-text-center">
-                {sendStatus === 200
-                  ? "Ваше сообщение успешно отправленно. Мы Вам перезвоним"
-                  : "Что-то пошло не так попробуйте еще раз..."}
-              </p>
-            )}
+            <form onSubmit={hendlerForm}>
+              <div className="uk-inline uk-width-1-1">
+                <span className="uk-form-icon" uk-icon="icon: user"></span>
+                <input
+                  className="uk-input"
+                  type="text"
+                  placeholder="Ваш номер телефона"
+                  value={input}
+                  onChange={hendlerInput}
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                className={clsx(
+                  "uk-button uk-margin uk-align-right",
+                  style.submit
+                )}
+              >
+                Отправить
+              </button>
+            </form>
           </div>
         </div>
       </Container>

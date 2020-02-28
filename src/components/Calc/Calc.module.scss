@@ -1,7 +1,13 @@
 @import "./../../constants/variables.scss";
 
 .fluid {
+  // background-image: url(https://images.wallpaperscraft.ru/image/abstraktsiya_akvarel_temnyj_pyatna_chernyj_zelenyj_116160_1920x1080.jpg);
+  background-image: url(https://avto-expert.by//images/auto/Group_6-1.jpg);
+  // background-image: url(https://million-wallpapers.ru/wallpapers/2/89/454072514641919/temnyj-fon-cveta.jpg);
   background-color: $colorCopyrate;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .wrapper {
@@ -11,6 +17,11 @@
   > * {
     width: 100%;
   }
+}
+
+.button {
+  color: $colorWhite;
+  background-color: $colorAccent;
 }
 
 .calc {
@@ -210,12 +221,16 @@
 
   .calcWrp {
     order: 1;
+    .title {
+      font-size: 30px;
+    }
   }
 
   .discription {
     order: 1;
 
     .title {
+      font-size: 30px;
       text-align: left;
       width: 90%;
     }
@@ -237,8 +252,8 @@
     .list {
       font-size: 20px;
       .icon {
-        width: 70px;
-        height: 70px;
+        // width: 70px;
+        // height: 70px;
         margin-right: 20px;
       }
     }

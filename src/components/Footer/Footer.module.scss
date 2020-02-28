@@ -5,6 +5,11 @@
 // .prefooterWrp {
 // }
 
+.sendButton {
+  background-color: $colorAccent;
+  color: $colorWhite;
+}
+
 .prefooter {
   width: $containerWidthMb -20px;
   margin: auto;
