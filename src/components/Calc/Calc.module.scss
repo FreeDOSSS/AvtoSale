@@ -7,6 +7,7 @@
 .wrapper {
   padding: 40px 0;
   display: flex;
+  flex-wrap: wrap;
   > * {
     width: 100%;
   }
@@ -20,6 +21,10 @@
   width: 60%;
   min-width: 290px;
   margin: auto;
+
+  &Wrp {
+    order: 2;
+  }
 
   .title {
     text-align: center;
@@ -47,7 +52,38 @@
 }
 
 .fileList {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+
+  .icon {
+    $width: 40px;
+    box-sizing: content-box;
+    // border: 1px solid $colorAccent;
+    // border-radius: $width;
+    // padding: 10px;
+    margin-right: 10px;
+    fill: $colorAccent;
+    width: $width;
+    height: $width;
+  }
+
+  .fileInput {
+    display: none;
+  }
+
+  .errFile {
+    font-style: italic;
+    color: red;
+  }
+
+  .label {
+    color: $colorWhite;
+    // text-align: center;
+    // width: 100%;
+    // display: block;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .row {
@@ -98,10 +134,113 @@
   }
 }
 
+.accent {
+  color: $colorAccent;
+}
+
+.discription {
+  order: 1;
+  color: $colorWhite;
+  .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $colorWhite;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .list {
+    list-style: none;
+    padding-left: 0;
+
+    font-size: 18px;
+
+    p {
+      margin: 0;
+    }
+
+    .icon {
+      flex-shrink: 0;
+      fill: $colorAccent;
+      $size: 40px;
+      width: $size;
+      height: $size;
+      margin-right: 10px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.spacer {
+  // text-align: left;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 3px;
+  background-color: $colorAccent;
+  $pos: 10%;
+  $pos2: $pos + 3%;
+  background: linear-gradient(
+    to right,
+    $colorAccent,
+    $colorAccent $pos,
+    transparentize($colorAccent, 1) $pos,
+    transparentize($colorAccent, 1) $pos2,
+    $colorAccent $pos2,
+    $colorAccent
+  );
+  transform: skewX(40deg);
+}
+
+.mes {
+  background-color: $colorFooter;
+}
+
 @media (min-width: $breakPointWidthTb) {
   .wrapper {
     > * {
       width: 50%;
+    }
+  }
+
+  .calcWrp {
+    order: 1;
+  }
+
+  .discription {
+    order: 1;
+
+    .title {
+      text-align: left;
+      width: 90%;
+    }
+
+    .list {
+      font-size: 18px;
+    }
+  }
+
+  .spacer {
+    margin: initial;
+  }
+}
+@media (min-width: $breakPointWidthDs) {
+  // .calcWrp {
+  // }
+
+  .discription {
+    .list {
+      font-size: 20px;
+      .icon {
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+      }
     }
   }
 }
