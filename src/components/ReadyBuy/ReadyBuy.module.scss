@@ -1,0 +1,60 @@
+@import "./../../constants//variables.scss";
+
+.fon {
+  background-image: url(./../../assets/images/list_bg.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 20px 10px;
+}
+
+.wrp {
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: $colorAccent;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  color: $colorBlackTransparent;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: grid;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.item {
+  color: $colorBlack;
+  text-align: center;
+}
+
+@media (min-width: $breakPointWidthTb) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .subtitle {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $breakPointWidthDs) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

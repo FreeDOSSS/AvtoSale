@@ -31,35 +31,33 @@ function LogoRow() {
 
   return (
     <>
-      <Container>
-        <div className={style.wrp}>
-          <div className={style.logoWrp}>
-            <img src={logo} alt="logo" className="logo" />
-          </div>
-
-          <button
-            className={style.modalBtn}
-            type="button"
-            uk-toggle="target: #modal-close-default"
-          >
-            Заказать звонок
-          </button>
-          <ul className={clsx(style.iconGroup, "uk-iconnav")}>
-            <li>
-              <a href="#" uk-icon="icon: facebook">
-                {""}
-              </a>
-            </li>
-            <li>
-              <a href={insta} uk-icon="icon: instagram">
-                {""}
-              </a>
-            </li>
-            <li>
-              <a href={`tel:${phone.replace(/\s/g, "")}`}>{phone}</a>
-            </li>
-          </ul>
+      <Container wrp={style.wrp}>
+        <div className={style.logoWrp}>
+          <img src={logo} alt="logo" className="logo" />
         </div>
+
+        <button
+          className={style.modalBtn}
+          type="button"
+          uk-toggle="target: #modal-close-default"
+        >
+          Заказать звонок
+        </button>
+        <ul className={clsx(style.iconGroup, "uk-iconnav")}>
+          <li>
+            <a href="#" uk-icon="icon: facebook">
+              {""}
+            </a>
+          </li>
+          <li>
+            <a href={insta} uk-icon="icon: instagram">
+              {""}
+            </a>
+          </li>
+          <li>
+            <a href={`tel:${phone.replace(/\s/g, "")}`}>{phone}</a>
+          </li>
+        </ul>
       </Container>
       <div id="modal-close-default" uk-modal="true">
         <div className="uk-modal-dialog uk-modal-body">

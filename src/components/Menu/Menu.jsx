@@ -73,18 +73,16 @@ function Menu() {
 
   return (
     <>
-      <Container fluid={style.wrp}>
-        <div className={style.menuWrp}>
-          {headreMenu(router)}
-          <button
-            className={style.offcanvasToggler}
-            uk-toggle="target: #offcanvas"
-            type="button"
-            uk-icon="menu"
-          >
-            {""}
-          </button>
-        </div>
+      <Container fluid={style.wrp} wrp={style.menuWrp}>
+        {headreMenu(router)}
+        <button
+          className={style.offcanvasToggler}
+          uk-toggle="target: #offcanvas"
+          type="button"
+          uk-icon="menu"
+        >
+          {""}
+        </button>
       </Container>
 
       <aside id="offcanvas" uk-offcanvas="overlay: true">

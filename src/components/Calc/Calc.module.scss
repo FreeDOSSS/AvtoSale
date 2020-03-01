@@ -11,7 +11,7 @@
 }
 
 .wrapper {
-  padding: 40px 0;
+  padding: 40px 10px;
   display: flex;
   flex-wrap: wrap;
   > * {
@@ -29,8 +29,7 @@
   padding: 20px;
   border: 1px solid $colorWhite;
   border-radius: 8px;
-  width: 60%;
-  min-width: 290px;
+  width: 100%;
   margin: auto;
 
   &Wrp {
@@ -217,6 +216,11 @@
     > * {
       width: 50%;
     }
+  }
+
+  .calc {
+    width: 60%;
+    min-width: 290px;
   }
 
   .calcWrp {

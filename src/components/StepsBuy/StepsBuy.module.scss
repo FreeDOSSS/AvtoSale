@@ -1,0 +1,107 @@
+@import "./../../constants/variables.scss";
+
+.title {
+  text-transform: uppercase;
+  color: $colorWhite;
+}
+
+.fon {
+  background-color: $colorFooter;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  color: $colorWhite;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  //   border: 1px solid #fff;
+  z-index: 20;
+
+  &:first-of-type {
+    overflow: hidden;
+  }
+
+  &::before,
+  &::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $colorAccent;
+    transform: skewY(10deg);
+  }
+
+  &::after {
+    transform-origin: right bottom;
+    right: 50%;
+  }
+
+  &::before {
+    transform-origin: left bottom;
+    transform: skewY(-10deg);
+    left: 50%;
+  }
+}
+
+@media (min-width: $breakPointWidthTb) {
+  .step {
+    --margin: 10px;
+
+    width: calc(50% - var(--margin));
+    margin-right: var(--margin);
+
+    $skew: 30deg;
+
+    &:first-of-type {
+      overflow: initial;
+    }
+
+    &:nth-of-type(2n-1) {
+      overflow: hidden;
+    }
+
+    &::after {
+      right: 0;
+      bottom: 50%;
+      transform: skewX($skew) skewY(0);
+    }
+
+    &::before {
+      left: 0;
+      top: 50%;
+      transform: skewY(0) skewX($skew * -1);
+      transform-origin: right top;
+    }
+  }
+}
+
+@media (min-width: $breakPointWidthDs) {
+  .step {
+    --margin: 10px;
+
+    width: calc(25% - var(--margin));
+    margin-right: var(--margin);
+
+    &:nth-of-type(2n-1) {
+      overflow: initial;
+    }
+
+    &:first-of-type {
+      overflow: hidden;
+    }
+  }
+}

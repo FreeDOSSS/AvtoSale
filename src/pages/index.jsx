@@ -12,12 +12,9 @@ import clsx from "clsx";
 import Footer from "./../components/Footer/Footer";
 import BuyAvto from "./../components/BuyAvto/BuyAvto";
 import Calc from "./../components/Calc";
+import ReadyBuy from "../components/ReadyBuy";
+import StepsBuy from "../components/StepsBuy/StepsBuy";
 
-{
-  /* <Head>
-  <title>Page</title>
-</Head> */
-}
 const App = () => {
   return (
     <>
@@ -31,6 +28,8 @@ const App = () => {
       </header>
 
       <main className={style.main}>
+        <ReadyBuy />
+        <StepsBuy />
         <Calc />
         <Container>
           <h2>Тут сео текст</h2>
