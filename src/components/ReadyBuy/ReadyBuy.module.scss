@@ -39,12 +39,7 @@
 
 .list {
   display: grid;
-  // justify-items: center;
-  // grid-column-gap: 20px;
   margin: 0;
-  // padding: 0;
-  // padding-left: 20px;
-  // list-style: none;
   grid-template-columns: repeat(1, 1fr);
 }
 

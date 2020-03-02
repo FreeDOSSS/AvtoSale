@@ -1,7 +1,7 @@
 import React from "react";
 
 import Container from "./../Container";
-import * as style from "./StepsBuy.module.scss";
+import * as style from "./StepsBuy.scss";
 
 function StepsBuy() {
   return (

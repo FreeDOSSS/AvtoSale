@@ -13,6 +13,51 @@
   color: $colorBlack;
 }
 
+.spacer {
+  margin: 0;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 3px;
+  background-color: $colorAccent;
+  $pos: 10%;
+  $pos2: $pos + 3%;
+  background: linear-gradient(
+    to right,
+    $colorAccent,
+    $colorAccent $pos,
+    transparentize($colorAccent, 1) $pos,
+    transparentize($colorAccent, 1) $pos2,
+    $colorAccent $pos2,
+    $colorAccent
+  );
+  transform: skewX(40deg);
+}
+
+.discription {
+  color: $colorBlack;
+}
+
+.chekList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.item {
+  color: $colorBlack;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+}
+
+.icon {
+  $size: 20px;
+  width: $size;
+  height: $size;
+  fill: $colorAccent;
+  margin-right: 10px;
+}
+
 @media (min-width: $breakPointWidthTb) {
 }
 
@@ -21,5 +66,9 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
+    > * {
+      width: 50%;
+    }
   }
 }
