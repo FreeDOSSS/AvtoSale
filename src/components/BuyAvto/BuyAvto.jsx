@@ -12,6 +12,11 @@ import mazda from "./../../assets/images/car/mazda.jpg";
 import mersedes from "./../../assets/images/car/mersedes.jpg";
 import nisan from "./../../assets/images/car/nisan.jpg";
 import tuareg from "./../../assets/images/car/tuareg.jpg";
+import bmw_525i from "./../../assets/images/car/bmw_e60_525i.jpg";
+import bmw_530i from "./../../assets/images/car/bmw_e60_530i.jpg";
+import land_crusir from "./../../assets/images/car/toyota_land_cruiser_prado.jpg";
+import chevrolet_cruze from "./../../assets/images/car/chevrolet_cruze_itz.jpg";
+import audi_a8 from "./../../assets/images/car/audi_a8_long.jpg";
 // ======
 
 function BuyAvto() {
@@ -85,6 +90,58 @@ function BuyAvto() {
       trans: "Автомат",
       km: "117 000",
       city: "Киев"
+    },
+    {
+      img: bmw_525i,
+      model: "BMW E60 525I",
+      price: "10 000",
+      year: "2008",
+      engine: "2 500",
+      trans: "Автомат",
+      km: "124 000",
+      city: "Киев"
+    },
+
+    {
+      img: bmw_530i,
+      model: "BMW E60 530I",
+      price: "8 500",
+      year: "2005",
+      engine: "3 000",
+      trans: "Автомат",
+      km: "138 000",
+      city: "Мариуполь"
+    },
+    {
+      img: audi_a8,
+      model: "audi a8 long",
+      price: "7 000",
+      year: "2005",
+      engine: "4 200",
+      trans: "Автомат",
+      km: "168 000",
+      city: "Бердянск"
+    },
+    {
+      img: chevrolet_cruze,
+      model: "Chevrolet Cruze ltz",
+      price: "9 200",
+      year: "2011",
+      engine: "1 800",
+      trans: "Автомат",
+      km: "138 000",
+      city: "Запорожье"
+    },
+
+    {
+      img: land_crusir,
+      model: "Toyota land cruiser Prado",
+      price: "19 000",
+      year: "2008",
+      engine: "4 000",
+      trans: "Автомат",
+      km: "120 000",
+      city: "Покровск"
     }
   ];
 

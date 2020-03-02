@@ -248,7 +248,7 @@ function Calc() {
               <use href="#deal"></use>
             </svg>
             <p>
-              Сделка в возможна в течении{" "}
+              Сделка возможна в течении{" "}
               <span className={style.accent}> 1-го часа</span>
             </p>
           </li>

@@ -1,0 +1,55 @@
+@import "./../../constants/variables.scss";
+
+.header {
+  background-image: url(./../../assets/images/sity.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  min-height: 50vh;
+}
+
+.title {
+  padding-top: 2%;
+  text-align: center;
+  font-weight: 700;
+  color: $colorWhite;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+
+.spacer {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 3px;
+  background-color: $colorAccent;
+  $pos: 10%;
+  $pos2: $pos + 3%;
+  background: linear-gradient(
+    to right,
+    $colorAccent,
+    $colorAccent $pos,
+    transparentize($colorAccent, 1) $pos,
+    transparentize($colorAccent, 1) $pos2,
+    $colorAccent $pos2,
+    $colorAccent
+  );
+  transform: skewX(40deg);
+}
+.kroh {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 30px;
+  li {
+    margin-right: 5px;
+    color: $colorWhite;
+  }
+
+  .link {
+    // color: $colorWhite;
+    color: $colorAccent;
+  }
+}

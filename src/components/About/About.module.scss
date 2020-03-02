@@ -1,4 +1,5 @@
 @import "./../../constants/variables.scss";
+
 .wrp {
   height: 100%;
   display: flex;
@@ -28,8 +29,11 @@
     align-items: center;
     // width: 50%;
     margin-bottom: 20px;
-    .img {
-      width: 30px;
+    .svg {
+      $size: 40px;
+      height: $size;
+      width: $size;
+      fill: $colorAccent;
 
       &Wrp {
         flex-shrink: 0;
@@ -106,7 +110,7 @@
 
 @media (min-width: $breakPointWidthTb) {
   .wrp {
-    padding-top: 180px;
+    padding-top: 8%;
     flex-wrap: nowrap;
   }
 

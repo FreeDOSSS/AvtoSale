@@ -27,9 +27,9 @@ function Menu() {
         {arr.map((el, i) =>
           Array.isArray(el) ? (
             <li key={i} className={style.menu__item}>
-              <Link href="#">
-                <a className={style.menu__item__link}>Автовыкуп в городах</a>
-              </Link>
+              <a href="#" className={style.menu__item__link}>
+                Автовыкуп в украине
+              </a>
               <div className={style.drop} uk-drop="mode: click">
                 <ul className={style.dropMenu}> {avtoDrop(router)}</ul>
               </div>

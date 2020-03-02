@@ -15,7 +15,11 @@ const router = {
     { name: "Житомир", url: "/avtovykup-zhytomyr", path: "" },
     { name: "Полтава", url: "/avtovykup-poltava", path: "" },
     { name: "Львов", url: "/avtovykup-lviv", path: "" },
-    { name: "Артемовск (Бахмут)", url: "/avtovykup-artyomovsk", path: "" },
+    {
+      name: "Артемовск (Бахмут)",
+      url: "/avtovykup-artyomovsk",
+      path: "/Artyomovsk"
+    },
     { name: "Сумы", url: "/avtovykup-sumy", path: "" },
     { name: "Чернигов", url: "/avtovykup-chernihiv", path: "" },
     { name: "Ровно", url: "/avtovykup-rovno", path: "" },

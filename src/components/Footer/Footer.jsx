@@ -17,7 +17,6 @@ function Footer() {
   const [input, setInput] = useState("");
   const [sendStatus, setSendStatus] = useState(null);
 
-  // TODO Всплывашка после отправки формы, такаяже как и в шапке
   const hendlerForm = event => {
     event.preventDefault();
     const send = [{ name: "Телефон", value: input }];
@@ -57,15 +56,14 @@ function Footer() {
         {arr.map((el, i) =>
           Array.isArray(el) ? (
             <li key={i} className={style.menu__item}>
-              <Link href="#">
-                <a
-                  className={style.menu__item__link}
-                  type="button"
-                  uk-toggle="target: #avtodrop"
-                >
-                  Автовыкуп в городах
-                </a>
-              </Link>
+              <a
+                href="#"
+                className={style.menu__item__link}
+                type="button"
+                uk-toggle="target: #avtodrop"
+              >
+                Автовыкуп в украине
+              </a>
             </li>
           ) : (
             <li key={i} className={style.menu__item}>
@@ -101,7 +99,6 @@ function Footer() {
             <img src={car} alt="Закажите просчет" className={style.img} />
           </div>
         </div>
-        {/* //TODO Вынести модалку в отдельный компонент */}
         <div id="footerform" uk-modal="true">
           <div className="uk-modal-dialog uk-modal-body">
             <button

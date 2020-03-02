@@ -1,0 +1,25 @@
+@import "./../../constants/variables.scss";
+
+.wrp {
+  padding: 20px 10px;
+}
+
+.left {
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  color: $colorBlack;
+}
+
+@media (min-width: $breakPointWidthTb) {
+}
+
+@media (min-width: $breakPointWidthDs) {
+  .wrp {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

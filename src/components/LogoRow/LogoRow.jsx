@@ -32,9 +32,11 @@ function LogoRow() {
   return (
     <>
       <Container wrp={style.wrp}>
-        <div className={style.logoWrp}>
-          <img src={logo} alt="logo" className="logo" />
-        </div>
+        <Link href="/">
+          <a className={style.logoWrp}>
+            <img src={logo} alt="logo" className={style.logo} />
+          </a>
+        </Link>
 
         <button
           className={style.modalBtn}
