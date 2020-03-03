@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from "react";
 import * as style from "./Calc.module.scss";
+
+import React, { useEffect, useState } from "react";
+
 import Container from "../Container";
-import sendTelegramPhoto from "./../../helpers/sendTelegramPhoto";
 import sendTelegram from "./../../helpers/sendTelegramMes";
+import sendTelegramPhoto from "./../../helpers/sendTelegramPhoto";
+
 function Calc() {
   const [firma, setFirma] = useState("");
   const [model, setModel] = useState("");

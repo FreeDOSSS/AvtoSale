@@ -6,15 +6,22 @@
 
 .left {
   text-align: center;
+  margin-bottom: 10px;
+
+  .img {
+    width: 90%;
+  }
 }
 
 .title {
   font-weight: 700;
   color: $colorBlack;
+  text-align: center;
+  font-family: $bebas;
 }
 
 .spacer {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 10px;
   width: 200px;
   height: 3px;
@@ -41,6 +48,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .item {
@@ -52,13 +60,93 @@
 
 .icon {
   $size: 20px;
+  flex-shrink: 0;
   width: $size;
   height: $size;
   fill: $colorAccent;
   margin-right: 10px;
 }
 
+.buttonWrp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: block;
+  // margin: auto;
+  position: relative;
+  z-index: 2;
+  // width: 100%;
+  color: $colorWhite;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: none;
+  padding: 12px 50px;
+  overflow: hidden;
+  background: none;
+  margin-bottom: 20px;
+  // background-color: $colorAccent;
+  position: relative;
+
+  .wrapper {
+    &::after {
+      content: "";
+      background-color: $colorAccent;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 6px;
+      right: 6px;
+      z-index: -1;
+      transform: skewX(13deg);
+    }
+  }
+  &:last-of-type {
+    .wrapper {
+      &::after {
+        background-color: $colorCopyrate;
+      }
+    }
+  }
+
+  &:hover {
+    transform: none;
+
+    &::after {
+      transform: translateX(-50%) skewX(-60deg);
+    }
+
+    &::before {
+      transform: translateX(50%) skewX(-60deg);
+    }
+  }
+
+  &::after,
+  &::before {
+    transition: all 0.4s;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: transparentize($colorWhite, 0.9);
+    transform: translateX(-90%) skewX(-40deg);
+  }
+
+  &::before {
+    transform: translateX(90%) skewX(-40deg);
+  }
+}
+
 @media (min-width: $breakPointWidthTb) {
+  .buttonWrp {
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: $breakPointWidthDs) {
@@ -70,5 +158,29 @@
     > * {
       width: 50%;
     }
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .spacer {
+    margin-left: 0;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .buttonWrp {
+    justify-content: initial;
+  }
+
+  .button:first-of-type {
+    margin-right: 30px;
+  }
+
+  .right {
+    padding-left: 30px;
   }
 }

@@ -1,7 +1,8 @@
+import * as style from "./About.module.scss";
+
 import React, { useState } from "react";
 
 import Container from "../Container";
-import * as style from "./About.module.scss";
 import sendTelegram from "./../../helpers/sendTelegramMes";
 
 function About() {

@@ -1,7 +1,8 @@
-import React from "react";
-
 import * as style from "./SaleInSity.module.scss";
-import Container from "../Container";
+
+import Container from "./../Container";
+import React from "react";
+import car from "./../../assets/images/CityAvto.png";
 
 function SaleInSity({ city }) {
   return (
@@ -11,9 +12,11 @@ function SaleInSity({ city }) {
           <path d="M20 12.194v9.806h-20v-20h18.272l-1.951 2h-14.321v16h16v-5.768l2-2.038zm.904-10.027l-9.404 9.639-4.405-4.176-3.095 3.097 7.5 7.273 12.5-12.737-3.096-3.096z" />
         </symbol>
       </svg>
-      <div className={style.left}>1</div>
+      <div className={style.left}>
+        <img src={car} alt="car" className={style.img} />
+      </div>
       <div className={style.right}>
-        <h2 className={style.title}>Выкуп авто в {city}</h2>
+        <h2 className={style.title}>срочный выкуп авто в {city}</h2>
         <div className={style.spacer}></div>
         <p className={style.discription}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas modi
@@ -27,17 +30,30 @@ function SaleInSity({ city }) {
             <svg className={style.icon}>
               <use href="#check"></use>
             </svg>
-            В предельно сжатые сроки
+            наличный и безналичный расчет
           </li>
           <li className={style.item}>
             <svg className={style.icon}>
               <use href="#check"></use>
             </svg>
-            за справедливую сумму
+            Оплата любой валютой (доллары, гривны, евро)
           </li>
         </ul>
 
-        <div className="buttonWrp"></div>
+        <div className={style.buttonWrp}>
+          <button
+            type="button"
+            className={style.button}
+            uk-toggle="target: #modal-close-default"
+          >
+            <div className={style.wrapper}></div>
+            Заказать звонок
+          </button>
+          <button type="button" className={style.button}>
+            экспресс оценка
+            <div className={style.wrapper}></div>
+          </button>
+        </div>
       </div>
     </Container>
   );

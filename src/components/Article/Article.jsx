@@ -1,7 +1,7 @@
-import React from "react";
-
 import * as style from "./Article.module.scss";
+
 import Container from "./../Container";
+import React from "react";
 
 function Article({ children }) {
   return (

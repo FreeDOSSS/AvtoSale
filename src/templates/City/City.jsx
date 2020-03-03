@@ -1,16 +1,15 @@
-import React from "react";
-
-import Menu from "../../components/Menu/Menu";
-import LogoRow from "../../components/LogoRow";
-import ReadyBuy from "../../components/ReadyBuy";
-import StepsBuy from "../../components/StepsBuy/StepsBuy";
-import Article from "../../components/Article/Article";
-import BuyAvto from "../../components/BuyAvto/BuyAvto";
-import Footer from "../../components/Footer/Footer";
-
 import * as style from "./City.module.scss";
+
+import Article from "./../../components/Article";
+import BuyAvto from "./../../components/BuyAvto/BuyAvto";
+import Footer from "./../../components/Footer/Footer";
 import Link from "next/link";
-import SaleInSity from "../../components/SaleInSity/SaleInSity";
+import LogoRow from "./../../components/LogoRow";
+import Menu from "./../../components/Menu/Menu";
+import React from "react";
+import ReadyBuy from "./../../components/ReadyBuy";
+import SaleInSity from "./../../components/SaleInSity";
+import StepsBuy from "./../../components/StepsBuy";
 
 function City({ city, children }) {
   //TODO Затемнить фон

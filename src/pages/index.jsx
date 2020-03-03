@@ -1,20 +1,16 @@
-import React from "react";
-import Head from "./../components/Head";
-import Menu from "../components/Menu/Menu";
 import * as style from "./index.module.scss";
 
-import Container from "../components/Container";
-import LogoRow from "../components/LogoRow";
-import About from "../components/About/About";
-
-import logo from "./../assets/images/logo/logo_b.svg";
-import clsx from "clsx";
-import Footer from "./../components/Footer/Footer";
-import BuyAvto from "./../components/BuyAvto/BuyAvto";
+import About from "../components/About";
+import Article from "../components/Article";
+import BuyAvto from "./../components/BuyAvto";
 import Calc from "./../components/Calc";
+import Footer from "./../components/Footer";
+import Head from "./../components/Head";
+import LogoRow from "../components/LogoRow";
+import Menu from "./../components/Menu";
+import React from "react";
 import ReadyBuy from "../components/ReadyBuy";
-import StepsBuy from "../components/StepsBuy/StepsBuy";
-import Article from "../components/Article/Article";
+import StepsBuy from "../components/StepsBuy";
 
 const App = () => {
   return (
@@ -45,51 +41,6 @@ const App = () => {
             officia temporibus dolor culpa nesciunt officiis! Nisi
             exercitationem nostrum a, architecto asperiores vitae sequi fugit
             hic nesciunt commodi accusantium officia, et possimus, consectetur
-            deleniti? Ut quam saepe iure similique nobis vero quod ratione!
-            Rerum harum repudiandae mollitia unde eveniet, laboriosam repellat.
-            Ipsam sunt adipisci voluptatum. Esse obcaecati aperiam repudiandae
-            atque non maxime libero architecto molestiae quidem accusamus
-            doloribus consectetur quaerat voluptatum nam, impedit beatae, quia,
-            tenetur maiores? Doloremque deserunt ipsa corrupti velit enim, id,
-            fugiat provident placeat magni ut quibusdam dolor voluptate illo
-            impedit nam error ratione distinctio. Sapiente, qui itaque dolores
-            quos, sint, voluptatum modi velit quidem optio eveniet voluptate
-            nulla vitae earum! Nesciunt commodi asperiores quas reprehenderit
-            dolore placeat ab minus harum accusantium eum exercitationem,
-            dolorem magnam obcaecati. Tenetur vel ex animi, labore natus
-            voluptatibus, cum non error sapiente beatae blanditiis temporibus
-            quod alias aut laborum quam dignissimos obcaecati ullam. Repellat
-            fugiat nobis suscipit non? Illum labore nam placeat sint aperiam
-            magnam maxime tempore perferendis eos beatae. Assumenda illo nobis
-            commodi repellendus quas unde officia incidunt quo laborum ex
-            aliquid recusandae officiis eveniet adipisci eligendi maiores
-            explicabo, ratione illum doloremque corrupti itaque. Excepturi earum
-            architecto, accusamus impedit inventore exercitationem quia incidunt
-            autem aliquam quam ullam consectetur nulla ipsum tenetur porro at
-            reprehenderit laboriosam saepe velit quod quisquam rem cum
-            consequuntur necessitatibus! Voluptatum similique eos ab excepturi
-            atque sunt facilis consectetur accusamus nobis exercitationem.
-            Voluptatum, odit minima. Nobis excepturi sapiente id, debitis
-            quibusdam aperiam nostrum. Consequuntur culpa nihil, molestias
-            soluta nisi voluptatibus quo placeat architecto corrupti
-            necessitatibus accusamus assumenda natus quidem quam, perspiciatis
-            fugit quas similique reprehenderit rem, aut cumque odio velit harum
-            et? Sequi praesentium in rerum autem maiores neque dolorem obcaecati
-            repudiandae ipsam maxime similique necessitatibus assumenda
-            provident veritatis nobis natus officiis, doloremque ullam atque
-            asperiores nihil fugiat beatae! Recusandae accusamus iste
-            consequuntur expedita numquam provident iure, aliquid corporis
-            beatae ipsam, similique maiores distinctio, suscipit quo eos? Minima
-            in ab ea aspernatur id voluptatem. Blanditiis praesentium saepe
-            aliquid inventore repellat iure, eligendi aut, laudantium
-            voluptatibus dolores nostrum. Assumenda dignissimos corrupti eaque
-            voluptatibus quibusdam cumque perferendis libero iure itaque
-            voluptatum. Maxime unde cumque, error tempore dolore possimus ea
-            veritatis incidunt culpa nobis blanditiis natus, alias pariatur.
-            Molestias perferendis, excepturi fugit incidunt nam sequi quis,
-            libero eos ipsum eius officia iusto. Laboriosam quasi rerum
-            voluptatem aliquam deserunt cupiditate, nihil hic possimus
-            asperiores, ducimus voluptates sed eveniet molestias aut obcaecati
             modi magnam tempora autem nam magni a, laborum exercitationem
             distinctio facere? Fuga inventore molestiae iste vel similique eum
             necessitatibus, autem earum ipsam ratione debitis vitae sequi

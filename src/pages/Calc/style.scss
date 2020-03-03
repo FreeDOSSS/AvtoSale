@@ -1,0 +1,197 @@
+@import "./../../constants/variables.scss";
+
+.header {
+  background-image: url(./../../assets/images/fon2.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  //   display: flex;
+  //   flex-wrap: wrap;
+}
+
+.calc {
+  background-color: $colorBlack;
+  padding: 20px;
+  border: 1px solid $colorWhite;
+  border-radius: 8px;
+  margin: auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "title"
+    "firm"
+    "model"
+    "year"
+    "km"
+    "name"
+    "phone"
+    "file"
+    "submit";
+
+  &Wrp {
+    padding-bottom: 30px;
+  }
+}
+.title {
+  grid-area: title;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 0;
+  padding: 0px 0px 10px 0;
+  font-family: $bebas;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+
+  color: $colorWhite;
+  font-weight: 700;
+
+  span {
+    color: $colorAccent;
+    //   display: block;
+  }
+}
+
+.field[name="firma"] {
+  grid-area: firm;
+}
+.field[name="model"] {
+  grid-area: model;
+}
+.field[name="year"] {
+  grid-area: year;
+}
+.field[name="km"] {
+  grid-area: km;
+}
+.field[name="name"] {
+  grid-area: name;
+}
+.field[name="phone"] {
+  grid-area: phone;
+}
+.fileList {
+  grid-area: file;
+}
+
+.submit {
+  grid-area: submit;
+}
+
+.field {
+  background: none;
+  background-color: $colorCopyrate;
+  border: none;
+  font-size: 16px;
+  color: $colorWhite;
+  padding: 10px;
+}
+
+.fileList {
+  margin-bottom: 20px;
+
+  .icon {
+    $width: 40px;
+    box-sizing: content-box;
+    // border: 1px solid $colorAccent;
+    // border-radius: $width;
+    // padding: 10px;
+    margin-right: 10px;
+    fill: $colorAccent;
+    width: $width;
+    height: $width;
+  }
+
+  .fileInput {
+    display: none;
+  }
+
+  .errFile {
+    font-style: italic;
+    color: red;
+  }
+
+  .label {
+    color: $colorWhite;
+    // text-align: center;
+    // width: 100%;
+    // display: block;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+// .row {
+//   display: flex;
+//   justify-content: space-between;
+//   > * {
+//     width: calc(50% - 10px);
+//     flex-shrink: 0;
+//   }
+// }
+
+.submit {
+  //   margin-left: auto;
+  width: 100%;
+  max-height: 50px;
+  background: none;
+  background-color: $colorAccent;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $colorWhite;
+  letter-spacing: 1px;
+  padding: 15px 0;
+  overflow: hidden;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    transition: all 0.2s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-90%) skewX(-40deg);
+    background-color: transparentize($colorWhite, 0.9);
+  }
+
+  &::before {
+    transform: translateX(90%) skewX(-40deg);
+  }
+  &:hover {
+    transform: scale(1);
+    &::after {
+      transform: translateX(-50%) skewX(-40deg);
+    }
+    &::before {
+      transform: translateX(50%) skewX(-40deg);
+    }
+  }
+}
+
+.accent {
+  color: $colorAccent;
+}
+
+@media (min-width: $breakPointWidthTb) {
+  .calc {
+    grid-template-areas:
+      "title title"
+      "firm model"
+      "year km"
+      "name phone"
+      "file submit";
+    &Wrp {
+      padding-top: 12%;
+      padding-bottom: 30px;
+    }
+  }
+  .title {
+    font-size: 2.6rem;
+  }
+}

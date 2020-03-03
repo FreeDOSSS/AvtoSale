@@ -8,11 +8,15 @@ $colorFooter: #141414;
 $colorCopyrate: #191919;
 $colorBlackTransparent: transparentize($colorBlack, 0.2);
 
+// Шрифты
+$bebas: "Bebas Neue", sens-serif;
+
 // Размеры
 $breakPointWidthMb: 320px;
 $breakPointWidthTb: 748px;
 $breakPointWidthDs: 1200px;
 
+// Тчоки перелома
 $containerWidthMb: 300px;
 $containerWidthTb: 728px;
 $containerWidthDs: 65%;

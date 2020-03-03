@@ -1,15 +1,13 @@
-import React from "react";
+import * as style from "./ReadyBuy.module.scss";
 
 import Container from "./../Container";
-
-import * as style from "./ReadyBuy.module.scss";
-import clsx from "clsx";
+import React from "react";
 
 function ReadyBuy({ city = "Украине" }) {
   return (
     <Container wrp={style.wrp} fluid={style.fon}>
       <h2 className={style.title}>
-        Срочный выкуп <span className={style.accent}>в {city}</span>
+        центр срочного выкупа <span className={style.accent}>в {city}</span>
       </h2>
 
       <h3 className={style.subtitle}>Что мы покупаем:</h3>
@@ -29,7 +27,7 @@ function ReadyBuy({ city = "Украине" }) {
         <li className={style.item}>Яхты</li>
         <li className={style.item}>Моторные лодки</li>
         <li className={style.item}>Воздушные суда</li>
-        <li className={style.item}>Недвижимость ( дома и квартиры)</li>
+        <li className={style.item}>Недвижимость</li>
       </ul>
     </Container>
   );

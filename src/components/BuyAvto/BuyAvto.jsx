@@ -1,22 +1,23 @@
-import React from "react";
-import clsx from "clsx";
-
 import * as style from "./BuyAvto.module.scss";
-import Container from "../Container";
 
-// Foto
-import infinity from "./../../assets/images/car/infinity.jpg";
+import Container from "../Container";
+import React from "react";
+import audi_a8 from "./../../assets/images/car/audi_a8_long.jpg";
+import bmw_525i from "./../../assets/images/car/bmw_e60_525i.jpg";
+import bmw_530i from "./../../assets/images/car/bmw_e60_530i.jpg";
+import chevrolet_cruze from "./../../assets/images/car/chevrolet_cruze_itz.jpg";
+import clsx from "clsx";
 import hunday from "./../../assets/images/car/hunday.jpg";
+import infinity from "./../../assets/images/car/infinity.jpg";
+import land_crusir from "./../../assets/images/car/toyota_land_cruiser_prado.jpg";
 import lexus from "./../../assets/images/car/lexus.jpg";
 import mazda from "./../../assets/images/car/mazda.jpg";
 import mersedes from "./../../assets/images/car/mersedes.jpg";
 import nisan from "./../../assets/images/car/nisan.jpg";
 import tuareg from "./../../assets/images/car/tuareg.jpg";
-import bmw_525i from "./../../assets/images/car/bmw_e60_525i.jpg";
-import bmw_530i from "./../../assets/images/car/bmw_e60_530i.jpg";
-import land_crusir from "./../../assets/images/car/toyota_land_cruiser_prado.jpg";
-import chevrolet_cruze from "./../../assets/images/car/chevrolet_cruze_itz.jpg";
-import audi_a8 from "./../../assets/images/car/audi_a8_long.jpg";
+
+// Foto
+
 // ======
 
 function BuyAvto() {

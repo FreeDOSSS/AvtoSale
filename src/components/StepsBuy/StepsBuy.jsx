@@ -1,7 +1,7 @@
-import React from "react";
+import * as style from "./StepsBuy.scss";
 
 import Container from "./../Container";
-import * as style from "./StepsBuy.scss";
+import React from "react";
 
 function StepsBuy() {
   return (

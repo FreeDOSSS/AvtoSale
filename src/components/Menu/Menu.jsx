@@ -1,9 +1,9 @@
-import React from "react";
+import * as style from "./Menu.module.scss";
+
 import Container from "./../Container";
 import Link from "next/link";
+import React from "react";
 import clsx from "clsx";
-
-import * as style from "./Menu.module.scss";
 import router from "./../../router/router";
 
 function Menu() {

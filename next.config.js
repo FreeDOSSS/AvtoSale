@@ -2,6 +2,7 @@ const withSass = require("@zeit/next-sass");
 const withImages = require("./config/images");
 const withPlugins = require("next-compose-plugins");
 const router = require("./src/router/router");
+const withFonts = require("nextjs-fonts");
 
 next_config = {
   exportPathMap: async function(
@@ -45,8 +46,14 @@ module.exports = withPlugins([
         importLoaders: 1,
         localIdentName: "[local]_[hash]"
       }
+      // withFonts: {
+      //   webpack(config, options) {
+      //     return config;
+      //   }
+      // }
     }
   ],
+
   [
     withImages,
     {

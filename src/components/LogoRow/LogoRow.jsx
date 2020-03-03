@@ -1,12 +1,12 @@
+import * as style from "./LogoRow.module.scss";
+
 import React, { useState } from "react";
-import Link from "next/link";
+import { fb, insta, phone } from "./../../constants/constants";
 
 import Container from "../Container";
-import logo from "./../../assets/images/logo/logo_w.svg";
-import * as style from "./LogoRow.module.scss";
+import Link from "next/link";
 import clsx from "clsx";
-import { insta, phone, fb } from "./../../constants/constants";
-
+import logo from "./../../assets/images/logo/logo_w.svg";
 import sendTelegram from "./../../helpers/sendTelegramMes.js";
 
 function LogoRow() {
@@ -47,7 +47,12 @@ function LogoRow() {
         </button>
         <ul className={clsx(style.iconGroup, "uk-iconnav")}>
           <li>
-            <a href="#" uk-icon="icon: facebook">
+            <a href={fb} uk-icon="icon: youtube">
+              {""}
+            </a>
+          </li>
+          <li>
+            <a href={fb} uk-icon="icon: facebook">
               {""}
             </a>
           </li>
@@ -68,7 +73,9 @@ function LogoRow() {
             type="button"
             uk-close="true"
           ></button>
-          <h2 className="uk-modal-title uk-text-center">Заказать звонок</h2>
+          <h2 className="uk-modal-title uk-text-center">
+            Заказать обратный звонок
+          </h2>
           {sendStatus === null && (
             <form onSubmit={hendlerForm} className={style.form}>
               <div className="uk-inline uk-width-1-1">

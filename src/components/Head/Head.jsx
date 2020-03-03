@@ -1,5 +1,6 @@
+// import "./../../helpers/style.scss";
+
 import NextHead from "next/head";
-import "./Head.scss";
 
 const Head = ({ children }) => {
   return <NextHead>{children}</NextHead>;

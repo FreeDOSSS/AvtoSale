@@ -60,6 +60,10 @@
   }
 }
 
+.submit {
+  background-color: $colorAccent;
+  color: $colorWhite;
+}
 @media (min-width: $breakPointWidthTb) {
   .wrp {
     justify-content: space-between;
@@ -70,11 +74,31 @@
 
     .logoWrp {
       text-align: left;
+      order: 1;
+    }
+
+    .iconGroup {
+      order: 2;
+    }
+
+    .modalBtn {
+      order: 3;
+      margin: auto;
+      margin-top: 20px;
     }
   }
 }
 
-.submit {
-  background-color: $colorAccent;
-  color: $colorWhite;
+@media (min-width: $breakPointWidthDs) {
+  .wrp {
+    .iconGroup {
+      order: 3;
+    }
+
+    .modalBtn {
+      order: 2;
+      margin-top: inherit;
+      margin: inherit;
+    }
+  }
 }

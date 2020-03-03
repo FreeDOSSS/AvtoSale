@@ -1,4 +1,4 @@
-@import "./../../constants//variables.scss";
+@import "./../../constants/variables.scss";
 
 .fon {
   background-image: url(./../../assets/images/list_bg.png);
@@ -26,7 +26,7 @@
 .subtitle {
   margin: 0;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   color: $colorBlackTransparent;
   margin-bottom: 20px;

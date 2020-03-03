@@ -25,19 +25,20 @@
   order: 2;
   text-align: center;
   margin-bottom: 20px;
+  font-family: $bebas;
 
   .title {
     color: $colorAccent;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 34px;
+    font-size: 38px;
     margin-bottom: 0;
   }
 
   .subtitle {
     margin: 0;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 32px;
     text-transform: uppercase;
     color: $colorBlack;
   }
@@ -147,6 +148,9 @@
         padding: 3px 0;
         display: block;
         letter-spacing: 1px;
+        font-family: $bebas;
+        letter-spacing: 2px;
+        font-size: 20px;
 
         text-transform: uppercase;
         color: $colorWhite;
@@ -320,7 +324,7 @@
     align-items: center;
     justify-content: space-between;
     > * {
-      width: initial;
+      width: 350px;
     }
   }
 
@@ -328,10 +332,10 @@
     order: 1;
     text-align: left;
     .title {
-      font-size: 38px;
+      font-size: 52px;
     }
     .subtitle {
-      font-size: 32px;
+      font-size: 46px;
     }
   }
   .boxBtn {

@@ -37,12 +37,15 @@
   );
   transform: skewX(40deg);
 }
+
 .kroh {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
   padding-bottom: 30px;
+  margin-bottom: 0;
+
   li {
     margin-right: 5px;
     color: $colorWhite;

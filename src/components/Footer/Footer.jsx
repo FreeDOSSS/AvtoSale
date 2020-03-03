@@ -1,16 +1,17 @@
-import React, { useState } from "react";
-import clsx from "clsx";
-import Link from "next/link";
-
 import * as style from "./Footer.module.scss";
-import Container from "../Container";
-import sendTelegram from "./../../helpers/sendTelegramMes";
-import router from "../../router/router";
-import { insta, fb, phone } from "./../../constants/constants";
 
+import React, { useState } from "react";
+import { fb, insta, phone } from "./../../constants/constants";
+
+import Container from "../Container";
+import Link from "next/link";
 // Картинки
 import car from "./../../assets/images/car.png";
+import clsx from "clsx";
 import logo from "./../../assets/images/logo/logo_w.svg";
+import router from "../../router/router";
+import sendTelegram from "./../../helpers/sendTelegramMes";
+
 // ========
 
 function Footer() {
@@ -90,7 +91,8 @@ function Footer() {
             <button
               className={style.button}
               type="button"
-              uk-toggle="target: #footerform"
+              // uk-toggle="target: #footerform"
+              uk-toggle="target: #modal-close-default"
             >
               узнать стоимость
             </button>
@@ -99,7 +101,7 @@ function Footer() {
             <img src={car} alt="Закажите просчет" className={style.img} />
           </div>
         </div>
-        <div id="footerform" uk-modal="true">
+        {/* <div id="footerform" uk-modal="true">
           <div className="uk-modal-dialog uk-modal-body">
             <button
               className="uk-modal-close-default"
@@ -130,7 +132,7 @@ function Footer() {
               </button>
             </form>
           </div>
-        </div>
+        </div> */}
       </Container>
 
       <Container fluid={style.logoBox}>
