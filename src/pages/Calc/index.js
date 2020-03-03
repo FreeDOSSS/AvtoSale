@@ -53,6 +53,7 @@ function App() {
         value: phone
       }
     ];
+
     const { files } = target.photo;
     if (!errFile) {
       sendTelegram(fields).then(res => {

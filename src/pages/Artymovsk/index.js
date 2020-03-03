@@ -3,6 +3,13 @@ import Head from "./../../components/Head";
 import React from "react";
 
 const Artyomovsk = () => {
+  /*
+  Город
+  Заходт в три секции
+  1. Хлебные крошки
+  2. Секцию с Выкупом авто
+  3. Заголовок
+  */
   const city = "Артемовске";
   return (
     <>

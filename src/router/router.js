@@ -28,7 +28,7 @@ const router = {
     // { name: "Бердянск", url: "/avtovykup-berdyansk", path: "" }
   ],
   readme: { name: "Калькулятор", url: "/calc", path: "/Calc" },
-  contact: { name: "Контакты", url: "/kontakty", path: "" }
+  contact: { name: "Контакты", url: "/kontakty", path: "/Contact" }
 };
 
 module.exports = router;
