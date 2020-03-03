@@ -2,15 +2,15 @@ import * as style from "./style.scss";
 
 import React, { useState } from "react";
 
-import Article from "../../components/Article";
-import BuyAvto from "../../components/BuyAvto";
-import Calc from "../../components/Calc";
-import Container from "../../components/Container";
-import Footer from "../../components/Footer";
+import Article from "./../../components/Article";
+import BuyAvto from "./../../components/BuyAvto";
+import Container from "./../../components/Container";
+import Footer from "./../../components/Footer";
 import Head from "./../../components/Head";
-import Link from "next/link";
 import LogoRow from "./../../components/LogoRow";
 import Menu from "./../../components/Menu";
+import sendTelegram from "./../../helpers/sendTelegramMes";
+import sendTelegramPhoto from "./../../helpers/sendTelegramPhoto";
 
 function App() {
   const [firma, setFirma] = useState("");
@@ -19,9 +19,7 @@ function App() {
   const [km, setKm] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-
   const [file, setFile] = useState(null);
-
   const [errFile, setErrFile] = useState(null);
 
   const hendlerForm = evt => {
