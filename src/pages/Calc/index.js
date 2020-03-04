@@ -11,6 +11,9 @@ import LogoRow from "./../../components/LogoRow";
 import Menu from "./../../components/Menu";
 import sendTelegram from "./../../helpers/sendTelegramMes";
 import sendTelegramPhoto from "./../../helpers/sendTelegramPhoto";
+import logo from "./../../assets/images/logo/logo_w.svg";
+import { baseUrl } from "./../../constants/constants";
+import router from "./../../router/router";
 
 function App() {
   const [firma, setFirma] = useState("");
@@ -120,11 +123,19 @@ function App() {
 
     setFile(arr);
   };
-
+  const {url} = router.contact
   return (
     <>
       <Head>
-        <title>Калькулятор</title>
+        <title>Контакты</title>
+    
+        <meta rel="cononical" href={`${baseUrl}${url}`} />
+        <meta name="description" content="Автовыкуп контактные данные" />
+
+        <meta property="og:title" content="Контакты" />
+        <meta property="og:type" content="website" />
+        <meta property = "og:url" content = {`${baseUrl}${url}`} />
+        <meta property="og:image" content={logo} />
       </Head>
       <header className={style.header}>
         <Menu />

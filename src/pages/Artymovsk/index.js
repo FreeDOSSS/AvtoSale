@@ -4,6 +4,7 @@ import React from "react";
 import { baseUrl } from "./../../constants/constants";
 import router from "./../../router/router";
 
+import logo from "./../../assets/images/logo/logo_w.svg";
 const Artyomovsk = () => {
   const location = router.city.find(el => el.path === `/Artymovsk`);
 
@@ -13,8 +14,13 @@ const Artyomovsk = () => {
     <>
       <Head>
         <title>Автовыкуп в {city}</title>
-        <meta name="description" content={`Срочный выкуп авто в ${city}`} />
         <meta rel="cononical" href={`${baseUrl}${location.url}`} />
+        <meta name="description" content={`Срочный выкуп авто в ${city}`} />
+        <meta property="og:title" content={`Автовыкуп в ${city}`} />
+        <meta property="og:type" content="website" />
+        <meta property = "og:url" content = {`${baseUrl}${location.url}`} />
+        <meta property="og:image" content={logo} />
+
       </Head>
       <City city={city}>
         <h1>H1 Lorem, ipsum.</h1>
