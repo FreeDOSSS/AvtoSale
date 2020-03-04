@@ -14,7 +14,8 @@ const Artyomovsk = () => {
   return (
     <>
       <Head>
-        <title>{city}</title>
+        <title>Автовыкуп в {city}</title>
+        <meta name="description" content={`Срочный выкуп авто в ${city}`} />
       </Head>
       <City city={city}>
         <h1>H1 Lorem, ipsum.</h1>

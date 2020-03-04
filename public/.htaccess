@@ -1,0 +1,21 @@
+# запускаем правила
+Options +FollowSymLinks
+RewriteEngine On
+
+# перенаправить на HTTPS
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+# kill WWW с УРЛ сайта
+RewriteCond %{SERVER_PORT} ^80$ [OR]
+RewriteCond %{HTTP} =on
+RewriteRule ^(.*)$ https://url.ru/$1 [R=301,L]
+
+# направляем на страницу ошибки 404
+ErrorDocument 404 /404.html
+
+# Убираем вконце слеш
+
+RewriteCond %{HTTP_HOST} (.*)
+RewriteCond %{REQUEST_URI} /$ [NC]
+RewriteRule ^(.*)(/)$ $1 [L,R=301]
