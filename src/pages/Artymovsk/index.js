@@ -1,21 +1,20 @@
 import City from "./../../templates/City";
 import Head from "./../../components/Head";
 import React from "react";
+import { baseUrl } from "./../../constants/constants";
+import router from "./../../router/router";
 
 const Artyomovsk = () => {
-  /*
-  Город
-  Заходт в три секции
-  1. Хлебные крошки
-  2. Секцию с Выкупом авто
-  3. Заголовок
-  */
+  const location = router.city.find(el => el.path === `/Artymovsk`);
+
   const city = "Артемовске";
+
   return (
     <>
       <Head>
         <title>Автовыкуп в {city}</title>
         <meta name="description" content={`Срочный выкуп авто в ${city}`} />
+        <meta rel="cononical" href={`${baseUrl}${location.url}`} />
       </Head>
       <City city={city}>
         <h1>H1 Lorem, ipsum.</h1>
