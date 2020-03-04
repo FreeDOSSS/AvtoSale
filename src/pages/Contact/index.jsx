@@ -26,8 +26,18 @@ function App() {
               <form className={style.form}>
                 <h2 className={style.title}>Есть вопросы?</h2>
                 <h2 className={style.subtitle}>Напиши нам</h2>
-                <input type="text" name="name" placeholder="Ваше имя" />
-                <input type="text" name="phone" placeholder="Ваш телефон" />
+                <input
+                  className={style.field}
+                  type="text"
+                  name="phone"
+                  placeholder="Ваш телефон"
+                />
+                <input
+                  className={style.field}
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                />
                 <textarea
                   name="message"
                   placeholder="Вы можете оставить сообщение..."

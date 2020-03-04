@@ -5,6 +5,7 @@ const router = require("./src/router/router");
 const withFonts = require("nextjs-fonts");
 
 next_config = {
+  exportTrailingSlash: true,
   exportPathMap: async function(
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
