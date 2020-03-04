@@ -18,7 +18,7 @@ const router = {
     // { name: "Львов", url: "/avtovykyp-lviv", path: "" },
     {
       name: "Артемовск (Бахмут)",
-      url: "/avtovykyp-artemovsk",
+      url: "/avtovykyp-artemovsk.html",
       path: "/Artymovsk"
     }
     // { name: "Сумы", url: "/avtovykyp-sumy", path: "" },
@@ -28,7 +28,7 @@ const router = {
     // { name: "Винница", url: "/avtovykyp-vinnitsa", path: "" },
     // { name: "Бердянск", url: "/avtovykyp-berdyansk", path: "" }
   ],
-  contact: { name: "Контакты", url: "/kontakty", path: "/Calc" }
+  contact: { name: "Контакты", url: "/kontakty.html", path: "/Calc" }
 };
 
 module.exports = router;
