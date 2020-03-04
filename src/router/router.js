@@ -28,8 +28,13 @@ const router = {
     // { name: "Винница", url: "/avtovykup-vinnitsa", path: "" },
     // { name: "Бердянск", url: "/avtovykup-berdyansk", path: "" }
   ],
+<<<<<<< HEAD
   // readme: { name: "Контакты", url: "/asdasdasd", path: "/Calc" }
   contact: { name: "Контакты", url: "/kontakty", path: "/Calc" }
+=======
+  readme: { name: "Калькулятор", url: "/Kalkulyator", path: "/Calc" },
+  contact: { name: "Контакты", url: "/kontakty", path: "/Contact" }
+>>>>>>> 10a83c48bba9a6605b48affdf15df512949b41db
 };
 
 module.exports = router;
