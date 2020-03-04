@@ -1,8 +1,11 @@
 import * as style from "./SaleInSity.module.scss";
 
 import Container from "./../Container";
+import Link from "next/link";
 import React from "react";
 import car from "./../../assets/images/CityAvto.png";
+import clsx from "clsx";
+import { contact } from "./../../router/router";
 
 function SaleInSity({ city }) {
   return (
@@ -46,13 +49,15 @@ function SaleInSity({ city }) {
             className={style.button}
             uk-toggle="target: #modal-close-default"
           >
-            <div className={style.wrapper}></div>
+            <span className={style.wrapper}></span>
             Заказать звонок
           </button>
-          <button type="button" className={style.button}>
-            экспресс оценка
-            <div className={style.wrapper}></div>
-          </button>
+          <Link href={contact.url}>
+            <a className={style.button}>
+              экспресс оценка
+              <span className={clsx(style.wrapper, style.url)}></span>
+            </a>
+          </Link>
         </div>
       </div>
     </Container>

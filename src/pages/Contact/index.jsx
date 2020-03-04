@@ -1,5 +1,6 @@
 import * as style from "./style.scss";
 
+import React, { useState } from "react";
 import { fb, phone, youtube } from "./../../constants/constants";
 
 import Article from "../../components/Article";
@@ -9,9 +10,56 @@ import Footer from "../../components/Footer";
 import Head from "next/head";
 import LogoRow from "../../components/LogoRow";
 import Menu from "../../components/Menu";
-import React from "react";
+import sendTelegram from "./../../helpers/sendTelegramMes";
 
 function App() {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [message, setMessage] = useState("");
+
+  const hendlerInput = ({ target }) => {
+    const { name, value } = target;
+    switch (name) {
+      case "name":
+        setName(value);
+        break;
+      case "number":
+        setNumber(value);
+        break;
+      case "message":
+        setMessage(value);
+        break;
+    }
+  };
+
+  const hendlerForm = event => {
+    event.preventDefault();
+
+    const send = [
+      {
+        name: "Имя",
+        value: name
+      },
+      {
+        name: "Телефон",
+        value: number
+      }
+    ];
+
+    if (message) send.push({ name: "Сообщение", value: message });
+
+    sendTelegram(send).then(res => {
+      if (res === 200) {
+        UIkit.modal.dialog(
+          `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправленна!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.button} uk-modal-close" autofocus="">Ok</button> </div> `
+        );
+        setName("");
+        setNumber("");
+        setMessage("");
+      }
+    });
+  };
+
   return (
     <>
       <Head>
@@ -22,28 +70,41 @@ function App() {
         <LogoRow />
         <Container>
           <div className={style.contactWrp}>
-            <div className={style.formWrp}>
+            <div className={style.formWrp} onSubmit={hendlerForm}>
               <form className={style.form}>
                 <h2 className={style.title}>Есть вопросы?</h2>
                 <h2 className={style.subtitle}>Напиши нам</h2>
                 <input
                   className={style.field}
                   type="text"
-                  name="phone"
-                  placeholder="Ваш телефон"
+                  name="name"
+                  onChange={hendlerInput}
+                  placeholder="Ваше имя"
+                  required
+                  value={name}
                 />
                 <input
                   className={style.field}
                   type="text"
-                  name="name"
-                  placeholder="Ваше имя"
+                  name="number"
+                  onChange={hendlerInput}
+                  required
+                  value={number}
+                  placeholder="Ваш телефон"
                 />
                 <textarea
                   name="message"
+                  value={message}
+                  onChange={hendlerInput}
+                  className={style.field}
                   placeholder="Вы можете оставить сообщение..."
                   cols="30"
                   rows="10"
                 ></textarea>
+
+                <button type="submit" className={style.submit}>
+                  отправить
+                </button>
               </form>
             </div>
             <div className={style.contact}>

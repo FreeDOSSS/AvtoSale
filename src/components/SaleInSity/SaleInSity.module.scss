@@ -89,7 +89,6 @@
   background: none;
   margin-bottom: 20px;
   // background-color: $colorAccent;
-  position: relative;
 
   .wrapper {
     &::after {
@@ -104,7 +103,12 @@
       transform: skewX(13deg);
     }
   }
-  &:last-of-type {
+
+  &:last-child {
+    &:hover {
+      text-decoration: none;
+      color: $colorAccent;
+    }
     .wrapper {
       &::after {
         background-color: $colorCopyrate;

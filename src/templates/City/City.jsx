@@ -3,6 +3,7 @@ import * as style from "./City.module.scss";
 import Article from "./../../components/Article";
 import BuyAvto from "./../../components/BuyAvto/BuyAvto";
 import Footer from "./../../components/Footer/Footer";
+import Head from "next/head";
 import Link from "next/link";
 import LogoRow from "./../../components/LogoRow";
 import Menu from "./../../components/Menu/Menu";
