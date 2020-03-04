@@ -2,6 +2,7 @@
   name: Название страницы (тайтл)
   url: Ссылка на сайте
   path: путь до компонента
+  Cacl != url
 */
 
 const router = {
@@ -27,7 +28,7 @@ const router = {
     // { name: "Винница", url: "/avtovykup-vinnitsa", path: "" },
     // { name: "Бердянск", url: "/avtovykup-berdyansk", path: "" }
   ],
-  readme: { name: "Калькулятор", url: "/calc", path: "/Calc" },
+  readme: { name: "Калькулятор", url: "/asdasdasd", path: "/Calc" },
   contact: { name: "Контакты", url: "/kontakty", path: "/Contact" }
 };
 

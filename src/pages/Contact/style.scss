@@ -8,15 +8,40 @@
 }
 
 .contact {
-  width: 50%;
+  // width: 50%;
   min-width: 280px;
-  margin-left: auto;
+  // margin-left: auto;
+
+  &Wrp {
+    // display: flex;
+  }
 }
 
 .title {
   font-size: 40px;
   color: $colorWhite;
   letter-spacing: 2px;
+}
+.form {
+  background-color: $colorFooter;
+  border: 1px solid $colorWhite;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+
+  .title {
+    text-align: center;
+    color: $colorAccent;
+    margin: 0;
+    padding: 0;
+  }
+
+  .subtitle {
+    margin: 0;
+    text-align: center;
+    color: $colorWhite;
+  }
 }
 
 .list {
@@ -35,5 +60,17 @@
   span {
     margin-right: 10px;
     font-size: 34px;
+  }
+}
+
+@media (min-width: $breakPointWidthTb) {
+  .contact {
+    &Wrp {
+      padding-top: 8%;
+      display: flex;
+      > * {
+        width: 50%;
+      }
+    }
   }
 }

@@ -22,6 +22,20 @@ function App() {
         <LogoRow />
         <Container>
           <div className={style.contactWrp}>
+            <div className={style.formWrp}>
+              <form className={style.form}>
+                <h2 className={style.title}>Есть вопросы?</h2>
+                <h2 className={style.subtitle}>Напиши нам</h2>
+                <input type="text" name="name" placeholder="Ваше имя" />
+                <input type="text" name="phone" placeholder="Ваш телефон" />
+                <textarea
+                  name="message"
+                  placeholder="Вы можете оставить сообщение..."
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </form>
+            </div>
             <div className={style.contact}>
               <h2 className={style.title}>Контакты</h2>
               <ul className={style.list}>
@@ -30,25 +44,25 @@ function App() {
                     className={style.link}
                     href={`tel:${phone.replace(/\s/g, "")}`}
                   >
-                    <span uk-icon="phone"></span>
+                    <span uk-icon="phone">{""}</span>
                     {phone}
                   </a>
                 </li>
                 <li className={style.item}>
                   <a href={fb} className={style.link}>
-                    <span uk-icon="facebook"></span>
+                    <span uk-icon="facebook">{""}</span>
                     Facebook
                   </a>
                 </li>
                 <li className={style.item}>
                   <a href={youtube} className={style.link}>
-                    <span uk-icon="youtube"></span>
+                    <span uk-icon="youtube">{""}</span>
                     YouTube
                   </a>
                 </li>
                 <li className={style.item}>
                   <a href="" className={style.link}>
-                    <span uk-icon="mail"></span>
+                    <span uk-icon="mail">{""}</span>
                     почта@обман.да
                   </a>
                 </li>
