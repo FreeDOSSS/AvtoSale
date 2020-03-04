@@ -14,7 +14,7 @@ import sendTelegram from "./../../helpers/sendTelegramMes";
 
 // ========
 
-function Footer() {
+function Footer({ first_row = true }) {
   const [input, setInput] = useState("");
   const [sendStatus, setSendStatus] = useState(null);
 
@@ -81,59 +81,29 @@ function Footer() {
 
   return (
     <footer>
-      <Container fluid={style.prefooterWrp}>
-        <div className={style.prefooter}>
-          <div className={style.boxTitle}>
-            <p className={style.title}>убедили?</p>
-            <p className={style.subtitle}>закажите просчет</p>
-          </div>
-          <div className={style.boxBtn}>
-            <button
-              className={style.button}
-              type="button"
-              // uk-toggle="target: #footerform"
-              uk-toggle="target: #modal-close-default"
-            >
-              узнать стоимость
-            </button>
-          </div>
-          <div className={style.boxImg}>
-            <img src={car} alt="Закажите просчет" className={style.img} />
-          </div>
-        </div>
-        {/* <div id="footerform" uk-modal="true">
-          <div className="uk-modal-dialog uk-modal-body">
-            <button
-              className="uk-modal-close-default"
-              type="button"
-              uk-close="true"
-            ></button>
-            <h2 className="uk-modal-title uk-text-center">Заказать звонок</h2>
-            <form onSubmit={hendlerForm}>
-              <div className="uk-inline uk-width-1-1">
-                <span className="uk-form-icon" uk-icon="icon: user"></span>
-                <input
-                  className="uk-input"
-                  type="text"
-                  placeholder="Ваш номер телефона"
-                  value={input}
-                  onChange={hendlerInput}
-                  required
-                />
-              </div>
+      {first_row && (
+        <Container fluid={style.prefooterWrp}>
+          <div className={style.prefooter}>
+            <div className={style.boxTitle}>
+              <p className={style.title}>убедили?</p>
+              <p className={style.subtitle}>закажите просчет</p>
+            </div>
+            <div className={style.boxBtn}>
               <button
-                type="submit"
-                className={clsx(
-                  "uk-button uk-margin uk-align-right",
-                  style.submit
-                )}
+                className={style.button}
+                type="button"
+                // uk-toggle="target: #footerform"
+                uk-toggle="target: #modal-close-default"
               >
-                Отправить
+                узнать стоимость
               </button>
-            </form>
+            </div>
+            <div className={style.boxImg}>
+              <img src={car} alt="Закажите просчет" className={style.img} />
+            </div>
           </div>
-        </div> */}
-      </Container>
+        </Container>
+      )}
 
       <Container fluid={style.logoBox}>
         <img src={logo} alt="Logo" className={style.logo} />

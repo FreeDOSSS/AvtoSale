@@ -10,7 +10,7 @@ import logo from "./../../assets/images/logo/logo_w.svg";
 import sendTelegram from "./../../helpers/sendTelegramMes.js";
 
 function LogoRow() {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState("+380");
   const [sendStatus, setSendStatus] = useState(null);
 
   const hendlerForm = event => {
@@ -19,7 +19,7 @@ function LogoRow() {
     sendTelegram(send).then(data => {
       if (data === 200) {
         UIkit.modal.dialog(
-          `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправленна!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.button} uk-modal-close" autofocus="">Ok</button> </div> `
+          `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправленна!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.button} uk-modal-close" autofocus="">Закрыть</button> </div> `
         );
       }
     });

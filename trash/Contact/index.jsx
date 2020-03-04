@@ -1,16 +1,16 @@
 import * as style from "./style.scss";
 
 import React, { useState } from "react";
-import { fb, phone, youtube } from "./../../constants/constants";
+import { fb, phone, youtube } from "../../src/constants/constants";
 
-import Article from "../../components/Article";
-import BuyAvto from "../../components/BuyAvto";
-import Container from "../../components/Container";
-import Footer from "../../components/Footer";
+import Article from "../../src/components/Article";
+import BuyAvto from "../../src/components/BuyAvto";
+import Container from "../../src/components/Container";
+import Footer from "../../src/components/Footer";
 import Head from "next/head";
-import LogoRow from "../../components/LogoRow";
-import Menu from "../../components/Menu";
-import sendTelegram from "./../../helpers/sendTelegramMes";
+import LogoRow from "../../src/components/LogoRow";
+import Menu from "../../src/components/Menu";
+import sendTelegram from "../../src/helpers/sendTelegramMes";
 
 function App() {
   const [name, setName] = useState("");
