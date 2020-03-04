@@ -1,8 +1,14 @@
 # запускаем правила
-Options +FollowSymLinks
-RewriteEngine On
+RewriteEngine on
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html
 
-# перенаправить на HTTPS
+#перенаправить на HTTPS
 #RewriteCond %{SERVER_PORT} !^443$
 #RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 
@@ -16,6 +22,7 @@ ErrorDocument 404 /404.html
 
 # Убираем вконце слеш
 
-RewriteCond %{HTTP_HOST} (.*)
-RewriteCond %{REQUEST_URI} /$ [NC]
-RewriteRule ^(.*)(/)$ $1 [L,R=301]
+# убираем слэш в конце адреса
+RewriteBase /
+RewriteCond %{REQUEST_URI} .+/$ [NC]
+RewriteRule ^(.+)(/)$ $1 [L,R=301]
