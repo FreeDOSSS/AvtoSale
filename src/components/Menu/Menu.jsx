@@ -12,9 +12,12 @@ function Menu() {
 
     return sortCity.map((el, i) => (
       <li key={i}>
-        <Link href={el.url}>
+        {/* <Link href={el.url}>
           <a className={style.menu__item__link}>{el.name}</a>
-        </Link>
+        </Link> */}
+        <a href={el.url} className={style.menu__item__link}>
+          {el.name}
+        </a>
       </li>
     ));
   };
@@ -36,9 +39,12 @@ function Menu() {
             </li>
           ) : (
             <li key={i} className={style.menu__item}>
-              <Link href={el.url}>
+              {/* <Link href={el.url}>
                 <a className={style.menu__item__link}>{el.name}</a>
-              </Link>
+              </Link> */}
+              <a href={el.url} className={style.menu__item__link}>
+                {el.name}
+              </a>
             </li>
           )
         )}
@@ -61,9 +67,11 @@ function Menu() {
             </li>
           ) : (
             <li key={i} className={style.menu__item}>
-              <Link href={el.url}>
-                <a className={style.menu__item__link}>{el.name}</a>
-              </Link>
+              {/* <Link href={el.url}> */}
+              <a href={el.url} className={style.menu__item__link}>
+                {el.name}
+              </a>
+              {/* </Link> */}
             </li>
           )
         )}

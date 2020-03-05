@@ -52,12 +52,12 @@ function SaleInSity({ city }) {
             <span className={style.wrapper}></span>
             Заказать звонок
           </button>
-          <Link href={contact.url}>
-            <a className={style.button}>
-              экспресс оценка
-              <span className={clsx(style.wrapper, style.url)}></span>
-            </a>
-          </Link>
+          {/* <Link href={contact.url}> */}
+          <a href={contact.url} className={style.button}>
+            экспресс оценка
+            <span className={clsx(style.wrapper, style.url)}></span>
+          </a>
+          {/* </Link> */}
         </div>
       </div>
     </Container>
