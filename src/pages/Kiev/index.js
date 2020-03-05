@@ -6,9 +6,9 @@ import router from "./../../router/router";
 
 import logo from "./../../assets/images/logo/logo_w.svg";
 const App= () => {
-  const location = router.city.find(el => el.path === `/Artymovsk`);
+  const location = router.city.find(el => el.path === `/Kiev`);
 
-  const city = "Артемовске";
+  const city = "Киеве";
 
   return (
     <>
