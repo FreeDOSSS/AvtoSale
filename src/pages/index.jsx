@@ -24,7 +24,7 @@ const App = () => {
         <meta property="og:title" content="AvtoSale" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content = {`${baseUrl}`} />
-        <meta property="og:image" content={logo} />
+       
         <meta property="og:image:type" content="image/png" />
         <meta property="og:locale" content="ru_RU" />
         <meta property="og:site_name" content="AvtoSale" />
