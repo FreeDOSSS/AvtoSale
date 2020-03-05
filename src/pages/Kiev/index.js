@@ -4,7 +4,7 @@ import React from "react";
 import { baseUrl } from "./../../constants/constants";
 import router from "./../../router/router";
 
-import logo from "./../../assets/images/logo/logo_w.svg";
+import logo from "./../../assets/images/logo/logo_wpng.png";
 const App= () => {
   const location = router.city.find(el => el.path === `/Kiev`);
 

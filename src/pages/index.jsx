@@ -11,12 +11,24 @@ import Menu from "./../components/Menu";
 import React from "react";
 import ReadyBuy from "../components/ReadyBuy";
 import StepsBuy from "../components/StepsBuy";
+import logo from "./../assets/images/logo/logo_wpng.png";
+import { baseUrl } from "./../constants/constants";
 
 const App = () => {
   return (
     <>
       <Head>
         <title>AvtoSale</title>
+        <meta rel="cononical" href={`${baseUrl}`} />
+        <meta name="description" content="AvtoSale | Автовыкуп авто по всей Украине" />
+        <meta property="og:title" content="AvtoSale" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content = {`${baseUrl}`} />
+        <meta property="og:image" content={logo} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:locale" content="ru_RU" />
+        <meta property="og:site_name" content="AvtoSale" />
+        <meta property="og:description" content="AvtoSale | Автовыкуп авто по всей Украине" />
       </Head>
       <header className={style.header}>
         <Menu />
