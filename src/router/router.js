@@ -8,25 +8,29 @@
 const router = {
   home: { name: "О нас", url: "/", path: "/" },
   city: [
-    // { name: "Киев", url: "/avtovykup-kiyev", path: "" },
-    // { name: "Харьков", url: "/avtovykyp-harkov", path: "" },
-    // { name: "Донецк", url: "/avtovykyp-donetsk", path: "" },
-    // { name: "Запорожье", url: "/avtovykyp-zaporozhye", path: "" },
-    // { name: "Мариуполь", url: "/avtovykyp-zhytomyr", path: "" },
-    // { name: "Житомир", url: "/avtovykyp-zhytomyr", path: "" },
-    // { name: "Полтава", url: "/avtovykyp-poltava", path: "" },
-    // { name: "Львов", url: "/avtovykyp-lviv", path: "" },
+    { name: "Киев", url: "/avtovykup-kiyev.html", path: "/Kiev" },
+    { name: "Харьков", url: "/avtovykyp-harkov.html", path: "/Harkov" },
+    { name: "Донецк", url: "/avtovykyp-donetsk.html", path: "/Donetsk" },
+    { name: "Запорожье", url: "/avtovykyp-zaporoje.html", path: "/Zaporoje" },
+    { name: "Мариуполь", url: "/avtovykyp-mariypol.html", path: "/Mariypol" },
+    { name: "Житомир", url: "/avtovykyp-jitomir.html", path: "/Jitomir" },
+    { name: "Полтава", url: "/avtovykyp-poltava.html", path: "/Poltava" },
+    { name: "Львов", url: "/avtovykyp-lvov.html", path: "/Lvov" },
     {
       name: "Артемовск (Бахмут)",
       url: "/avtovykyp-artemovsk.html",
       path: "/Artymovsk"
-    }
-    // { name: "Сумы", url: "/avtovykyp-sumy", path: "" },
-    // { name: "Чернигов", url: "/avtovykyp-chernihiv", path: "" },
-    // { name: "Ровно", url: "/avtovykyp-rovno", path: "" },
-    // { name: "Хмельницкий", url: "/avtovykyp-khmelnitsky", path: "" },
-    // { name: "Винница", url: "/avtovykyp-vinnitsa", path: "" },
-    // { name: "Бердянск", url: "/avtovykyp-berdyansk", path: "" }
+    },
+    { name: "Сумы", url: "/avtovykyp-symy.html", path: "/Symy" },
+    { name: "Чернигов", url: "/avtovykyp-chernigov.html", path: "/Chernigov" },
+    { name: "Ровно", url: "/avtovykyp-rovno.html", path: "/Rovno" },
+    {
+      name: "Хмельницкий",
+      url: "/avtovykyp-hmelnitskii.html",
+      path: "/Hmelnitskii"
+    },
+    { name: "Винница", url: "/avtovykyp-vinnitsa.html", path: "/Vinnitsa" },
+    { name: "Бердянск", url: "/avtovykyp-berdiansk.html", path: "/Berdiansk" }
   ],
   contact: { name: "Контакты", url: "/kontakty.html", path: "/Calc" }
 };

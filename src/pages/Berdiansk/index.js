@@ -5,10 +5,10 @@ import { baseUrl } from "./../../constants/constants";
 import router from "./../../router/router";
 
 import logo from "./../../assets/images/logo/logo_w.svg";
-const App= () => {
-  const location = router.city.find(el => el.path === `/Artymovsk`);
+const App = () => {
+  const location = router.city.find(el => el.path === `/Berdiansk`);
 
-  const city = "Артемовске";
+  const city = "Бердянск";
 
   return (
     <>
