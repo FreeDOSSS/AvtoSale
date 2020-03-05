@@ -1,5 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
-
+import logo from "./../assets/images/logo/logo_social.jpg"
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -14,7 +14,7 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css"
           />
-
+        <meta property="og:image" content={logo} />
         </Head>
         <body>
           <svg style={{ display: "none" }}>
