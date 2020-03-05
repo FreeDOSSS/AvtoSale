@@ -22,7 +22,7 @@ const config = {
   port: 21,
   localRoot: localFolder,
   remoteRoot: `/${folder}/public_html/`,
-  include: ["*", "**/*"], // this would upload everything except dot files
+  include: ["*", "**/*", ".*"], // this would upload everything except dot files
   //   include: ["*.php", "dist/*", ".*"],
   // e.g. exclude sourcemaps, and ALL files in node_modules (including dot files)
   //   exclude: [
@@ -34,11 +34,22 @@ const config = {
   // delete ALL existing files at destination before uploading, if true
   deleteRemote: true,
   // Passive mode is forced (EPSV command is not sent)
-  forcePasv: false
+  forcePasv: true
 };
 
 // use with promises
+console.log("Start uploading!");
 ftpDeploy
   .deploy(config)
-  .then(res => console.log("Send!"))
+  .then(res => console.log("Send end"))
   .catch(err => console.log(err));
+
+ftpDeploy.on("uploading", function(data) {
+  // console.log(data.totalFilesCount); // total file count being transferred
+  // console.log(data.transferredFileCount); // number of files transferred
+  console.log(data.filename); // partial path with filename being uploaded
+});
+
+ftpDeploy.on("upload-error", function(data) {
+  console.warn(data.err); // data will also include filename, relativePath, and other goodies
+});
