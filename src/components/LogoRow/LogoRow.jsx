@@ -6,7 +6,7 @@ import { fb, insta, phone } from "./../../constants/constants";
 import Container from "../Container";
 import Link from "next/link";
 import clsx from "clsx";
-import logo from "./../../assets/images/logo/logo_w.svg";
+import logo from "./../../assets/images/logo/logo_wpng.png";
 import sendTelegram from "./../../helpers/sendTelegramMes.js";
 
 function LogoRow() {

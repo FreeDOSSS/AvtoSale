@@ -4,7 +4,7 @@ import React from "react";
 import { baseUrl } from "./../../constants/constants";
 import router from "./../../router/router";
 
-import logo from "./../../assets/images/logo/logo_w.svg";
+import logo from "./../../assets/images/logo/logo_wpng.png";
 const App = () => {
   const location = router.city.find(el => el.path === `/Berdiansk`);
 
@@ -20,7 +20,8 @@ const App = () => {
         <meta property="og:type" content="website" />
         <meta property = "og:url" content = {`${baseUrl}${location.url}`} />
         <meta property="og:image" content={logo} />
-
+        <meta property="og:site_name" content="Автовыкуп" />
+        <meta property="og:description" content={`Срочный выкуп авто в ${city}`} />
       </Head>
       <City city={city}>
         <h1>H1 Lorem, ipsum.</h1>

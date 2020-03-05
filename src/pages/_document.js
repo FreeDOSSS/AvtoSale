@@ -8,12 +8,13 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
-        <Head>
+      <Html lang="ru" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+        <Head >
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css"
           />
+
         </Head>
         <body>
           <svg style={{ display: "none" }}>

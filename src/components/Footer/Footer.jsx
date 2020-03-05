@@ -8,7 +8,7 @@ import Link from "next/link";
 // Картинки
 import car from "./../../assets/images/car.png";
 import clsx from "clsx";
-import logo from "./../../assets/images/logo/logo_w.svg";
+import logo from "./../../assets/images/logo/logo_wpng.png";
 import router from "../../router/router";
 import sendTelegram from "./../../helpers/sendTelegramMes";
 
