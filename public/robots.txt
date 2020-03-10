@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /
+sitemap: http://blackw7r.beget.tech/sitemap.xml
