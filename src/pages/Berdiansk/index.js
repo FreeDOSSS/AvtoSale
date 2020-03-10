@@ -7,7 +7,7 @@ import router from "./../../router/router";
 const App = () => {
   const location = router.city.find(el => el.path === `/Berdiansk`);
 
-  const city = "Бердянск";
+  const city = "Бердянске";
 
   return (
     <>
