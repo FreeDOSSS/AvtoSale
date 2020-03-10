@@ -62,7 +62,7 @@ function About() {
                 <span className={style.accent}>3</span> минуты!
               </h2>
               <p className={style.subtitle}>
-                Оставте ваш номер и мы Вам перезвоним
+                Оставьте ваш номер и мы Вам перезвоним
               </p>
               <input
                 type="text"

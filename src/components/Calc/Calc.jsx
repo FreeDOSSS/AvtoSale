@@ -232,7 +232,7 @@ function Calc() {
               <use href="#coin"></use>
             </svg>
             <p>
-              Выкуп - <span className={style.accent}> максимально</span> дорого
+              Выкуп — <span className={style.accent}> максимально</span> дорого
               24/7
             </p>
           </li>
@@ -261,7 +261,7 @@ function Calc() {
               <use href="#document"></use>
             </svg>
             <p>
-              Оформление и заверение документов -{" "}
+              Оформление и заверение документов —{" "}
               <span className={style.accent}>бесплатно</span>
             </p>
           </li>
@@ -271,7 +271,7 @@ function Calc() {
               <use href="#police"></use>
             </svg>
             <p>
-              Снятие с учета в ГАИ -{" "}
+              Снятие с учета в ГАИ —{" "}
               <span className={style.accent}>бесплатно</span>
             </p>
           </li>

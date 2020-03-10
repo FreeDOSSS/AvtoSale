@@ -178,7 +178,7 @@ function BuyAvto() {
                             </td>
                           </tr>
                           <tr>
-                            <td>Каробка передач:</td>
+                            <td>Коробка передач:</td>
                             <td>{el.trans}</td>
                           </tr>
                           <tr>
