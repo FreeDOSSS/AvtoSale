@@ -22,85 +22,48 @@ const App= () => {
 
       </Head>
       <City city={city}>
-        <h1>H1 Lorem, ipsum.</h1>
+        <h1>Автовыкуп в {city}</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat
-          dolore similique maxime ipsa, a quam hic, magni ad deleniti suscipit,
-          inventore neque voluptate? Veritatis voluptatum explicabo nemo dolor
-          tenetur eos velit omnis facilis inventore? Facere, quis veniam,
-          accusantium quae omnis deleniti ea alias dignissimos molestias sit
-          aperiam sunt nobis laborum. Voluptate, mollitia repudiandae velit
-          ipsam sed minus cupiditate soluta sequi nam a officia temporibus dolor
-          culpa nesciunt officiis! Nisi exercitationem nostrum a, architecto
-          asperiores vitae sequi fugit hic nesciunt commodi accusantium officia,
-          et possimus, consectetur modi magnam tempora autem nam magni a,
-          laborum exercitationem distinctio facere? Fuga inventore molestiae
-          iste vel similique eum necessitatibus, autem earum ipsam ratione
-          debitis vitae sequi asperiores molestias sunt animi cumque.
-          Consequuntur sit temporibus consequatur ipsam omnis illum ratione
-          sapiente officia maiores, possimus nostrum placeat, voluptate quis,
-          odio labore alias numquam quo. Consectetur cumque, perferendis qui
-          iste accusantium at sapiente error animi reiciendis amet, sunt alias
-          facere dicta quaerat aperiam, nobis commodi voluptas sequi fuga.
-          Sapiente id ex amet est ipsa eius dolorem aperiam sit aliquid unde,
-          molestiae, laboriosam minima. Beatae consectetur officiis aliquid
-          aliquam iusto
+        Хотите быстро и выгодно продать машину? Тогда услуга «автовыкуп в Донецке»  именно для вас. Сервис уже оценили сотни автовладельцев, которые столкнулись с ситуацией, когда срочно нужны деньги, а наиболее выгодным и удобным ликвидным имуществом является транспортное средство. 
         </p>
-
-        <h2> H2 Lorem ipsum dolor sit amet.</h2>
+        <p>Автовыкуп в Донецке – это возможность в течение одного дня продать машину вне зависимости от марки и технического состояния по очень выгодной стоимости и без каких-либо рисков.</p>
+<p>Воспользуйтесь нашими услугами, и вам не придется тратить время и силы, чтобы выгодно представить товар на специализированном рынке, объективно оценить его, уверенно провести переговоры с потенциальным покупателем, прежде чем получить результат. Наших клиентов не заботит затратная предпродажная подготовка транспортного средства. Они не думают о размещении рекламы, демонстрации авто на профильных рынках. Не переживают о законном оформлении сделки и не тревожатся о рисках, с которыми продавец может столкнуться.</p>
+<p>Автовыкуп в Донецке – это замечательный шанс уже сегодня получить на руки или на банковскую карту деньги от продажи автомобиля. А сумма, на которую вы можете рассчитывать – не менее 90 % от рыночной стоимости транспортного средства на момент обращения.</p>
+        <h2>Кого заинтересует автовыкуп в Донецке?</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto omnis
-          nam repudiandae debitis, deserunt veniam perspiciatis ducimus sint
-          dignissimos neque repellendus commodi eaque quae explicabo hic
-          consequatur accusantium! Aperiam nostrum blanditiis alias autem odio
-          repudiandae! Numquam quos magnam voluptatum consequatur officia ipsam
-          blanditiis! Autem, in ipsa. Impedit, pariatur laborum sit provident
-          doloremque accusamus vitae, vero modi a molestiae vel aut dolore ullam
-          consequuntur ipsum. Optio odit laudantium, ipsam sunt necessitatibus
-          excepturi quo rerum placeat praesentium sint ipsum. Totam, nihil
-          tempore? Dolore molestias omnis illo voluptates! Reiciendis animi
-          accusantium ipsam facilis provident architecto ipsa perferendis
-          corporis ratione at perspiciatis quidem sed magni, accusamus facere
-          quibusdam, ex rerum sit eaque tempore numquam reprehenderit neque ad!
-          Architecto in hic iure amet quam culpa deserunt impedit. Deserunt,
-          consequatur! Officia debitis impedit voluptatibus voluptates autem
-          dolor dolore possimus, molestias error eveniet assumenda! Incidunt est
-          veritatis asperiores nobis dolorum, iusto fuga magnam? Quam blanditiis
-          eius quaerat nesciunt, eligendi repellendus quas minima ipsam vero
-          nihil error! Expedita, aut. Distinctio odio alias consequatur mollitia
-          facilis earum sunt maiores voluptatem aliquam placeat. Ut, assumenda
-          eius praesentium tenetur in explicabo quaerat quod perferendis minima
-          accusamus laborum nostrum a soluta pariatur commodi. Porro incidunt
-          sunt, ipsa doloremque quod neque ipsum veritatis.
+        Время – главная ценность современного человека. Его катастрофически не хватает на общение с семьей, на любимую работу, на творчество и отдых. Особенно жаль тратить драгоценные минуты и часы на проект, который может затянуться на долгие месяцы. А сколько придется ждать реального покупателя на автомобиль? Это одному богу известно.
         </p>
-
+<p>Экономьте время с услугой автовыкуп в Донецке! На оформление сделки купли/продажи вашего транспортного средства нам потребуется не больше часа. Даже если машина не на ходу, вам не стоит переживать. Мы сами приедем для ее оценки и покупки на место стоянки или хранения. Будьте уверены, лучших условий вам точно не найти. Не верите? Сравнивайте сами:</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nobis recusandae hic, eos temporibus ipsam! Repellendus beatae nulla
-          culpa sequi, nisi, laudantium deserunt quas porro, hic repellat animi
-          nesciunt corporis assumenda minus placeat corrupti! Vel, magni
-          cupiditate eveniet, autem excepturi quaerat quia repellendus
-          laboriosam inventore saepe aliquam impedit aperiam molestias totam
-          aliquid obcaecati illum nulla doloremque officia sit enim eligendi
-          voluptates. Architecto amet asperiores neque delectus quas dignissimos
-          beatae quo placeat, minima animi nam, consequatur omnis rem,
-          reiciendis ipsum sit? Mollitia eius cum iste? Cupiditate, iure
-          voluptas, aperiam tempora, nulla fugiat possimus atque officiis minus
-          dolor accusamus suscipit eos laudantium!
+        1.	Юридические риски 
+        </p><p>
+        При самостоятельной продаже автомобиля его владелец рискует нарваться на мошенников, когда документы будут переоформлены, а заплачена будет неполная сумма. Доказать несостоятельность сделки будет очень сложно и сделать это можно только через суд. Это может случиться по причине не порядочности покупателя, а также его сознательном обмане, когда в договор вписываются различные штрафы, комиссии и удержания. Человек, не знакомый со всеми юридическими тонкостями, не может чувствовать себя защищенным.
         </p>
+        <p>Автовыкуп в Донецке сопровождают профессиональные юристы. Сделка проводится в полном соответствии с нормами действующего законодательства, поэтому владелец транспортного средства полностью защищен от любых рисков. Никакие комиссии или другие скрытые платежи договором не предусмотрены. Вы получите на руки ровно ту сумму, которая была оговорена.</p>
+        <p>2.	Чтобы продать, не нужно платить</p>
+        <p>Занимаясь самостоятельной продажей автомобиля, его владельцу придется прилично потратиться: сначала подготовить машину к продаже, затем – хорошо прорекламировать товар, подготовить необходимые документы.</p>
+        <p>Автовыкуп в Донецке исключает какие-либо вложения. Оценку машины, переоформление ее мы берем на себя.</p>
+        <p>
+        3.	Покупка авто не на ходу
+        </p>
+<p>
+Продать машину после ДТП или нуждающуюся в ремонте сложно. Покупатели ищут дешевый вариант транспортного средства, полностью пригодного к эксплуатации. Вряд ли их заинтересует ваше предложение. Но переживать не стоит. Гарантированно продать машину не на ходу можно, прибегнув к услуге автовыкупа в Донецке.
+</p>
+<p>
+8.	Наличный расчет или деньги на карту
+</p>
+<p>
+Мы предлагаем вам самим выбрать удобную форму расчета. Мы готовы выплатить деньги от продажи транспортного средства наличными на месте проведения сделки или перевести их на карту. 
+</p>
+<h3>Автовыкуп в Донецке: что вы гарантированно получите?</h3>
         <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
+          <li>Продажу машины в день обращения.</li>
+          <li>Полную безопасность.</li>
+          <li>Не менее 90% от рыночной стоимости авто.</li>
+          <li>Возможность оформить сделку в любое время дня и ночи, так как мы работаем без выходных и перерывов. </li>
         </ul>
-        <h3>H3 Lorem ipsum dolor sit amet.</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-          consequuntur! Fuga itaque necessitatibus ipsa labore ullam aliquam,
-          dolorem ea placeat eligendi, autem beatae aspernatur tenetur totam vel
-          nobis sapiente quasi?
+        Узнавайте заранее сумму, которую вы получите за машину. Для этого вам достаточно по телефону назвать основные ее параметры, и наш специалист назовет цену, которую мы заплатим.
         </p>
       </City>
     </>

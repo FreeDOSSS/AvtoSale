@@ -22,85 +22,29 @@ const App= () => {
 
       </Head>
       <City city={city}>
-        <h1>H1 Lorem, ipsum.</h1>
+        <h1>Автовыкуп в {city}</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat
-          dolore similique maxime ipsa, a quam hic, magni ad deleniti suscipit,
-          inventore neque voluptate? Veritatis voluptatum explicabo nemo dolor
-          tenetur eos velit omnis facilis inventore? Facere, quis veniam,
-          accusantium quae omnis deleniti ea alias dignissimos molestias sit
-          aperiam sunt nobis laborum. Voluptate, mollitia repudiandae velit
-          ipsam sed minus cupiditate soluta sequi nam a officia temporibus dolor
-          culpa nesciunt officiis! Nisi exercitationem nostrum a, architecto
-          asperiores vitae sequi fugit hic nesciunt commodi accusantium officia,
-          et possimus, consectetur modi magnam tempora autem nam magni a,
-          laborum exercitationem distinctio facere? Fuga inventore molestiae
-          iste vel similique eum necessitatibus, autem earum ipsam ratione
-          debitis vitae sequi asperiores molestias sunt animi cumque.
-          Consequuntur sit temporibus consequatur ipsam omnis illum ratione
-          sapiente officia maiores, possimus nostrum placeat, voluptate quis,
-          odio labore alias numquam quo. Consectetur cumque, perferendis qui
-          iste accusantium at sapiente error animi reiciendis amet, sunt alias
-          facere dicta quaerat aperiam, nobis commodi voluptas sequi fuga.
-          Sapiente id ex amet est ipsa eius dolorem aperiam sit aliquid unde,
-          molestiae, laboriosam minima. Beatae consectetur officiis aliquid
-          aliquam iusto
+        Решение продать машину может быть связано с различными факторами. Одни владельцы транспортных средств хотят сменить имеющийся автомобиль на более новую модель. Другие – продают машину в связи с острой необходимостью крупной денежной суммы. Третьи – решают отказаться от владения движимым имуществом из-за отсутствия необходимости в нем. Не важно, что движет собственником авто, который «выводит товар на рынок». Главное, что каждый продавец хочет получить максимальную выручку от продажи и в самые короткие сроки. Такое желание понятно, ведь ждать месяцами, пока найдется покупатель, регулярно проводить переговоры и торги, встречи и показы физически и психологически непросто.
         </p>
-
-        <h2> H2 Lorem ipsum dolor sit amet.</h2>
+<p>
+Существует услуга, которая помогает избежать всех хлопот, связанных с продажей транспортного средства. Автовыкуп в Киеве – это возможность за один день, а точнее за пару часов совершить сделку и получить на руки или на банковскую карту приличную сумму денег от продажи транспортного средства. Наша компания предлагает не меньше 90% от реальной рыночной стоимости машины на момент обращения. При этом клиент компании полностью освобождается от всех хлопот, которые могут ожидать его при самостоятельной продаже авто через интернет или автомобильный рынок. Речь о таких заботах как предпродажная подготовка авто, реклама в интернете, оценка транспортного средства, переоформление документов.  Просто представьте: заполняете заявку и в этот же день завершаете сделку, получив на руки полностью всю сумму. Очень удобно. А если учесть, что через автовыкуп в Киеве продаются автомобили в неисправном техническом состоянии, машины, не прошедшие таможенную легализацию, заложенная в банк техника, то становится понятным, почему все больше владельцев движимого имущества обращаются к нам.
+</p>
+        <h2>Автовыкуп в Киеве: быстро и безопасно</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto omnis
-          nam repudiandae debitis, deserunt veniam perspiciatis ducimus sint
-          dignissimos neque repellendus commodi eaque quae explicabo hic
-          consequatur accusantium! Aperiam nostrum blanditiis alias autem odio
-          repudiandae! Numquam quos magnam voluptatum consequatur officia ipsam
-          blanditiis! Autem, in ipsa. Impedit, pariatur laborum sit provident
-          doloremque accusamus vitae, vero modi a molestiae vel aut dolore ullam
-          consequuntur ipsum. Optio odit laudantium, ipsam sunt necessitatibus
-          excepturi quo rerum placeat praesentium sint ipsum. Totam, nihil
-          tempore? Dolore molestias omnis illo voluptates! Reiciendis animi
-          accusantium ipsam facilis provident architecto ipsa perferendis
-          corporis ratione at perspiciatis quidem sed magni, accusamus facere
-          quibusdam, ex rerum sit eaque tempore numquam reprehenderit neque ad!
-          Architecto in hic iure amet quam culpa deserunt impedit. Deserunt,
-          consequatur! Officia debitis impedit voluptatibus voluptates autem
-          dolor dolore possimus, molestias error eveniet assumenda! Incidunt est
-          veritatis asperiores nobis dolorum, iusto fuga magnam? Quam blanditiis
-          eius quaerat nesciunt, eligendi repellendus quas minima ipsam vero
-          nihil error! Expedita, aut. Distinctio odio alias consequatur mollitia
-          facilis earum sunt maiores voluptatem aliquam placeat. Ut, assumenda
-          eius praesentium tenetur in explicabo quaerat quod perferendis minima
-          accusamus laborum nostrum a soluta pariatur commodi. Porro incidunt
-          sunt, ipsa doloremque quod neque ipsum veritatis.
+        У автолюбителей есть свои «фишки», по их мнению, помогающие продать быстро и дорого транспорт. Например, рекомендуют планировать продажу на весну, ведь осенью и зимой цены на машины существенно снижаются. При обращении в автовыкуп в Киеве никакие хитрости не нужны. Мы, вне зависимости от сезона, времени суток, погодных условий, предложим вам отличные условия. Вашу машину мы готовы купить не менее чем за 90% от ее реальной рыночной стоимости. Мы не будем выискивать изъяны и торговаться, чтобы сбить цену. Узнать приблизительную стоимость сделки можно еще на этапе телефонных переговоров. Озвучьте нашему специалисту основные критерии и характеристики вашего имущества. Мы назовем ориентировочную сумму по телефону. Она может быть незначительно скорректирована после детального осмотра машины на месте.
         </p>
-
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nobis recusandae hic, eos temporibus ipsam! Repellendus beatae nulla
-          culpa sequi, nisi, laudantium deserunt quas porro, hic repellat animi
-          nesciunt corporis assumenda minus placeat corrupti! Vel, magni
-          cupiditate eveniet, autem excepturi quaerat quia repellendus
-          laboriosam inventore saepe aliquam impedit aperiam molestias totam
-          aliquid obcaecati illum nulla doloremque officia sit enim eligendi
-          voluptates. Architecto amet asperiores neque delectus quas dignissimos
-          beatae quo placeat, minima animi nam, consequatur omnis rem,
-          reiciendis ipsum sit? Mollitia eius cum iste? Cupiditate, iure
-          voluptas, aperiam tempora, nulla fugiat possimus atque officiis minus
-          dolor accusamus suscipit eos laudantium!
+        Автовыкуп в Киеве сопровождают квалифицированные юристы и нотариус, поэтому стороны полностью защищены с правовой точки зрения. Сделка не предполагает скрытых комиссий и платежей, поэтому вы получите ровно ту сумму, на которую заключается договор купли/продажи. Расчет осуществляется на выбор продавца наличными на месте или в нашем офисе, также возможно перечисление необходимой суммы на банковскую карту. Наш клиент сам определяет, какой вариант ему наиболее подходит.
         </p>
+<h3>И еще о преимуществах автовыкупа в Киеве</h3>
         <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
+          <li>Наша компания рассматривает все варианты транспортных средств: после ДТП, не на ходу, не прошедшие растаможку. Условия автовыкупа в Киеве оговариваются в каждом случае с владельцем в индивидуальном порядке.</li>
+          <li>Мы сотрудничаем с юридическими и физическими лицами. Для многих фирм услуга – это отличная возможность быстро обновить автопарк или получить крупную сумму, например, для завершения выгодной сделки.</li>
+          <li>Мы принимаем заявки на автовыкуп в Киеве в круглосуточном режиме. Когда банки не работают из-за выходных или праздников, мы не перестаем заключать сделки и выплачивать клиентам на руки крупные суммы денег.</li>
+          <li>Все дополнительные расходы, связанные с оценкой авто, переоформлением транспортного средства мы берем на себя, поэтому наши клиенты полностью лишены каких-либо дополнительных затрат.</li>
         </ul>
-        <h3>H3 Lorem ipsum dolor sit amet.</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-          consequuntur! Fuga itaque necessitatibus ipsa labore ullam aliquam,
-          dolorem ea placeat eligendi, autem beatae aspernatur tenetur totam vel
-          nobis sapiente quasi?
+        Узнать подробности автовыкупа в Киеве можно, не выходя из дома. Перезвоните нам или закажите обратный звонок, и мы сами перезвоним вам, чтобы ответить на все вопросы.
         </p>
       </City>
     </>

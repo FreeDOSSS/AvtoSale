@@ -22,85 +22,46 @@ const App= () => {
 
       </Head>
       <City city={city}>
-        <h1>H1 Lorem, ipsum.</h1>
+        <h1>Автовыкуп в {city}</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat
-          dolore similique maxime ipsa, a quam hic, magni ad deleniti suscipit,
-          inventore neque voluptate? Veritatis voluptatum explicabo nemo dolor
-          tenetur eos velit omnis facilis inventore? Facere, quis veniam,
-          accusantium quae omnis deleniti ea alias dignissimos molestias sit
-          aperiam sunt nobis laborum. Voluptate, mollitia repudiandae velit
-          ipsam sed minus cupiditate soluta sequi nam a officia temporibus dolor
-          culpa nesciunt officiis! Nisi exercitationem nostrum a, architecto
-          asperiores vitae sequi fugit hic nesciunt commodi accusantium officia,
-          et possimus, consectetur modi magnam tempora autem nam magni a,
-          laborum exercitationem distinctio facere? Fuga inventore molestiae
-          iste vel similique eum necessitatibus, autem earum ipsam ratione
-          debitis vitae sequi asperiores molestias sunt animi cumque.
-          Consequuntur sit temporibus consequatur ipsam omnis illum ratione
-          sapiente officia maiores, possimus nostrum placeat, voluptate quis,
-          odio labore alias numquam quo. Consectetur cumque, perferendis qui
-          iste accusantium at sapiente error animi reiciendis amet, sunt alias
-          facere dicta quaerat aperiam, nobis commodi voluptas sequi fuga.
-          Sapiente id ex amet est ipsa eius dolorem aperiam sit aliquid unde,
-          molestiae, laboriosam minima. Beatae consectetur officiis aliquid
-          aliquam iusto
+        Многие владельцы транспортных средств, кто решает продать движимое имущество, задаются вопросом: «Как быстро продать подержанный автомобиль и получить за него хорошую цену?». На первый взгляд, все просто. Достаточно оплатить рекламу в интернете, и неиссякаемый поток потенциальных покупателей будет в очередь выстраиваться на просмотр. Однако на практике все не так. Автомобильный рынок переполнен предложениями на любой цвет и вкус. А в условиях конкуренции выручить за машину с пробегом приличную сумму не так уж просто. Избалованные скидками и рассрочками покупатели во время показа автомобиля выискивают реальные и несуществующие дефекты в попытке снизить стоимость транспортного средства. И владелец, которому деньги нужны срочно, вынужден отдавать «товар» на треть дешевле, чем он реально стоит. Ну а те, кто держит цену, может прождать сделки несколько месяцев.
         </p>
-
-        <h2> H2 Lorem ipsum dolor sit amet.</h2>
+<p>
+  Все эти неприятные моменты останутся в стороне, если воспользоваться услугой «Автовыкуп в Мариуполе». Сравнительно новая, но уже очень популярная услуга позволяет продать машину в течение одного дня и получить от продажи приличную сумму – не менее 90% от реальной рыночной стоимости. Кроме того, продавец избавляется от необходимости затратной предпродажной подготовки, от хлопот, связанных с проведением переговоров, необходимостью демонстрации ТС многочисленным потенциальным покупателям. Нашим клиентам не нужно платить деньги за оценку авто, его перерегистрацию. Хотите узнать все выгоды, которые открывает для вас автовыкуп в Мариуполе?
+</p>
+        <h2>Какие преимущества несет автовыкуп в Мариуполе автовладельцам?</h2>
+        <ol>
+<li>Узнать предварительно, какую цену вы сможете выручить за конкретное ТС, можно по телефону. Достаточно озвучить основные параметры авто специалисту, и он скажет, за какую сумму компания готова его выкупить.</li>
+<li>
+Мы предлагаем максимально высокие цены на автомобили – 90 и более процентов от фактической стоимости ТС на момент обращения клиента.
+</li>
+<li>
+Автовыкуп в Мариуполе распространяется на практически все транспортные средства. Банковский залог, неудовлетворительное техническое состояние, отсутствие таможенной легализации – все это для нас не повод отказать вам в сделке. Условия выкупа проблемного автомобиля оговариваются с каждым собственником в индивидуальном порядке.
+</li>
+<li>
+Вам не придется тратить силу и время. Мы приедем сами на место стоянки или хранения транспортного средства, на месте оформим сделку и проведем расчет.
+</li>
+<li>
+Автовыкуп в Мариуполе сопровождает опытный юрист, поэтому вы полностью защищены с правовой точки зрения. Мы работаем без скрытых комиссий, штрафов. Деятельность регламентируется нормами действующего законодательства. Мы работаем по всей Украине и дорожим своей репутацией, поэтому полное соблюдение прав клиента – одно из главных условий сотрудничества.
+</li>
+<li>
+Круглосуточный прием заявок на автовыкуп в Мариуполе – это то, что особенно ценят те люди, которых в сотрудничестве с нами привлекает оперативность получения средств от продаж автомобилей. Когда банки и другие финансовые учреждения обедают или отдыхают, мы работаем. Если вам срочно нужны деньги и ваш способ их получения – продажа автомобиля, то звоните прямо сейчас! Быстрее чем мы, вашу машину никто не купит.
+</li>
+<li>
+Командная работа по принципу одного окна позволяет быстро проводить сделку. Вам не придется ездить к оценщику, встречаться с юристом, посещать нотариуса для оформления бумаг. Все специалисты сами приедут, чтобы заверить и подтвердить факт купли/продажи авто. 
+</li>
+<li>
+Мы уважаем ваше право на конфиденциальность, поэтому персональные данные, а также сам факт продажи транспорта не подлежит разглашению третьим (незаинтересованным) лицам. 
+</li>
+<li>
+По вашему выбору мы готовы рассчитаться за покупку наличными средствами на месте оформления сделки или перевести деньги на указанную банковскую карточку.
+</li>
+<li>
+Вы ничем не рискуете. Быстро, с соблюдением предварительных договоренностей, корректно. Именно так осуществляется авовыкуп в Мариуполе.
+</li>
+        </ol>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto omnis
-          nam repudiandae debitis, deserunt veniam perspiciatis ducimus sint
-          dignissimos neque repellendus commodi eaque quae explicabo hic
-          consequatur accusantium! Aperiam nostrum blanditiis alias autem odio
-          repudiandae! Numquam quos magnam voluptatum consequatur officia ipsam
-          blanditiis! Autem, in ipsa. Impedit, pariatur laborum sit provident
-          doloremque accusamus vitae, vero modi a molestiae vel aut dolore ullam
-          consequuntur ipsum. Optio odit laudantium, ipsam sunt necessitatibus
-          excepturi quo rerum placeat praesentium sint ipsum. Totam, nihil
-          tempore? Dolore molestias omnis illo voluptates! Reiciendis animi
-          accusantium ipsam facilis provident architecto ipsa perferendis
-          corporis ratione at perspiciatis quidem sed magni, accusamus facere
-          quibusdam, ex rerum sit eaque tempore numquam reprehenderit neque ad!
-          Architecto in hic iure amet quam culpa deserunt impedit. Deserunt,
-          consequatur! Officia debitis impedit voluptatibus voluptates autem
-          dolor dolore possimus, molestias error eveniet assumenda! Incidunt est
-          veritatis asperiores nobis dolorum, iusto fuga magnam? Quam blanditiis
-          eius quaerat nesciunt, eligendi repellendus quas minima ipsam vero
-          nihil error! Expedita, aut. Distinctio odio alias consequatur mollitia
-          facilis earum sunt maiores voluptatem aliquam placeat. Ut, assumenda
-          eius praesentium tenetur in explicabo quaerat quod perferendis minima
-          accusamus laborum nostrum a soluta pariatur commodi. Porro incidunt
-          sunt, ipsa doloremque quod neque ipsum veritatis.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nobis recusandae hic, eos temporibus ipsam! Repellendus beatae nulla
-          culpa sequi, nisi, laudantium deserunt quas porro, hic repellat animi
-          nesciunt corporis assumenda minus placeat corrupti! Vel, magni
-          cupiditate eveniet, autem excepturi quaerat quia repellendus
-          laboriosam inventore saepe aliquam impedit aperiam molestias totam
-          aliquid obcaecati illum nulla doloremque officia sit enim eligendi
-          voluptates. Architecto amet asperiores neque delectus quas dignissimos
-          beatae quo placeat, minima animi nam, consequatur omnis rem,
-          reiciendis ipsum sit? Mollitia eius cum iste? Cupiditate, iure
-          voluptas, aperiam tempora, nulla fugiat possimus atque officiis minus
-          dolor accusamus suscipit eos laudantium!
-        </p>
-        <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-        </ul>
-        <h3>H3 Lorem ipsum dolor sit amet.</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-          consequuntur! Fuga itaque necessitatibus ipsa labore ullam aliquam,
-          dolorem ea placeat eligendi, autem beatae aspernatur tenetur totam vel
-          nobis sapiente quasi?
+        Узнать подробности и оставить заявку на автовыкуп можно прямо сейчас. Свяжитесь с нами по телефону или оформите обратный звонок. Мы перезвоним, чтобы ответить на ваши вопросы.
         </p>
       </City>
     </>
