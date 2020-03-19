@@ -21,7 +21,7 @@ const config = {
   host: host,
   port: 21,
   localRoot: localFolder,
-  remoteRoot: `/${folder}/public_html/`,
+  remoteRoot: folder,
   include: ["*", "**/*", ".*"], // this would upload everything except dot files
   //   include: ["*.php", "dist/*", ".*"],
   // e.g. exclude sourcemaps, and ALL files in node_modules (including dot files)

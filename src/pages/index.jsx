@@ -18,17 +18,17 @@ const App = () => {
   return (
     <>
       <Head>
-        <title>AvtoSale</title>
+        <title>AvtoSale | Автовыкуп в Украине</title>
         <meta rel="cononical" href={`${baseUrl}`} />
-        <meta name="description" content="AvtoSale | Автовыкуп авто по всей Украине" />
+        <meta name="description" content="AvtoSale | Автовыкуп по всей Украине" />
         <meta property="og:title" content="AvtoSale" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content = {`${baseUrl}`} />
-       
+        <meta property="og:url" content={`${baseUrl}`} />
+
         <meta property="og:image:type" content="image/png" />
         <meta property="og:locale" content="ru_RU" />
         <meta property="og:site_name" content="AvtoSale" />
-        <meta property="og:description" content="AvtoSale | Автовыкуп авто по всей Украине" />
+        <meta property="og:description" content="AvtoSale | Автовыкуп в Украине" />
       </Head>
       <header className={style.header}>
         <Menu />
@@ -41,88 +41,38 @@ const App = () => {
         <StepsBuy />
         <Calc />
         <Article>
-          <h1>H1 Lorem, ipsum.</h1>
+        <h1>Автовыкуп в Украине</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat
-            dolore similique maxime ipsa, a quam hic, magni ad deleniti
-            suscipit, inventore neque voluptate? Veritatis voluptatum explicabo
-            nemo dolor tenetur eos velit omnis facilis inventore? Facere, quis
-            veniam, accusantium quae omnis deleniti ea alias dignissimos
-            molestias sit aperiam sunt nobis laborum. Voluptate, mollitia
-            repudiandae velit ipsam sed minus cupiditate soluta sequi nam a
-            officia temporibus dolor culpa nesciunt officiis! Nisi
-            exercitationem nostrum a, architecto asperiores vitae sequi fugit
-            hic nesciunt commodi accusantium officia, et possimus, consectetur
-            modi magnam tempora autem nam magni a, laborum exercitationem
-            distinctio facere? Fuga inventore molestiae iste vel similique eum
-            necessitatibus, autem earum ipsam ratione debitis vitae sequi
-            asperiores molestias sunt animi cumque. Consequuntur sit temporibus
-            consequatur ipsam omnis illum ratione sapiente officia maiores,
-            possimus nostrum placeat, voluptate quis, odio labore alias numquam
-            quo. Consectetur cumque, perferendis qui iste accusantium at
-            sapiente error animi reiciendis amet, sunt alias facere dicta
-            quaerat aperiam, nobis commodi voluptas sequi fuga. Sapiente id ex
-            amet est ipsa eius dolorem aperiam sit aliquid unde, molestiae,
-            laboriosam minima. Beatae consectetur officiis aliquid aliquam iusto
+            Услуга «Автовыкуп» в Украине достаточно новая, но уже завоевала популярность. Ею успели заинтересоваться и воспользоваться тысячи автовладельцев. Пришла данная практика из Америки и Европы, где очень распространена и востребована. Суть сервиса заключается в быстрой, простой, удобной продаже автомобилей частными и юридическими лицами специализированной компании. Прибегают к процедуре люди, не имеющие времени и желания тратить силы на самостоятельный поиск покупателей на транспортное средство. При этом цена, которую предлагает салон за машину, честная – до 90% от объективной рыночной стоимости. Компания-покупатель берет на себя расходы, связанные с оценкой транспортного средства и оформлением сделки, поэтому продавец выигрывает со всех сторон.
           </p>
 
-          <h2> H2 Lorem ipsum dolor sit amet.</h2>
+          <h2>Кому интересен автовыкуп в Украине?</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-            omnis nam repudiandae debitis, deserunt veniam perspiciatis ducimus
-            sint dignissimos neque repellendus commodi eaque quae explicabo hic
-            consequatur accusantium! Aperiam nostrum blanditiis alias autem odio
-            repudiandae! Numquam quos magnam voluptatum consequatur officia
-            ipsam blanditiis! Autem, in ipsa. Impedit, pariatur laborum sit
-            provident doloremque accusamus vitae, vero modi a molestiae vel aut
-            dolore ullam consequuntur ipsum. Optio odit laudantium, ipsam sunt
-            necessitatibus excepturi quo rerum placeat praesentium sint ipsum.
-            Totam, nihil tempore? Dolore molestias omnis illo voluptates!
-            Reiciendis animi accusantium ipsam facilis provident architecto ipsa
-            perferendis corporis ratione at perspiciatis quidem sed magni,
-            accusamus facere quibusdam, ex rerum sit eaque tempore numquam
-            reprehenderit neque ad! Architecto in hic iure amet quam culpa
-            deserunt impedit. Deserunt, consequatur! Officia debitis impedit
-            voluptatibus voluptates autem dolor dolore possimus, molestias error
-            eveniet assumenda! Incidunt est veritatis asperiores nobis dolorum,
-            iusto fuga magnam? Quam blanditiis eius quaerat nesciunt, eligendi
-            repellendus quas minima ipsam vero nihil error! Expedita, aut.
-            Distinctio odio alias consequatur mollitia facilis earum sunt
-            maiores voluptatem aliquam placeat. Ut, assumenda eius praesentium
-            tenetur in explicabo quaerat quod perferendis minima accusamus
-            laborum nostrum a soluta pariatur commodi. Porro incidunt sunt, ipsa
-            doloremque quod neque ipsum veritatis.
+            Для опытного автолюбителя машина – это не просто транспортное средство. Это верный помощник в ситуациях, когда нужно быстро и/или с комфортом добраться до пункта назначения. Это игрушка и объект гордости, позволяющий после соответствующего тюнинга продемонстрировать свою индивидуальность. Это выгодная инвестиция, ведь если своевременно проводить техническое облуживание и текущий ремонт, то можно существенно увеличить амортизационную стоимость автомобиля.
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            nobis recusandae hic, eos temporibus ipsam! Repellendus beatae nulla
-            culpa sequi, nisi, laudantium deserunt quas porro, hic repellat
-            animi nesciunt corporis assumenda minus placeat corrupti! Vel, magni
-            cupiditate eveniet, autem excepturi quaerat quia repellendus
-            laboriosam inventore saepe aliquam impedit aperiam molestias totam
-            aliquid obcaecati illum nulla doloremque officia sit enim eligendi
-            voluptates. Architecto amet asperiores neque delectus quas
-            dignissimos beatae quo placeat, minima animi nam, consequatur omnis
-            rem, reiciendis ipsum sit? Mollitia eius cum iste? Cupiditate, iure
-            voluptas, aperiam tempora, nulla fugiat possimus atque officiis
-            minus dolor accusamus suscipit eos laudantium!
+            Но бывают ситуации, когда приходит время продажи железного коня. Причины у всех автовладельцев разные. Кто-то нуждается в срочной крупной сумме денег, другие – решают продать машину из-за переезда или невозможности регулярной эксплуатации, третьи – «переросли» транспортное средство или обратили взор на более новую, современную модель. В любом случае, у каждого владельца авто, кто решает продать его, появляется задача – получить за машину объективную стоимость.
           </p>
-          <ul>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-          </ul>
-          <h3>H3 Lorem ipsum dolor sit amet.</h3>
+          <h3>Сложности самостоятельной продажи автомобиля</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-            consequuntur! Fuga itaque necessitatibus ipsa labore ullam aliquam,
-            dolorem ea placeat eligendi, autem beatae aspernatur tenetur totam
-            vel nobis sapiente quasi?
+            Самый большой риск, который возникает при продаже авто, это встреча с мошенниками или недобросовестными покупателями. Автовладелец рискует остаться и без имущества, и без выручки за него.
           </p>
-        </Article>
+          <p>Еще одна сложность самостоятельной продажи транспортного средства – выгодно представить товар, чтобы получить за него честную стоимость. Не многие автолюбители знают, как представить «товар». И, как правило, каждый покупатель при осмотре машины начинает выискивать «изъяны», сбавляя цену. Продавец встает перед выбором – продать автомобиль дешево или отказать? Если «держать» цену, продажа авто может затянуться на долгие месяцы. А если деньги нужны срочно? </p>
+          <p>А еще нужно учитывать необходимость многочисленных показов/просмотров, переговоров с людьми, которых заинтересует предложение. Все это требует значительных эмоциональных и физических затрат. И не факт, что одна из встреч завершится сделкой. На первый взгляд, патовая ситуация. Но только на первый взгляд. Реальный выход из сложившегося положения – автовыкуп в Украине. </p>
+<h3>Автовыкуп в Украине: особенности и выгоды</h3>
+<p>Главный плюс, который получает автовладелец, воспользовавшийся услугой «Автовыкуп в Украине», это возможность в день обращения продать транспортное средство и получить за него хорошую цену. Как правило, на оформление сделки уходит не более часа. </p>
+<p>Еще одна особенность автовыкупа в Украине, привлекающая автовладельцев, это абсолютная юридическая защита прав продавца. Сделку сопровождают профессиональные юристы в рамках действующего законодательства. Все законно и безопасно.</p>
+<h2>Очевидные преимущества автовыкупа в Украине</h2>
+<ul>
+<li>Оперативность. Вы продадите автомобиль в сжатые сроки, получите деньги в день обращения.</li>
+<li>Безопасность. Сделка не несет никакого риска, проводится под пристальным надзором адвокатов.</li> 
+<li>Максимальная финансовая выгода для покупателя. Самая высокая стоимость в Украине. Все сопутствующие расходы берет на себя компания-покупатель.</li>
+<li>От вас – минимальный пакет документов. От нас – круглосуточный автовыкуп: когда другие спят, мы работаем.</li>
+<li>Предварительная оценка по телефону: озвучьте основные параметры вашей машины, и специалист назовет цену, которую мы готовы заплатить за нее.</li>
+</ul> 
+<p>Звоните, чтобы узнать детали самого выгодного автовыкупа в Украине. Конфиденциальность гарантируем.</p>
+ </Article>
         <BuyAvto />
       </main>
       <Footer />

@@ -18,90 +18,42 @@ const App= () => {
         <meta property="og:title" content={`Автовыкуп в ${city}`} />
         <meta property="og:type" content="website" />
         <meta property = "og:url" content = {`${baseUrl}${location.url}`} />
-       
-
       </Head>
       <City city={city}>
-        <h1>H1 Lorem, ipsum.</h1>
+        <h1>Автовыкуп в {city}</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat
-          dolore similique maxime ipsa, a quam hic, magni ad deleniti suscipit,
-          inventore neque voluptate? Veritatis voluptatum explicabo nemo dolor
-          tenetur eos velit omnis facilis inventore? Facere, quis veniam,
-          accusantium quae omnis deleniti ea alias dignissimos molestias sit
-          aperiam sunt nobis laborum. Voluptate, mollitia repudiandae velit
-          ipsam sed minus cupiditate soluta sequi nam a officia temporibus dolor
-          culpa nesciunt officiis! Nisi exercitationem nostrum a, architecto
-          asperiores vitae sequi fugit hic nesciunt commodi accusantium officia,
-          et possimus, consectetur modi magnam tempora autem nam magni a,
-          laborum exercitationem distinctio facere? Fuga inventore molestiae
-          iste vel similique eum necessitatibus, autem earum ipsam ratione
-          debitis vitae sequi asperiores molestias sunt animi cumque.
-          Consequuntur sit temporibus consequatur ipsam omnis illum ratione
-          sapiente officia maiores, possimus nostrum placeat, voluptate quis,
-          odio labore alias numquam quo. Consectetur cumque, perferendis qui
-          iste accusantium at sapiente error animi reiciendis amet, sunt alias
-          facere dicta quaerat aperiam, nobis commodi voluptas sequi fuga.
-          Sapiente id ex amet est ipsa eius dolorem aperiam sit aliquid unde,
-          molestiae, laboriosam minima. Beatae consectetur officiis aliquid
-          aliquam iusto
+        Достаточно часто автовладельцы принимают решение о продаже транспортного средства. Причины этому могут быть разные – от необходимости отдать крупную сумму в качестве оплаты долга до желания купить более современную модель машины. А объединяет всех продавцов движимого имущества стремление найти на «товар» покупателя быстро и денег от сделки выручить как можно больше.
+        </p><p>
+        Но те, кто самостоятельно продавал автомобиль, прекрасно знают, насколько трудно реализоваться проект с таким результатом. Ведь специализированный рынок переполнен предложениями, реальных покупателей не так уж много, а перекупщики стараются сбить цену на 25-30 процентов, чтобы заработать на перепродаже машины. Кроме того, неграмотный подход к продвижению рекламы, к составлению объявления для специализированного сайта может привести к тому, что объявление просто затеряется на просторах всемирной сети. Чтобы избежать всех этих сложностей и рисков, еще на начальном этапе эксперты рекомендуют не тратить время и силы тем, кто не знаком со всеми тонкостями сегмента, а обратиться к услуге автовыкуп в Полтаве.
         </p>
 
-        <h2> H2 Lorem ipsum dolor sit amet.</h2>
+        <h2>Что такое автовыкуп в Полтаве?</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto omnis
-          nam repudiandae debitis, deserunt veniam perspiciatis ducimus sint
-          dignissimos neque repellendus commodi eaque quae explicabo hic
-          consequatur accusantium! Aperiam nostrum blanditiis alias autem odio
-          repudiandae! Numquam quos magnam voluptatum consequatur officia ipsam
-          blanditiis! Autem, in ipsa. Impedit, pariatur laborum sit provident
-          doloremque accusamus vitae, vero modi a molestiae vel aut dolore ullam
-          consequuntur ipsum. Optio odit laudantium, ipsam sunt necessitatibus
-          excepturi quo rerum placeat praesentium sint ipsum. Totam, nihil
-          tempore? Dolore molestias omnis illo voluptates! Reiciendis animi
-          accusantium ipsam facilis provident architecto ipsa perferendis
-          corporis ratione at perspiciatis quidem sed magni, accusamus facere
-          quibusdam, ex rerum sit eaque tempore numquam reprehenderit neque ad!
-          Architecto in hic iure amet quam culpa deserunt impedit. Deserunt,
-          consequatur! Officia debitis impedit voluptatibus voluptates autem
-          dolor dolore possimus, molestias error eveniet assumenda! Incidunt est
-          veritatis asperiores nobis dolorum, iusto fuga magnam? Quam blanditiis
-          eius quaerat nesciunt, eligendi repellendus quas minima ipsam vero
-          nihil error! Expedita, aut. Distinctio odio alias consequatur mollitia
-          facilis earum sunt maiores voluptatem aliquam placeat. Ut, assumenda
-          eius praesentium tenetur in explicabo quaerat quod perferendis minima
-          accusamus laborum nostrum a soluta pariatur commodi. Porro incidunt
-          sunt, ipsa doloremque quod neque ipsum veritatis.
+        Этот сервис предполагает выкуп практически любого транспортного средства специализированной компанией. Мы готовы купить у вас автомобиль за хорошую цену, которая составляет не менее 90% от его реальной рыночной стоимости. При этом дополнительные расходы, связанные с оценкой ТС, его перерегистрацией на нового владельца, мы берем на себя. То есть, автовыкуп в Полтаве гарантирует своим клиентам, что они без забот и хлопот продадут машину на очень выгодных условиях.
         </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nobis recusandae hic, eos temporibus ipsam! Repellendus beatae nulla
-          culpa sequi, nisi, laudantium deserunt quas porro, hic repellat animi
-          nesciunt corporis assumenda minus placeat corrupti! Vel, magni
-          cupiditate eveniet, autem excepturi quaerat quia repellendus
-          laboriosam inventore saepe aliquam impedit aperiam molestias totam
-          aliquid obcaecati illum nulla doloremque officia sit enim eligendi
-          voluptates. Architecto amet asperiores neque delectus quas dignissimos
-          beatae quo placeat, minima animi nam, consequatur omnis rem,
-          reiciendis ipsum sit? Mollitia eius cum iste? Cupiditate, iure
-          voluptas, aperiam tempora, nulla fugiat possimus atque officiis minus
-          dolor accusamus suscipit eos laudantium!
+<p>Очень важно, что сделка может быть оформлена в день обращения собственника ТС. Это, без сомнения, оценят те люди, которые решаются на срочную продажу авто из-за необходимости получения крупной суммы денег. Сразу после подписания договора клиент компании получает всю стоимость автомобиля наличными на руки или на любую банковскую карту. 
+</p>
+<p>
+Кстати, узнать, сколько мы готовы заплатить за вашу машину, можно еще на этапе переговоров. Озвучьте основные параметры ТС по телефону, и менеджер назовет примерную цену, которую за «товар» сможет выручить продавец. Сумма может быть незначительно скорректирована после осмотра автомобиля оценщиком. 
+</p>
+<p>
+        Итак, автовыкуп в Полтаве – это возможность за один день, на выгодных финансовых  условиях, без хлопот и забот продать транспорт. 
         </p>
-        <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-        </ul>
-        <h3>H3 Lorem ipsum dolor sit amet.</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-          consequuntur! Fuga itaque necessitatibus ipsa labore ullam aliquam,
-          dolorem ea placeat eligendi, autem beatae aspernatur tenetur totam vel
-          nobis sapiente quasi?
-        </p>
+        <h3>Какие машины интересуют автовыкуп в Полтаве?</h3>
+        <p>Мы рассматриваем все варианты покупки машин. Не стоит переживать о невозможности продажи, если транспорт не на ходу, находится в залоге у банка или побывал в ДТП. Оформляйте заявку на автовыкуп в Полтаве, получайте свои деньги. И ваши хлопоты,  связанные с проблемным автотранспортом, становятся нашими заботами.</p>
+<p>Уточнить возможность автовыкупа конкретного транспортного средства можно по контактному телефону в индивидуальном порядке. Как правило, 95% заявок завершаются сделкой.</p>
+<h3>Что получают клиенты сервиса автовыкуп в Полтаве?</h3>
+        <ol>
+          <li>Возможность круглосуточной продажи авто, так как наша компания работает в режиме 24/7 без выходных и перерывов.</li>
+          <li>Отличные финансовые условия – не менее 90% от рыночной стоимости машины на момент обращения.</li>
+          <li>Отказ от затрат, связанных с предпродажной подготовкой, рекламой машины в социальных сетях или на специализированных сайтах.</li>
+          <li>Отсутствие хлопот, связанных с показом машины десяткам потенциальных покупателей. Отсутствие рисков быть втянутым в аферу.</li>
+          <li>Нет необходимости тратиться на услуги оценщика, заниматься перерегистрацией автомобиля.</li>
+          <li>Полную правовую безопасность сделки, так как процедуру сопровождают квалифицированные юристы.</li>
+          <li>Минимальные сроки – продажа машины в один день. Мгновенное получение денег от продажи машины на руки или банковскую карту.</li>
+          <li>Конфиденциальность. Мы никогда не передаем третьим лицам или сторонним организациям информацию о наших клиентах или фактах совершения сделок.</li>
+        </ol>
+        <p>Выгоды такой услуги как автовыкуп в Полтаве очевидны даже тем, кто далек от маркетинга, менеджмента и бизнеса. Если у вас остались вопросы, позвоните нам сами или закажите обратный звонок, и менеджер ответит на них.</p>
       </City>
     </>
   );

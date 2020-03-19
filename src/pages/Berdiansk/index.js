@@ -23,85 +23,34 @@ const App = () => {
         <meta property="og:description" content={`Срочный выкуп авто в ${city}`} />
       </Head>
       <City city={city}>
-        <h1>H1 Lorem, ipsum.</h1>
+        <h1>Автовыкуп в {city}</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat
-          dolore similique maxime ipsa, a quam hic, magni ad deleniti suscipit,
-          inventore neque voluptate? Veritatis voluptatum explicabo nemo dolor
-          tenetur eos velit omnis facilis inventore? Facere, quis veniam,
-          accusantium quae omnis deleniti ea alias dignissimos molestias sit
-          aperiam sunt nobis laborum. Voluptate, mollitia repudiandae velit
-          ipsam sed minus cupiditate soluta sequi nam a officia temporibus dolor
-          culpa nesciunt officiis! Nisi exercitationem nostrum a, architecto
-          asperiores vitae sequi fugit hic nesciunt commodi accusantium officia,
-          et possimus, consectetur modi magnam tempora autem nam magni a,
-          laborum exercitationem distinctio facere? Fuga inventore molestiae
-          iste vel similique eum necessitatibus, autem earum ipsam ratione
-          debitis vitae sequi asperiores molestias sunt animi cumque.
-          Consequuntur sit temporibus consequatur ipsam omnis illum ratione
-          sapiente officia maiores, possimus nostrum placeat, voluptate quis,
-          odio labore alias numquam quo. Consectetur cumque, perferendis qui
-          iste accusantium at sapiente error animi reiciendis amet, sunt alias
-          facere dicta quaerat aperiam, nobis commodi voluptas sequi fuga.
-          Sapiente id ex amet est ipsa eius dolorem aperiam sit aliquid unde,
-          molestiae, laboriosam minima. Beatae consectetur officiis aliquid
-          aliquam iusto
+        Машина – не только средство передвижения, не только увлечение и гордость, железный друг своего владельца. Прежде всего, это ликвидное имущество. Поэтому достаточно часто встает вопрос о продаже авто. Причины такого решения у всех разные. Для бизнесмена это может быть возможность получить нужную сумму денег для завершения удачной сделки. Для компании – необходимость обновления автопарка. Для обычного человека – шанс купить более «молодую» или престижную модель. Обстоятельства продажи разные, а цель у всех продавцов одна – получить максимально высокую цену в самые короткие сроки.
         </p>
-
-        <h2> H2 Lorem ipsum dolor sit amet.</h2>
+<p>Автовыкуп в Бердянске – та услуга, которая позволяет реализовать задумку быстро и выгодно. Получите до 90% от реальной рыночной стоимости вашего авто в день обращения. Даже не так: в час вашего обращения.</p>
+        <h3>Продаете на авторынке? Тратите драгоценное время…</h3>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto omnis
-          nam repudiandae debitis, deserunt veniam perspiciatis ducimus sint
-          dignissimos neque repellendus commodi eaque quae explicabo hic
-          consequatur accusantium! Aperiam nostrum blanditiis alias autem odio
-          repudiandae! Numquam quos magnam voluptatum consequatur officia ipsam
-          blanditiis! Autem, in ipsa. Impedit, pariatur laborum sit provident
-          doloremque accusamus vitae, vero modi a molestiae vel aut dolore ullam
-          consequuntur ipsum. Optio odit laudantium, ipsam sunt necessitatibus
-          excepturi quo rerum placeat praesentium sint ipsum. Totam, nihil
-          tempore? Dolore molestias omnis illo voluptates! Reiciendis animi
-          accusantium ipsam facilis provident architecto ipsa perferendis
-          corporis ratione at perspiciatis quidem sed magni, accusamus facere
-          quibusdam, ex rerum sit eaque tempore numquam reprehenderit neque ad!
-          Architecto in hic iure amet quam culpa deserunt impedit. Deserunt,
-          consequatur! Officia debitis impedit voluptatibus voluptates autem
-          dolor dolore possimus, molestias error eveniet assumenda! Incidunt est
-          veritatis asperiores nobis dolorum, iusto fuga magnam? Quam blanditiis
-          eius quaerat nesciunt, eligendi repellendus quas minima ipsam vero
-          nihil error! Expedita, aut. Distinctio odio alias consequatur mollitia
-          facilis earum sunt maiores voluptatem aliquam placeat. Ut, assumenda
-          eius praesentium tenetur in explicabo quaerat quod perferendis minima
-          accusamus laborum nostrum a soluta pariatur commodi. Porro incidunt
-          sunt, ipsa doloremque quod neque ipsum veritatis.
+        Наверняка, если вы уже пытались продать машину, то выезжали на авторынок. В этом случае вам пришлось столкнуться с отсутствием реальных покупателей и множеством зевак, которые задавали вопросы, критиковали, выискивали изъяны и уходили, оставив вас ни с чем. Знакомая картина? И так несколько раз подряд. Все это вам только предстоит? Представьте, что вас ждет, пока эмоциональные и физические силы не иссякнут.  Перспектива не радужная.
         </p>
-
+        <h3>Продаете через интернет? Рискуете…</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nobis recusandae hic, eos temporibus ipsam! Repellendus beatae nulla
-          culpa sequi, nisi, laudantium deserunt quas porro, hic repellat animi
-          nesciunt corporis assumenda minus placeat corrupti! Vel, magni
-          cupiditate eveniet, autem excepturi quaerat quia repellendus
-          laboriosam inventore saepe aliquam impedit aperiam molestias totam
-          aliquid obcaecati illum nulla doloremque officia sit enim eligendi
-          voluptates. Architecto amet asperiores neque delectus quas dignissimos
-          beatae quo placeat, minima animi nam, consequatur omnis rem,
-          reiciendis ipsum sit? Mollitia eius cum iste? Cupiditate, iure
-          voluptas, aperiam tempora, nulla fugiat possimus atque officiis minus
-          dolor accusamus suscipit eos laudantium!
+        Еще один «популярный» вариант – продажа автомобиля через интернет. Существуют  сайты, предлагающие услуги по продаже авто. Их правила предполагают от продавцов  размещения объявления. Но чтобы его заметили среди сотни схожих предложений, свою страницу нужно постоянно продвигать, рекламировать. И даже в этом случае нет гарантии, что кого-то заинтересует ваш товар. Могут пройти месяцы, прежде чем покупатель найдется. А что делать, если деньги за машину нужны срочно? Но даже не трата времени является основной опасностью в этом способе. Гораздо больший риск несет то, что на таких сайтах приходится оставлять свои личные данные, контакты. И даже если вы удалите свое объявление, например, в случае успешной продажи автомобиля, то информация про вас останется в сети навсегда. И она может стать достоянием злоумышленников.
         </p>
+        <h2>Автовыкуп в Бердянске: особенности, преимущества</h2>
+        <p>Для тех автовладельцев, кто хочет продать автомобиль быстро и дорого, настоящим спасением становится автовыкуп в Бердянске. Эта услуга позволяет за несколько часов продать машину и получить деньги на руки или на банковскую карту по желанию продавца. Еще один важный момент: сделка сопровождается квалифицированным юристом, поэтому полностью безопасна для сторон. В договоре отсутствуют скрытые комиссии и дополнительные расходы. Клиент автосервиса в Бердянске получает за автомобиль ровно ту сумму, которая ему была озвучена перед подписанием договора. Также покупатель берет на себя расходы по переоформлению транспортного средства в ГИБДД. Все просто, удобно, прозрачно. Продавцу даже не придется ехать на базу компании. Это актуально в том случае, когда машина не на ходу.</p>
+        <h3>Автовыкуп в Бердянске: что вы получите?</h3>
+        <p>Главные плюсы, которые мы можем вам предложить, это экономия времени, выгодная цена, гарантированная правовая поддержка. Уже сотни автовладельцев успели оценить все преимущества такого сотрудничества:</p>
         <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
+          <li>Время на заключение сделки – около часа.</li>
+          <li>Деньги на руки или счет в день обращения.</li>
+          <li>Юридическое сопровождение, а значит, никаких рисков быть обманутым.</li>
+          <li>Отсутствие скрытых комиссий, дополнительных платежей. </li>
+          <li>Объективная цена. Не менее 90% от рыночной стоимости транспортного средства на день обращения.</li>
+          <li>Возможность продать автомобиль в любое время дня и ночи. Это очень важно, так как деньги могут потребоваться в самый неожиданный момент.</li>
+          <li>•	Предварительный расчет стоимости. Продавец заранее может узнать приблизительную сумму сделки. По телефону озвучьте основные параметры автомобиля, и специалист автовыкупа в Бердянске назовет цену, которую компания готова заплатить.</li>
         </ul>
-        <h3>H3 Lorem ipsum dolor sit amet.</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-          consequuntur! Fuga itaque necessitatibus ipsa labore ullam aliquam,
-          dolorem ea placeat eligendi, autem beatae aspernatur tenetur totam vel
-          nobis sapiente quasi?
+        Закажите обратный звонок, и мы сами перезвоним вам, чтобы подробнее рассказать обо всех деталях сотрудничества. Можете быть уверены, обращаясь к услугам автовыкупа в Бердянске, вы получаете максимум выгод при нулевых рисках.
         </p>
       </City>
     </>

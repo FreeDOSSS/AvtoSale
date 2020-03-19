@@ -22,86 +22,42 @@ const App= () => {
 
       </Head>
       <City city={city}>
-        <h1>H1 Lorem, ipsum.</h1>
+        <h1>Автовыкуп в {city}</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat
-          dolore similique maxime ipsa, a quam hic, magni ad deleniti suscipit,
-          inventore neque voluptate? Veritatis voluptatum explicabo nemo dolor
-          tenetur eos velit omnis facilis inventore? Facere, quis veniam,
-          accusantium quae omnis deleniti ea alias dignissimos molestias sit
-          aperiam sunt nobis laborum. Voluptate, mollitia repudiandae velit
-          ipsam sed minus cupiditate soluta sequi nam a officia temporibus dolor
-          culpa nesciunt officiis! Nisi exercitationem nostrum a, architecto
-          asperiores vitae sequi fugit hic nesciunt commodi accusantium officia,
-          et possimus, consectetur modi magnam tempora autem nam magni a,
-          laborum exercitationem distinctio facere? Fuga inventore molestiae
-          iste vel similique eum necessitatibus, autem earum ipsam ratione
-          debitis vitae sequi asperiores molestias sunt animi cumque.
-          Consequuntur sit temporibus consequatur ipsam omnis illum ratione
-          sapiente officia maiores, possimus nostrum placeat, voluptate quis,
-          odio labore alias numquam quo. Consectetur cumque, perferendis qui
-          iste accusantium at sapiente error animi reiciendis amet, sunt alias
-          facere dicta quaerat aperiam, nobis commodi voluptas sequi fuga.
-          Sapiente id ex amet est ipsa eius dolorem aperiam sit aliquid unde,
-          molestiae, laboriosam minima. Beatae consectetur officiis aliquid
-          aliquam iusto
+        Еще несколько лет назад самыми популярными способами сбыть подержанное авто считались: поиск покупателя среди знакомых, помещение объявления на тематическом интернет ресурсе и посещение автомобильного рынка. Некоторые автовладельцы, для кого было особенно важно продать имущество быстро, использовали параллельно все три способа поиска потенциального покупателя. Однако самостоятельная продажа машины имела немало подводных камней. Кроме того, что процесс мог затянуться на месяцы, не всегда удавалось выручить ту сумму, на которую владелец авто первоначально рассчитывал. А еще риски встречи с мошенниками, когда и вовсе можно было потерять все. Ситуация кардинально изменилась с появлением такой услуги как «Автовыкуп в Житомире».
         </p>
-
-        <h2> H2 Lorem ipsum dolor sit amet.</h2>
+<p>
+Теперь искать покупателя на авто не нужно. Вашу новую или подержанную, исправную или не на ходу машину купит наша компания. Автовыкуп в Житомире проводится в полном соответствии с нормами действующего законодательства. И главное, деньги от продажи наши клиенты получают в течение часа. Для тех, кто не готов отдавать имущество за «три копейки» и хочет провести безопасную, выгодную сделку, мы предоставляем такую возможность.
+</p>
+        <h2>Чем автовыкуп в Житомире выгоден для продавца автомобиля?</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto omnis
-          nam repudiandae debitis, deserunt veniam perspiciatis ducimus sint
-          dignissimos neque repellendus commodi eaque quae explicabo hic
-          consequatur accusantium! Aperiam nostrum blanditiis alias autem odio
-          repudiandae! Numquam quos magnam voluptatum consequatur officia ipsam
-          blanditiis! Autem, in ipsa. Impedit, pariatur laborum sit provident
-          doloremque accusamus vitae, vero modi a molestiae vel aut dolore ullam
-          consequuntur ipsum. Optio odit laudantium, ipsam sunt necessitatibus
-          excepturi quo rerum placeat praesentium sint ipsum. Totam, nihil
-          tempore? Dolore molestias omnis illo voluptates! Reiciendis animi
-          accusantium ipsam facilis provident architecto ipsa perferendis
-          corporis ratione at perspiciatis quidem sed magni, accusamus facere
-          quibusdam, ex rerum sit eaque tempore numquam reprehenderit neque ad!
-          Architecto in hic iure amet quam culpa deserunt impedit. Deserunt,
-          consequatur! Officia debitis impedit voluptatibus voluptates autem
-          dolor dolore possimus, molestias error eveniet assumenda! Incidunt est
-          veritatis asperiores nobis dolorum, iusto fuga magnam? Quam blanditiis
-          eius quaerat nesciunt, eligendi repellendus quas minima ipsam vero
-          nihil error! Expedita, aut. Distinctio odio alias consequatur mollitia
-          facilis earum sunt maiores voluptatem aliquam placeat. Ut, assumenda
-          eius praesentium tenetur in explicabo quaerat quod perferendis minima
-          accusamus laborum nostrum a soluta pariatur commodi. Porro incidunt
-          sunt, ipsa doloremque quod neque ipsum veritatis.
+        Самое главное, что мы можем предложить нашим клиентам, это минимум ваших усилий и максимум выгоды от продажи транспортного средства. Разве не это ваша главная цель? Наши специалисты готовы подъехать в указанное продавцом место для совершения сделки. Это актуально для тех, у кого машина не на ходу, а также для тех, кто ограничен во времени. Автовыкуп в Житомире осуществляется в день вашего обращения.
         </p>
-
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nobis recusandae hic, eos temporibus ipsam! Repellendus beatae nulla
-          culpa sequi, nisi, laudantium deserunt quas porro, hic repellat animi
-          nesciunt corporis assumenda minus placeat corrupti! Vel, magni
-          cupiditate eveniet, autem excepturi quaerat quia repellendus
-          laboriosam inventore saepe aliquam impedit aperiam molestias totam
-          aliquid obcaecati illum nulla doloremque officia sit enim eligendi
-          voluptates. Architecto amet asperiores neque delectus quas dignissimos
-          beatae quo placeat, minima animi nam, consequatur omnis rem,
-          reiciendis ipsum sit? Mollitia eius cum iste? Cupiditate, iure
-          voluptas, aperiam tempora, nulla fugiat possimus atque officiis minus
-          dolor accusamus suscipit eos laudantium!
+        Мы берем на себя все расходы, связанные с оценкой транспортного средства, его перерегистрацией. А цена, которую компания готова выплатить за ваше авто не ниже 90% от ее рыночной стоимости на момент обращения.
         </p>
-        <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-        </ul>
-        <h3>H3 Lorem ipsum dolor sit amet.</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-          consequuntur! Fuga itaque necessitatibus ipsa labore ullam aliquam,
-          dolorem ea placeat eligendi, autem beatae aspernatur tenetur totam vel
-          nobis sapiente quasi?
+        Особенно важно, что сделку сопровождают квалифицированные юристы, поэтому обе стороны полностью защищены с правовой точки зрения. Мы принимаем заявки от владельцев автомобилей круглосуточно: без выходных и перерывов. То есть автовыкуп в Житомире – это реальный шанс получить на руки нужную сумму, когда банки и другие финансовые учреждения не работают.
         </p>
+        <h3>На какие авто распространяется услуга автовыкуп в Житомире?</h3>
+        <p>
+        С перечнем всех транспортных средств, которые мы готовы купить, можно ознакомиться на странице сайта. Хотелось бы отметить, что мы работаем с юридическими и физическими лицами. Для компаний – это прекрасная возможность быстро обновить автопарк. Для бизнесменов срочный автовыкуп в Житомире – шанс в течение часа получить большую сумму денег, которой как раз не хватает на завершение сделки.
+        </p>
+        <p>
+        Автовыкуп в Житомире готов заключить сделку, даже если машина находится в банковском залоге, если автомобиль не прошел таможенную легализацию. В этих случаях детали оговариваются с каждым клиентом в индивидуальном порядке. Автомобили этой категории самостоятельно продать сложнее всего, практически невозможно, потому для многих владельцев сделка с нашей компанией становится единственным шансом. Но мы не пользуемся ситуацией, занижая цену, а предлагаем реальную стоимость транспортного средства, определенную независимым экспертом.
+        </p>
+        <p>
+        Продать неисправную машину или автомобиль, побывавший в ДТП, очень сложно. Но только не при обращении в автовыкуп в Житомире. Мы приобретем транспортное средство по оптимальной цене, и вам не придется тратиться на его ремонт, предпродажную подготовку. Мы заберем автомобиль в том виде, в котором он у вас есть, сами переоформим все необходимые документы, чтобы  полностью избавить вас от хлопот, связанных с продажей машины.
+        </p>
+        <h2>Какие еще плюсы предлагает автовыкуп в Житомире?</h2>
+        <p>
+        Вы сами выбираете удобную для себя форму расчета. Мы можем отдать средства, вырученные вами от продажи машины наличными, а можем перечислить сумму на банковскую карту. Последний способ удобен для тех, кто не хочет рисковать крупной суммой денег, например, возвращаясь после совершения сделки домой.
+        </p>
+       <p>Однозначно вы не потратите время впустую. Еще на этапе переговоров по телефону вы можете узнать примерную цену, за которую мы готовы выкупить ваше транспортное средство. Озвучьте основные параметры машины, и менеджер скажет, за сколько мы готовы ее выкупить.
+       </p>
+       <p>
+       Автовыкуп в Житомире – реальная возможность быстро и дорого продать автомобиль. Звоните!
+       </p>
       </City>
     </>
   );

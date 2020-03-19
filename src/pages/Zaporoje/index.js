@@ -22,85 +22,32 @@ const App= () => {
 
       </Head>
       <City city={city}>
-        <h1>H1 Lorem, ipsum.</h1>
+        <h1>Автовыкуп в {city}</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat
-          dolore similique maxime ipsa, a quam hic, magni ad deleniti suscipit,
-          inventore neque voluptate? Veritatis voluptatum explicabo nemo dolor
-          tenetur eos velit omnis facilis inventore? Facere, quis veniam,
-          accusantium quae omnis deleniti ea alias dignissimos molestias sit
-          aperiam sunt nobis laborum. Voluptate, mollitia repudiandae velit
-          ipsam sed minus cupiditate soluta sequi nam a officia temporibus dolor
-          culpa nesciunt officiis! Nisi exercitationem nostrum a, architecto
-          asperiores vitae sequi fugit hic nesciunt commodi accusantium officia,
-          et possimus, consectetur modi magnam tempora autem nam magni a,
-          laborum exercitationem distinctio facere? Fuga inventore molestiae
-          iste vel similique eum necessitatibus, autem earum ipsam ratione
-          debitis vitae sequi asperiores molestias sunt animi cumque.
-          Consequuntur sit temporibus consequatur ipsam omnis illum ratione
-          sapiente officia maiores, possimus nostrum placeat, voluptate quis,
-          odio labore alias numquam quo. Consectetur cumque, perferendis qui
-          iste accusantium at sapiente error animi reiciendis amet, sunt alias
-          facere dicta quaerat aperiam, nobis commodi voluptas sequi fuga.
-          Sapiente id ex amet est ipsa eius dolorem aperiam sit aliquid unde,
-          molestiae, laboriosam minima. Beatae consectetur officiis aliquid
-          aliquam iusto
+        Каждый автолюбитель, кто пробовал продать подержанное транспортное средство, знает, что это не самая легкая задача. Ведь отдавать имущество за бесценок не хочется, а реальную цену за него перекупщики не дают. Найти покупателя, в лучшем случае, удастся только через несколько недель – это если повезет. А перед этим нужно провести дорогостоящую предпродажную подготовку автомобиля, заплатить за рекламу в интернете, пережить десятки показов и сотни телефонных переговоров.
         </p>
-
-        <h2> H2 Lorem ipsum dolor sit amet.</h2>
+<p>
+Если автомобиль не в лучшем техническом состоянии, то и вовсе задача становится практически невыполнимой. Когда спешить некуда, можно пустить ситуацию на самотек: дать объявление на специализированном сайте и ждать, когда кто-то на него «клюнет». Ну а если продать машину нужно быстро, то единственным верным решением становится автовыкуп в Запорожье.
+</p>
+        <h2>Что собой представляет услуга автовыкуп в Запорожье?</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto omnis
-          nam repudiandae debitis, deserunt veniam perspiciatis ducimus sint
-          dignissimos neque repellendus commodi eaque quae explicabo hic
-          consequatur accusantium! Aperiam nostrum blanditiis alias autem odio
-          repudiandae! Numquam quos magnam voluptatum consequatur officia ipsam
-          blanditiis! Autem, in ipsa. Impedit, pariatur laborum sit provident
-          doloremque accusamus vitae, vero modi a molestiae vel aut dolore ullam
-          consequuntur ipsum. Optio odit laudantium, ipsam sunt necessitatibus
-          excepturi quo rerum placeat praesentium sint ipsum. Totam, nihil
-          tempore? Dolore molestias omnis illo voluptates! Reiciendis animi
-          accusantium ipsam facilis provident architecto ipsa perferendis
-          corporis ratione at perspiciatis quidem sed magni, accusamus facere
-          quibusdam, ex rerum sit eaque tempore numquam reprehenderit neque ad!
-          Architecto in hic iure amet quam culpa deserunt impedit. Deserunt,
-          consequatur! Officia debitis impedit voluptatibus voluptates autem
-          dolor dolore possimus, molestias error eveniet assumenda! Incidunt est
-          veritatis asperiores nobis dolorum, iusto fuga magnam? Quam blanditiis
-          eius quaerat nesciunt, eligendi repellendus quas minima ipsam vero
-          nihil error! Expedita, aut. Distinctio odio alias consequatur mollitia
-          facilis earum sunt maiores voluptatem aliquam placeat. Ut, assumenda
-          eius praesentium tenetur in explicabo quaerat quod perferendis minima
-          accusamus laborum nostrum a soluta pariatur commodi. Porro incidunt
-          sunt, ipsa doloremque quod neque ipsum veritatis.
+        Сервис «Автовыкуп в Запорожье» – это услуга, стремительно набирающая популярность в регионе. Она идеально подходит тем автовладельцам, кто ищет возможность быстро и выгодно продать машину. Мы предлагаем за транспортные средства цену, максимально приближенную к рыночной. Разница не превышает 10 % от стоимости авто на момент обращения. Оценку проводят сертифицированные оценщики. Кстати, узнать, сколько вы получите за имущество, можно еще на этапе переговоров. По телефону озвучьте основные параметры транспортного средства, и специалист скажет, сколько вы за него сможете выручить.
         </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nobis recusandae hic, eos temporibus ipsam! Repellendus beatae nulla
-          culpa sequi, nisi, laudantium deserunt quas porro, hic repellat animi
-          nesciunt corporis assumenda minus placeat corrupti! Vel, magni
-          cupiditate eveniet, autem excepturi quaerat quia repellendus
-          laboriosam inventore saepe aliquam impedit aperiam molestias totam
-          aliquid obcaecati illum nulla doloremque officia sit enim eligendi
-          voluptates. Architecto amet asperiores neque delectus quas dignissimos
-          beatae quo placeat, minima animi nam, consequatur omnis rem,
-          reiciendis ipsum sit? Mollitia eius cum iste? Cupiditate, iure
-          voluptas, aperiam tempora, nulla fugiat possimus atque officiis minus
-          dolor accusamus suscipit eos laudantium!
-        </p>
+<p>
+К неоспоримым преимуществам автовыкупа в Запорожье можно отнести:
+</p>
         <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
+          <li>Высокую скорость проведения сделки. Срочный автовыкуп в Запорожье позволяет продать автомобиль в течение часа, что является главным плюсом для тех, кто нуждается в большой сумме денег именно сегодня.</li>
+          <li>Круглосуточный прием заявок на автовыкуп – это еще один бонус для тех, кому деньги нужны срочно. Мы работаем без выходных и перерывов. Оставляйте заявку в удобное для вас время, и мы свяжемся с вами как можно быстрее.</li>
+          <li>Минимальные хлопоты. Те автовладельцы, кто уже пробовал продать авто самостоятельно, знают, насколько длительным и проблемным может быть процесс. Многочисленные звонки, бесконечные показы автомобиля потенциальным покупателям, торги и просьбы снизить указанную цену, поиск изъянов. Все это морально тяжело и неприятно. Обращаясь к услугам автовыкупа в Запорожье, вы избавляетесь от этих забот.</li>
+          <li>Мгновенный расчет. Как только детали сделки оговорены, происходит подписание документов и расчет. Наши клиенты не ждут, пока покупатель съездит за деньгами или сможет собрать нужную сумму. Никаких авансов – полный расчет на месте совершения сделки.</li>
+          <li>Никаких рисков. Продажа такого дорогостоящего имущества как автомобиль всегда привлекает мошенников, встреча с которыми может привести к серьезным неприятностям. Избежать этого можно, обратившись в автовыкуп в Запорожье. Сделку проводят опытные юристы, поэтому все проходит в рамках действующего законодательства.</li>
         </ul>
-        <h3>H3 Lorem ipsum dolor sit amet.</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-          consequuntur! Fuga itaque necessitatibus ipsa labore ullam aliquam,
-          dolorem ea placeat eligendi, autem beatae aspernatur tenetur totam vel
-          nobis sapiente quasi?
+        Важная информация для владельцев автомобилей не в идеальном техническом состоянии. Мы готовы выкупить автомобиль даже в том случае, если он не на ходу. И вам даже не придется нанимать эвакуатор, чтобы доставить «товар» к нам. Мы сами приедем на место стоянки или хранения транспортного средства, чтобы выкупить его. 
+        </p>
+        <p>
+        Мы рассматриваем варианты автовыкупа в Запорожье машин, которые находится в банковском залоге, автомобилей, не прошедших таможенную легализацию. При выкупе «проблемных» авто, детали оговариваются в каждом случае с клиентом в индивидуальном порядке. На такие транспортные средства самостоятельно найти покупателя труднее всего, поэтому для многих автовладельцев сотрудничество с нашей компанией становится единственной возможностью продать такой «товар». Узнать все подробности можно по телефону. Закажите обратный звонок, и мы сами наберем вас, чтобы ответить на все вопросы. Наша команда – опытные юристы, нотариус, сертифицированные оценщики, менеджеры – работает по принципу одного окна. Мы гарантируем своим клиентам полное информационное, юридическое сопровождение сделки, что особенно оценят те, кто хочет быстро продать машину, но не имеет времени и желания этим заниматься.
         </p>
       </City>
     </>

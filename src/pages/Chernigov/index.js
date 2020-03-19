@@ -22,7 +22,7 @@ const App= () => {
 
       </Head>
       <City city={city}>
-        <h1>H1 Lorem, ipsum.</h1>
+        <h1>Автовыкуп в {city}</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat
           dolore similique maxime ipsa, a quam hic, magni ad deleniti suscipit,
