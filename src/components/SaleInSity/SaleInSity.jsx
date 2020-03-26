@@ -22,10 +22,7 @@ function SaleInSity({ city }) {
         <h2 className={style.title}>срочный выкуп авто в {city}</h2>
         <div className={style.spacer}></div>
         <p className={style.discription}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas modi
-          doloremque alias tempore eaque, laborum enim nemo eligendi suscipit et
-          voluptatem asperiores repellat ipsa odit fugiat, voluptatum hic at
-          iure.
+        Мы предлагаем максимальную цену за Ваш автомобиль - 95% от рыночной стоимости. Оценка авто и выезд на осмотр абсолютно бесплатно. Расчет в удобное для вас время и в любой валюте. Наше отличие от конкурентов – это мобильность, порядочность, надежность.
         </p>
 
         <ul className={style.chekList}>

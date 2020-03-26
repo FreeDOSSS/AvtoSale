@@ -19,7 +19,7 @@ function LogoRow() {
     sendTelegram(send).then(data => {
       if (data === 200) {
         UIkit.modal.dialog(
-          `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправленна!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.button} uk-modal-close" autofocus="">Закрыть</button> </div> `
+          `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправлена!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.button} uk-modal-close" autofocus="">Закрыть</button> </div> `
         );
       }
     });
@@ -47,17 +47,17 @@ function LogoRow() {
         </button>
         <ul className={clsx(style.iconGroup, "uk-iconnav")}>
           <li>
-            <a href={fb} uk-icon="icon: youtube">
+            <a href={fb} target="_blank" uk-icon="icon: youtube">
               {""}
             </a>
           </li>
           <li>
-            <a href={fb} uk-icon="icon: facebook">
+            <a href={fb} target="_blank" uk-icon="icon: facebook">
               {""}
             </a>
           </li>
           <li>
-            <a href={insta} uk-icon="icon: instagram">
+            <a href={insta} target="_blank" uk-icon="icon: instagram">
               {""}
             </a>
           </li>

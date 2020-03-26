@@ -67,7 +67,7 @@ function StepsBuy() {
         </symbol>
       </svg>
       {/* <h2 className={style.title}>Выкуп авто в украине</h2> */}
-      <h2 className={style.title}>Схема продажи</h2>
+      <h4 className={style.title}>Схема продажи</h4>
       <div className="spacer"></div>
       <div className={style.steps}>
         <div className={style.step}>
