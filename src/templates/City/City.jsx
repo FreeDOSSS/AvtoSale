@@ -19,7 +19,7 @@ function City({ city, children }) {
       <header className={style.header}>
         <Menu />
         <LogoRow />
-        <h2 className={style.title}>Автовыкуп в {city}</h2>
+        <h1 className={style.title}>Автовыкуп в {city}</h1>
         <div className={style.spacer}></div>
         <ul className={style.kroh}>
           <li className={style.home}>

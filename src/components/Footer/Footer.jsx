@@ -24,7 +24,7 @@ function Footer({ first_row = true }) {
     sendTelegram(send).then(data => {
       if (data === 200) {
         UIkit.modal.dialog(
-          `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправленна!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.sendButton} uk-modal-close" autofocus="">Ok</button> </div> `
+          `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправлена!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.sendButton} uk-modal-close" autofocus="">Ok</button> </div> `
         );
       }
     });
@@ -139,14 +139,14 @@ function Footer({ first_row = true }) {
               {phone}
             </a>
             <div className={style.iconBox}>
-              <a href={fb} uk-icon="icon: facebook">
+              <a href={fb} target="_blank" uk-icon="icon: facebook">
                 {""}
               </a>
-              <a href={insta} uk-icon="icon: instagram">
+              <a href={insta} target="_blank" uk-icon="icon: instagram">
                 {""}
               </a>
               <a
-                href="https://www.instagram.com/auto_best_vykup"
+                href="https://www.instagram.com/auto_best_vykup" target="_blank"
                 uk-icon="icon: youtube"
               >
                 {""}

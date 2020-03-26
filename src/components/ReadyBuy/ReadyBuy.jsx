@@ -6,9 +6,9 @@ import React from "react";
 function ReadyBuy({ city = "Украине" }) {
   return (
     <Container wrp={style.wrp} fluid={style.fon}>
-      <h2 className={style.title}>
+      <h3 className={style.title}>
         центр срочного выкупа <span className={style.accent}>в {city}</span>
-      </h2>
+      </h3>
 
       <h3 className={style.subtitle}>Что мы покупаем:</h3>
       <ul className={style.list}>

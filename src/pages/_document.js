@@ -12,9 +12,17 @@ class MyDocument extends Document {
         <Head >
           <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css"
-          />
+            href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css" />
         <meta property="og:image" content={logo} />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75602494-17"></script>
+<script>
+ {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-75602494-17');`}
+</script>
         </Head>
         <body>
           <svg style={{ display: "none" }}>
