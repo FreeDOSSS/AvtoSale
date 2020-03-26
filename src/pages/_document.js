@@ -19,15 +19,15 @@ class MyDocument extends Document {
           {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-75602494-17"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-7git5602494-17"
           ></script>
           <script>
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
-              gtag(${"js"}, new Date());
+              gtag(${'js'}, new Date());
 
-              gtag(${"config"}, ${"UA-75602494-17"});
+              gtag(${'config'}, ${"UA-75602494-17"});
   `}
           </script>
         </Head>
