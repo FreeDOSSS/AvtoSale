@@ -1,5 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
-import logo from "./../assets/images/logo/logo_social.jpg"
+import logo from "./../assets/images/logo/logo_social.jpg";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -9,20 +9,27 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="ru" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-        <Head >
+        <Head>
           <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css" />
-        <meta property="og:image" content={logo} />
+            href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css"
+          />
+          <meta property="og:image" content={logo} />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75602494-17"></script>
-<script>
- {`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag(\'js\', new Date());
+          {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-75602494-17"
+          ></script>
+          <script>
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag(${"js"}, new Date());
 
-  gtag(\'config\', \'UA-75602494-17\');`}
-</script>
+              gtag(${"config"}, ${"UA-75602494-17"});
+  `}
+          </script>
         </Head>
         <body>
           <svg style={{ display: "none" }}>
