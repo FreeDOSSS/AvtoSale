@@ -23,6 +23,11 @@ const App= () => {
       </Head>
       <City city={city}>
       <h5>ИЗВИНИТЕ, ТЕКСТ СКОРО БУДЕТ</h5>
+      <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </City>
     </>
   );
