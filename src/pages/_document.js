@@ -12,11 +12,6 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="stylesheet"
-<<<<<<< HEAD
-            href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css" />
-        <meta property="og:image" content={logo} />
-        
-=======
             href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css"
           />
           <meta property="og:image" content={logo} />
@@ -24,18 +19,17 @@ class MyDocument extends Document {
           {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-75602494-17"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-7git5602494-17"
           ></script>
           <script>
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
-              gtag(${"js"}, new Date());
+              gtag(${'js'}, new Date());
 
-              gtag(${"config"}, ${"UA-75602494-17"});
+              gtag(${'config'}, ${"UA-75602494-17"});
   `}
           </script>
->>>>>>> uppstream/master
         </Head>
         <body>
           <svg style={{ display: "none" }}>
