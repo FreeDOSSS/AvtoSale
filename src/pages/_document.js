@@ -6,6 +6,15 @@ class MyDocument extends Document {
     return { ...initialProps };
   }
 
+  // componentDidMount() {
+  //   console.log("2", 1);
+  //   if (!window.GA_INITIALIZED) {
+  //     initGA();
+  //     window.GA_INITIALIZED = true;
+  //   }
+  //   logPageView();
+  // }
+
   render() {
     return (
       <Html lang="ru" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
@@ -15,21 +24,6 @@ class MyDocument extends Document {
             href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css"
           />
           <meta property="og:image" content={logo} />
-
-          {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-7git5602494-17"
-          ></script>
-          <script>
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag(${'js'}, new Date());
-
-              gtag(${'config'}, ${"UA-75602494-17"});
-  `}
-          </script>
         </Head>
         <body>
           <svg style={{ display: "none" }}>
