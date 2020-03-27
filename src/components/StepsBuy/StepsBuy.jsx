@@ -1,7 +1,6 @@
-import * as style from "./StepsBuy.scss";
-
-import Container from "./../Container";
 import React from "react";
+import Container from "./../Container";
+import * as style from "./StepsBuy.module.scss";
 
 function StepsBuy() {
   return (
@@ -66,7 +65,8 @@ function StepsBuy() {
           />
         </symbol>
       </svg>
-      {/* <h2 className={style.title}>Выкуп авто в украине</h2> */}
+      {/* //TODO Пофиксить размеры заголовка, установить такие которые были кога тег
+      h2 */}
       <h4 className={style.title}>Схема продажи</h4>
       <div className="spacer"></div>
       <div className={style.steps}>

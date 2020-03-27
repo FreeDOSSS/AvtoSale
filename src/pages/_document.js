@@ -6,15 +6,6 @@ class MyDocument extends Document {
     return { ...initialProps };
   }
 
-  // componentDidMount() {
-  //   console.log("2", 1);
-  //   if (!window.GA_INITIALIZED) {
-  //     initGA();
-  //     window.GA_INITIALIZED = true;
-  //   }
-  //   logPageView();
-  // }
-
   render() {
     return (
       <Html lang="ru" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
