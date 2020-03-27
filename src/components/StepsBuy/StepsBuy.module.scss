@@ -16,6 +16,7 @@
   margin: 0;
   font-weight: 700;
   margin-bottom: 20px;
+  font-size: 27.2px;
 }
 
 .subtitle {
@@ -185,6 +186,10 @@
 }
 
 @media (min-width: $breakPointWidthDs) {
+  .title {
+    font-size: 32px;
+  }
+
   .step {
     --margin: 10px;
 

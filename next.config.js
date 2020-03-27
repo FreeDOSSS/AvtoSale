@@ -5,7 +5,6 @@ const router = require("./src/router/router");
 const withFonts = require("nextjs-fonts");
 
 next_config = {
-
   exportPathMap: async function(
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
@@ -34,7 +33,6 @@ next_config = {
         }
       }
     }
-    console.log("end", end);
     return end;
   }
 };

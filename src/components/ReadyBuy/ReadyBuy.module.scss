@@ -20,6 +20,7 @@
   color: $colorBlack;
   margin: 0;
   padding: 0;
+  font-size: 27.2px;
   margin-bottom: 10px;
 }
 
@@ -62,6 +63,10 @@
 }
 
 @media (min-width: $breakPointWidthDs) {
+  .title {
+    font-size: 32px;
+  }
+
   .list {
     grid-template-columns: repeat(4, 1fr);
   }

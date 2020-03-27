@@ -1,13 +1,11 @@
-import * as style from "./LogoRow.module.scss";
-
-import React, { useState } from "react";
-import { fb, insta, phone } from "./../../constants/constants";
-
-import Container from "../Container";
-import Link from "next/link";
 import clsx from "clsx";
+import Link from "next/link";
+import React, { useState } from "react";
+import Container from "../Container";
 import logo from "./../../assets/images/logo/logo_w.svg";
+import { fb, insta, phone } from "./../../constants/constants";
 import sendTelegram from "./../../helpers/sendTelegramMes.js";
+import * as style from "./LogoRow.module.scss";
 
 function LogoRow() {
   const [input, setInput] = useState("+380");
