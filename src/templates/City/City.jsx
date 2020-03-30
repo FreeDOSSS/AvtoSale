@@ -1,16 +1,14 @@
-import * as style from "./City.module.scss";
-
+import Link from "next/link";
+import React from "react";
 import Article from "./../../components/Article";
 import BuyAvto from "./../../components/BuyAvto/BuyAvto";
 import Footer from "./../../components/Footer/Footer";
-import Head from "next/head";
-import Link from "next/link";
 import LogoRow from "./../../components/LogoRow";
 import Menu from "./../../components/Menu/Menu";
-import React from "react";
 import ReadyBuy from "./../../components/ReadyBuy";
 import SaleInSity from "./../../components/SaleInSity";
 import StepsBuy from "./../../components/StepsBuy";
+import * as style from "./City.module.scss";
 
 function City({ city, children }) {
   //TODO Затемнить фон
