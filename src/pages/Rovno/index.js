@@ -13,7 +13,7 @@ const App= () => {
     <>
       <Head>
         <title>Автовыкуп в {city}</title>
-        <meta rel="cononical" href={`${baseUrl}${location.url}`} />
+      
         <meta name="description" content={`Срочный выкуп авто в ${city}`} />
         <meta property="og:title" content={`Автовыкуп в ${city}`} />
         <meta property="og:type" content="website" />
