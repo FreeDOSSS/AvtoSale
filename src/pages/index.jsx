@@ -18,7 +18,7 @@ const App = () => {
     <>
       <Head>
         <title>AvtoSale | Автовыкуп в Украине</title>
-        <meta rel="cononical" href={`${baseUrl}`} />
+        <link rel="canonical" href={`${baseUrl}`} />
         <meta
           name="description"
           content="AvtoSale | Автовыкуп по всей Украине"
