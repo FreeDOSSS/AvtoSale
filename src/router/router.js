@@ -30,7 +30,10 @@ const router = {
       path: "/Hmelnitskii"
     },
     { name: "Винница", url: "/avtovykyp-vinnitsa.html", path: "/Vinnitsa" },
-    { name: "Бердянск", url: "/avtovykyp-berdiansk.html", path: "/Berdiansk" }
+    { name: "Бердянск", url: "/avtovykyp-berdiansk.html", path: "/Berdiansk" },
+    { name: "Мелитополь", url: "/avtovykyp-melitopol.html", path: "/Melitopol" },
+    { name: "Белая Церковь", url: "/avtovykyp-belaya-tserkov.html", path: "/Belaya-Tserkov" },
+    { name: "Луцк", url: "/avtovykyp-lutsk.html", path: "/Lutsk" }
   ],
   contact: { name: "Контакты", url: "/kontakty.html", path: "/Calc" }
 };
