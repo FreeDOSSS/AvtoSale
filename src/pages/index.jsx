@@ -17,22 +17,22 @@ const App = () => {
   return (
     <>
       <Head>
-        <title>AvtoSale | Автовыкуп в Украине</title>
+        <title>Car&House | Автовыкуп в Украине</title>
         <link rel="canonical" href={`${baseUrl}`} />
         <meta
           name="description"
-          content="AvtoSale | Автовыкуп по всей Украине"
+          content="Car&House | Автовыкуп по всей Украине"
         />
-        <meta property="og:title" content="AvtoSale" />
+        <meta property="og:title" content="Car&House" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${baseUrl}`} />
 
         <meta property="og:image:type" content="image/png" />
         <meta property="og:locale" content="ru_RU" />
-        <meta property="og:site_name" content="AvtoSale" />
+        <meta property="og:site_name" content="Car&House" />
         <meta
           property="og:description"
-          content="AvtoSale | Автовыкуп в Украине"
+          content="Car&House | Автовыкуп в Украине"
         />
       </Head>
       <header className={style.header}>
