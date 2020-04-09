@@ -26,6 +26,8 @@
     "km"
     "name"
     "phone"
+    "sity"
+    "payment"
     "file"
     "submit";
 
@@ -70,6 +72,12 @@
 }
 .field[name="phone"] {
   grid-area: phone;
+}
+.field[name="sity"] {
+  grid-area: sity;
+}
+.field[name="payment"] {
+  grid-area: payment;
 }
 .fileList {
   grid-area: file;
@@ -185,6 +193,7 @@
       "firm model"
       "year km"
       "name phone"
+      "sity payment"
       "file submit";
     &Wrp {
       padding-top: 12%;

@@ -1,10 +1,8 @@
-import * as style from "./Calc.module.scss";
-
-import React, { useEffect, useState } from "react";
-
+import React, { useState } from "react";
 import Container from "../Container";
 import sendTelegram from "./../../helpers/sendTelegramMes";
 import sendTelegramPhoto from "./../../helpers/sendTelegramPhoto";
+import * as style from "./Calc.module.scss";
 
 function Calc() {
   const [firma, setFirma] = useState("");
@@ -13,12 +11,14 @@ function Calc() {
   const [km, setKm] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [sity, setSity] = useState("");
+  const [payment, setPayment] = useState("");
 
   const [file, setFile] = useState(null);
 
   const [errFile, setErrFile] = useState(null);
 
-  const hendlerForm = evt => {
+  const hendlerForm = (evt) => {
     evt.preventDefault();
 
     const { target } = evt;
@@ -26,32 +26,40 @@ function Calc() {
     const fields = [
       {
         name: "Марка",
-        value: firma
+        value: firma,
       },
       {
         name: "Модель",
-        value: model
+        value: model,
       },
       {
         name: "Год выпуска",
-        value: year
+        value: year,
       },
       {
         name: "Пробег",
-        value: km
+        value: km,
       },
       {
         name: "Имя",
-        value: name
+        value: name,
       },
       {
         name: "Телефон",
-        value: phone
-      }
+        value: phone,
+      },
+      {
+        name: "Город",
+        value: sity,
+      },
+      {
+        name: "Цена",
+        value: payment,
+      },
     ];
     const { files } = target.photo;
     if (!errFile) {
-      sendTelegram(fields).then(res => {
+      sendTelegram(fields).then((res) => {
         if (res === 200) {
           setFirma("");
           setPhone("");
@@ -60,6 +68,8 @@ function Calc() {
           setYear("");
           setModel("");
           setFile("");
+          setSity("");
+          setPayment("");
           UIkit.modal.dialog(
             `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправлена!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.button} uk-modal-close" autofocus="">Ok</button> </div> `
           );
@@ -95,6 +105,14 @@ function Calc() {
       case "phone":
         setPhone(value);
         break;
+      case "payment":
+        setPayment(value);
+        break;
+      case "sity":
+        setSity(value);
+        break;
+      default:
+        return;
     }
   };
 
@@ -188,6 +206,24 @@ function Calc() {
             className={style.field}
             placeholder="Ваш телефон"
           />
+          <input
+            type="text"
+            required
+            name="sity"
+            value={sity}
+            onChange={hendlerInput}
+            className={style.field}
+            placeholder="Ваш город"
+          />
+          <input
+            type="text"
+            required
+            name="payment"
+            value={payment}
+            onChange={hendlerInput}
+            className={style.field}
+            placeholder="Цена продажи"
+          />
 
           <div className={style.fileList}>
             <label className={style.label}>
@@ -271,7 +307,7 @@ function Calc() {
               <use href="#police"></use>
             </svg>
             <p>
-            Переоформление в МРЕО —{" "}
+              Переоформление в МРЕО —{" "}
               <span className={style.accent}>бесплатно</span>
             </p>
           </li>

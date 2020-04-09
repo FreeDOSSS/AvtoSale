@@ -24,8 +24,10 @@ function App() {
   const [phone, setPhone] = useState("");
   const [file, setFile] = useState(null);
   const [errFile, setErrFile] = useState(null);
+  const [sity, setSity] = useState("");
+  const [payment, setPayment] = useState("");
 
-  const hendlerForm = evt => {
+  const hendlerForm = (evt) => {
     evt.preventDefault();
 
     const { target } = evt;
@@ -33,33 +35,41 @@ function App() {
     const fields = [
       {
         name: "Марка",
-        value: firma
+        value: firma,
       },
       {
         name: "Модель",
-        value: model
+        value: model,
       },
       {
         name: "Год выпуска",
-        value: year
+        value: year,
       },
       {
         name: "Пробег",
-        value: km
+        value: km,
       },
       {
         name: "Имя",
-        value: name
+        value: name,
       },
       {
         name: "Телефон",
-        value: phone
-      }
+        value: phone,
+      },
+      {
+        name: "Город",
+        value: sity,
+      },
+      {
+        name: "Цена",
+        value: payment,
+      },
     ];
 
     const { files } = target.photo;
     if (!errFile) {
-      sendTelegram(fields).then(res => {
+      sendTelegram(fields).then((res) => {
         if (res === 200) {
           setFirma("");
           setPhone("");
@@ -68,6 +78,8 @@ function App() {
           setYear("");
           setModel("");
           setFile("");
+          setSity("");
+          setPayment("");
           UIkit.modal.dialog(
             `<h2 style="padding: 10px; text-align: center ">Заявка успешно отправлена!</h2><div class="uk-modal-footer uk-text-right"> <button class="uk-button ${style.button} uk-modal-close" autofocus="">Ok</button> </div> `
           );
@@ -103,6 +115,14 @@ function App() {
       case "phone":
         setPhone(value);
         break;
+      case "payment":
+        setPayment(value);
+        break;
+      case "sity":
+        setSity(value);
+        break;
+      default:
+        return;
     }
   };
 
@@ -123,7 +143,7 @@ function App() {
 
     setFile(arr);
   };
-  const {url} = router.contact
+  const { url } = router.contact;
   return (
     <>
       <Head>
@@ -132,11 +152,10 @@ function App() {
         <meta name="description" content="Автовыкуп контактные данные" />
         <meta property="og:title" content="Контакты" />
         <meta property="og:type" content="website" />
-        <meta property = "og:url" content = {`${baseUrl}${url}`} />
-       
+        <meta property="og:url" content={`${baseUrl}${url}`} />
+
         <meta property="og:site_name" content="Автовыкуп" />
         <meta property="og:description" content="Автовыкуп контактные данные" />
-
       </Head>
       <header className={style.header}>
         <Menu />
@@ -157,6 +176,7 @@ function App() {
                 className={style.field}
                 placeholder="Введите марку"
               />
+
               <input
                 type="text"
                 required
@@ -167,7 +187,6 @@ function App() {
                 placeholder="Введите модель"
               />
 
-              {/* <div className={style.row}> */}
               <input
                 type="number"
                 required
@@ -177,6 +196,7 @@ function App() {
                 className={style.field}
                 placeholder="Год выпуска"
               />
+
               <input
                 type="number"
                 required
@@ -186,7 +206,6 @@ function App() {
                 className={style.field}
                 placeholder="Пробег"
               />
-              {/* </div> */}
 
               <input
                 type="text"
@@ -197,6 +216,7 @@ function App() {
                 className={style.field}
                 placeholder="Ваше имя"
               />
+
               <input
                 type="text"
                 required
@@ -205,6 +225,24 @@ function App() {
                 onChange={hendlerInput}
                 className={style.field}
                 placeholder="Ваш телефон"
+              />
+              <input
+                type="text"
+                required
+                name="sity"
+                value={sity}
+                onChange={hendlerInput}
+                className={style.field}
+                placeholder="Ваш город"
+              />
+              <input
+                type="text"
+                required
+                name="payment"
+                value={payment}
+                onChange={hendlerInput}
+                className={style.field}
+                placeholder="Цена продажи"
               />
 
               <div className={style.fileList}>
