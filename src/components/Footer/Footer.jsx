@@ -139,14 +139,14 @@ function Footer({ first_row = true }) {
               {phone}
             </a>
             <div className={style.iconBox}>
-              <a href={fb} target="_blank" uk-icon="icon: facebook">
+              <a  rel="nofollow" href={fb} target="_blank" uk-icon="icon: facebook">
                 {""}
               </a>
-              <a href={insta} target="_blank" uk-icon="icon: instagram">
+              <a  rel="nofollow" href={insta} target="_blank" uk-icon="icon: instagram">
                 {""}
               </a>
-              <a
-                href="https://www.instagram.com/auto_best_vykup" target="_blank"
+              <a rel="nofollow"
+                href="https://www.youtube.com/" target="_blank"
                 uk-icon="icon: youtube"
               >
                 {""}

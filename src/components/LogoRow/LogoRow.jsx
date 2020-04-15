@@ -45,17 +45,17 @@ function LogoRow() {
         </button>
         <ul className={clsx(style.iconGroup, "uk-iconnav")}>
           <li>
-            <a href={fb} target="_blank" uk-icon="icon: youtube">
+            <a  rel="nofollow" href="https://www.youtube.com/" target="_blank" uk-icon="icon: youtube">
               {""}
             </a>
           </li>
           <li>
-            <a href={fb} target="_blank" uk-icon="icon: facebook">
+            <a  rel="nofollow" href={fb} target="_blank" uk-icon="icon: facebook">
               {""}
             </a>
           </li>
           <li>
-            <a href={insta} target="_blank" uk-icon="icon: instagram">
+            <a  rel="nofollow" href={insta} target="_blank" uk-icon="icon: instagram">
               {""}
             </a>
           </li>
