@@ -34,6 +34,7 @@ const router = {
     { name: "Мелитополь", url: "/avtovykyp-melitopol.html", path: "/Melitopol" },
     { name: "Белая Церковь", url: "/avtovykyp-belaya-tserkov.html", path: "/Belaya-Tserkov" },
     { name: "Луцк", url: "/avtovykyp-lutsk.html", path: "/Lutsk" }
+    { name: "Днепр", url: "/avtovykyp-dnepr.html", path: "/Dnepr" }
   ],
   contact: { name: "Контакты", url: "/kontakty.html", path: "/Calc" }
 };
