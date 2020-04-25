@@ -14,33 +14,13 @@ const App= () => {
     <>
       <Head>
         <title>Автовыкуп в {city}</title>
-        <link rel="canonical" href={`${baseUrl}${location.url}`} />
+        <link rel="canonical" href="https://vykup.org/avtovykyp-artemovsk" />
         <meta name="description" content={`Срочный выкуп авто в ${city}`} />
         <meta property="og:title" content={`Автовыкуп в ${city}`} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${baseUrl}${location.url}`} />
+        <meta property="og:url" content="https://vykup.org/avtovykyp-artemovsk" />
         <meta property="og:site_name" content="Автовыкуп" />
         <meta property="og:description" content={`Срочный выкуп авто в ${city}`} />
-
-        <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "О НАС",
-        "item": "https://vykup.org/"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Автовыкуп в Артемовске",
-        "item": "https://vykup.org/avtovykyp-artemovsk"
-      }]
-    }
-    </script>
-
-
       </Head>
       <City city={city}>
         <p>
