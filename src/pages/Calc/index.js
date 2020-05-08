@@ -153,7 +153,6 @@ function App() {
         <meta property="og:title" content="Контакты" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://vykup.org/kontakty" />
-
         <meta property="og:site_name" content="Автовыкуп" />
         <meta property="og:description" content="Автовыкуп контактные данные" />
       </Head>
