@@ -117,6 +117,7 @@ function Footer({ first_row = true }) {
       <div class="star-rating__container">
         <div class="star-rating__wrapper" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
           <div class="star-rating__avg" itemprop="ratingValue"></div>
+          <div class="star-rating__avg" itemprop="ratingCount"></div>
           <div class="fign" itemprop="bestRating">5</div>
           <div class="fign" itemprop="worstRating">1</div>
           <div class="star-rating" data-id="page-1">
