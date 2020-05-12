@@ -1,7 +1,7 @@
 <?php
 
 const
-DB_HOST = 'blackw7r.beget.tech',
+DB_HOST = 'localhost',
 DB_NAME = 'blackw7r_ww',
 DB_CHARSET = 'utf8',
 DB_USER = 'blackw7r_ww',

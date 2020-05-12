@@ -117,6 +117,8 @@ function Footer({ first_row = true }) {
       <div class="star-rating__container">
         <div class="star-rating__wrapper" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
           <div class="star-rating__avg" itemprop="ratingValue"></div>
+          <div class="fign" itemprop="bestRating">5</div>
+          <div class="fign" itemprop="worstRating">1</div>
           <div class="star-rating" data-id="page-1">
             <div class="star-rating__bg">
               <svg class="star-rating__item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -174,7 +176,7 @@ function Footer({ first_row = true }) {
             </div>
           </div>
           <div class="star-rating__votes">
-            <div class="star-rating__votes_count"><span class="star-rating__votes_number" itemprop="reviewCount"></span><span class="star-rating__votes_text"></span></div>
+            <div class="star-rating__votes_count"><span class="star-rating__votes_number" itemprop="ratingCount"><span class="star-rating__votes_number" itemprop="reviewCount"></span></span><span class="star-rating__votes_text"></span></div>
             <div class="star-rating__votes_message d-none">Оцени!</div>
           </div>
         </div>

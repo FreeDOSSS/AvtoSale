@@ -3,9 +3,21 @@
     text-align: center;
     background-color: #141414;
 }
-
+.star-rating__votes_text{
+    color: #141414;
+}
+.star-rating__votes_number{
+    color: #141414;
+}
+.star-rating__avg{
+    color: #141414;
+}
 .star-rating__wrapper {
     position: relative;
+}
+.fign{
+    color: #141414;
+    size: 1px;
 }
 
 .star-rating {
