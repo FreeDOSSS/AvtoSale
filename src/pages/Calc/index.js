@@ -148,11 +148,11 @@ function App() {
     <>
       <Head>
         <title>Контакты</title>
-        <meta rel="cononical" href={`${baseUrl}${url}`} />
+        <meta rel="cononical" href="https://vykup.org/kontakty" />
         <meta name="description" content="Автовыкуп контактные данные" />
         <meta property="og:title" content="Контакты" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${baseUrl}${url}`} />
+        <meta property="og:url" content="https://vykup.org/kontakty" />
 
         <meta property="og:site_name" content="Автовыкуп" />
         <meta property="og:description" content="Автовыкуп контактные данные" />

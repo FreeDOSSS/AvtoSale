@@ -146,7 +146,7 @@ function Footer({ first_row = true }) {
                 {""}
               </a>
               <a rel="nofollow"
-                href="https://www.youtube.com/" target="_blank"
+                href="https://www.youtube.com/channel/UCsQIX8AAQ0eWveMtjyrvMHw" target="_blank"
                 uk-icon="icon: youtube"
               >
                 {""}

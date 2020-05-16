@@ -13,11 +13,11 @@ const App= () => {
     <>
       <Head>
         <title>Автовыкуп в {city}</title>
-        <link rel="canonical" href={`${baseUrl}${location.url}`} />
+        <link rel="canonical" href="https://vykup.org/avtovykup-kiyev" />
         <meta name="description" content={`Срочный выкуп авто в ${city}`} />
         <meta property="og:title" content={`Автовыкуп в ${city}`} />
         <meta property="og:type" content="website" />
-        <meta property = "og:url" content = {`${baseUrl}${location.url}`} />
+        <meta property="og:url" content="https://vykup.org/avtovykup-kiyev" />
        
 
       </Head>
