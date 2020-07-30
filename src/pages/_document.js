@@ -14,6 +14,7 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css"
           />
+          <link rel="stylesheet" href="star_rating.css"></link>
           <meta property="og:image" content={logo} />
         </Head>
         <body>
@@ -64,6 +65,8 @@ class MyDocument extends Document {
 
           <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/js/uikit.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/js/uikit-icons.min.js"></script>
+          <script src="jquery-3.4.1.min.js"></script>
+          <script src="star_rating.js"></script>
         </body>
       </Html>
     );
