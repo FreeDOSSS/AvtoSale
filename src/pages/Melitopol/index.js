@@ -12,13 +12,14 @@ const App= () => {
   return (
     <>
       <Head>
-        <title>Автовыкуп в {city}</title>
+        <title>Автовыкуп в Мелитополе. Работаем 24/7. Даем 95% рыночной цены</title>
         <link rel="canonical" href="https://vykup.org/avtovykyp-melitopol" />
-        <meta name="description" content={`Срочный выкуп авто в ${city}`} />
-        <meta property="og:title" content={`Автовыкуп в ${city}`} />
+        <meta name="description" content="Автовыкуп в Мелитополе. Выкупим ваше авто по самой высокой цене быстро! Все виды оплат. Безопасная сделка, бесплатная оценка авто.  Платим сразу всю сумму. Работаем быстро." />
+        <meta property="og:title" content="Автовыкуп в Мелитополе. Работаем 24/7. Даем 95% рыночной цены" />
         <meta property="og:type" content="website" />
         <meta property = "og:url" content="https://vykup.org/avtovykyp-melitopol" />
-       
+        <meta property="og:site_name" content="Автовыкуп в Мелитополе. Работаем 24/7. Даем 95% рыночной цены" />
+        <meta property="og:description" content="Автовыкуп в Мелитополе. Выкупим ваше авто по самой высокой цене быстро! Все виды оплат. Безопасная сделка, бесплатная оценка авто.  Платим сразу всю сумму. Работаем быстро." />
 
       </Head>
       <City city={city}>

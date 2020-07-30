@@ -4,6 +4,7 @@
     background-color: #141414;
 }
 .star-rating__votes_text{
+    font-size: 1px;
     color: #141414;
 }
 .star-rating__votes_number{
@@ -17,7 +18,7 @@
 }
 .fign{
     color: #141414;
-    size: 1px;
+    font-size: 1px;
 }
 
 .star-rating {
@@ -62,7 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-size: 1px;
     text-align: center;
     width: 2em;
 }

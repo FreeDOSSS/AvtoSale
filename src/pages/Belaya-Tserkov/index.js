@@ -12,9 +12,9 @@ const App= () => {
   return (
     <>
       <Head>
-        <title>Автовыкуп в {city}</title>
+        <title>Автовыкуп в Белой церкви. Выкупим ваше авто по самой высокой цене быстро! Все виды оплат. Безопасная сделка, бесплатная оценка авто.  Платим сразу всю сумму. Работаем быстро.</title>
         <link rel="canonical" href="https://vykup.org/avtovykyp-belaya-tserkov" />
-        <meta name="description" content={`Срочный выкуп авто в ${city}`} />
+        <meta name="description" content="Автовыкуп в Белой церкви. Выкупим ваше авто по самой высокой цене быстро! Все виды оплат. Безопасная сделка, бесплатная оценка авто.  Платим сразу всю сумму. Работаем быстро." />
         <meta property="og:title" content={`Автовыкуп в ${city}`} />
         <meta property="og:type" content="website" />
         <meta property = "og:url" content="https://vykup.org/avtovykyp-belaya-tserkov" />
